@@ -1,0 +1,21 @@
+.ball {
+  font-size: 26px;
+  line-height: 55px;
+  text-align: center;
+  overflow: hidden;
+  span {
+    display: block;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    margin-right: 10px;
+    float: left;
+  }
+  .red {
+    background-color: #ff3333;
+  }
+  .blue {
+    background-color: #1e88d2;
+  }
+}

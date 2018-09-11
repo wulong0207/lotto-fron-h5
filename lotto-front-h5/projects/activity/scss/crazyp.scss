@@ -1,0 +1,178 @@
+@import "~lib/scss/base/base.scss";
+
+.creazyp-cont {
+  width: 100%;
+  background-color: #ce3231;
+  .top-head {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .cont {
+    padding: 0 20px;
+    .prize-cont {
+      width: 100%;
+      padding: 40px 10px 20px;
+      background-color: #fff;
+      border-radius: 18px;
+      .head {
+        width: 305px;
+        height: 53px;
+        font-size: 34px;
+        line-height: 53px;
+        color: #fff;
+        text-align: center;
+        background: url("../img/creazy_title.png") no-repeat center;
+        background-size: 100%;
+        margin: 0 auto;
+      }
+      .act-info {
+        margin-top: 30px;
+        p {
+          padding-left: 20px;
+          font-size: 24px;
+          color: #333;
+          span {
+            font-size: 30px;
+            color: #ce3231;
+          }
+        }
+      }
+      .table-cont {
+        margin-top: 30px;
+        width: 100%;
+        table {
+          width: 100%;
+          text-align: center;
+          tr {
+            td {
+              border: 1px solid #990000; /*no*/
+              width: 20%;
+              height: 70px;
+            }
+          }
+          .row-gride {
+            border: 1px solid #990000; /*no*/
+            background-color: #ffe7e7;
+            height: 70px;
+          }
+          .last {
+            color: #ce3231;
+            font-weight: bolder;
+          }
+          .mid {
+            font-weight: bolder;
+          }
+          .t-head {
+            background-color: #ce3231;
+            td {
+              color: #fff;
+            }
+          }
+          .t-info {
+            background-color: #ffe7e7;
+            td:nth-last-child(1) {
+              color: #ce3231;
+              font-weight: bolder;
+            }
+            td:nth-last-child(2) {
+              font-weight: bolder;
+            }
+          }
+        }
+      }
+    }
+    .tools {
+      width: 100%;
+      padding: 40px 10px 20px;
+      background-color: #fff;
+      border-radius: 18px;
+      margin-top: 20px;
+      .head {
+        width: 305px;
+        height: 53px;
+        font-size: 34px;
+        line-height: 53px;
+        color: #fff;
+        text-align: center;
+        background: url("../img/creazy_title.png") no-repeat center;
+        background-size: 100%;
+        margin: 0 auto;
+      }
+      .tab-1 {
+        width: 100%;
+        .sec-head {
+          font-size: 28px;
+          text-align: center;
+          line-height: 77px;
+        }
+        table {
+          width: 100%;
+          text-align: center;
+          tbody {
+            tr {
+              td {
+                width: 20%;
+                height: 70px;
+                border: 1px solid #990000; /*no*/
+              }
+              td:nth-last-child(1) {
+                color: #ce3231;
+              }
+            }
+            tr:nth-child(1) {
+              background-color: #ce3231 !important;
+              color: #fff;
+              td {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .info {
+      width: 100%;
+      padding: 50px 10px 180px;
+      .head {
+        width: 305px;
+        height: 53px;
+        font-size: 34px;
+        line-height: 53px;
+        color: #fff;
+        text-align: center;
+        background: url("../img/creazy_title.png") no-repeat center;
+        background-size: 100%;
+        margin: 0 auto;
+      }
+      ul {
+        li {
+          font-size: 22px;
+          color: #fff;
+          margin-top: 30px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  .post {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      border: none;
+      outline: none;
+      width: 300px;
+      height: 90px;
+      background: url("../img/crazy_button.png") no-repeat center;
+      background-size: 100%;
+    }
+  }
+}

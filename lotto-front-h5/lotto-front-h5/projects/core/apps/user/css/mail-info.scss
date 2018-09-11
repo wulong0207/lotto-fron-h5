@@ -1,0 +1,41 @@
+// @import '../base/base.scss';
+@import "./common.scss";
+
+.phone-detail {
+  // 公共样式 邮箱详情
+  .mail-ok,
+  .mail-done,
+  .mail-no {
+    width: 400px;
+    height: 162px;
+    margin: 80px auto 58px;
+    background: url("../img/emailok@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .mail-no {
+    background: url("../img/emailno@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .phone-number {
+    p {
+      font-size: 34px;
+      color: #333333;
+      text-align: center;
+    }
+  }
+  .phone-desc {
+    font-size: 24px;
+    color: #999999;
+    margin: 38px 65px 65px 65px;
+  }
+  button {
+  }
+  .btn-blue {
+  }
+  .btn-white {
+    background: #fff;
+    color: #999999;
+  }
+}

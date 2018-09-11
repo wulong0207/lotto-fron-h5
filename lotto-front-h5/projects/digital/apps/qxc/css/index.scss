@@ -1,0 +1,14 @@
+@import "../../../../../lib/scss/base/base";
+
+body,
+#app {
+  background: #fff !important;
+}
+.yc-qxc {
+  .number-panel-box {
+    border-bottom: solid 1px #f4f4f4; /* no */
+    &.last {
+      border: none;
+    }
+  }
+}

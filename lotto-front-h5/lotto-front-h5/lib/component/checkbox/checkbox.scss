@@ -1,0 +1,33 @@
+@import "../../scss/base/base";
+
+.checkbox-component {
+  display: inline-block;
+  .checkbox-input-origin {
+    display: none;
+  }
+  .checkbox-input {
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    margin: 0 10px;
+    border: solid 1px #f4f4f4; /* no */
+    &.checked {
+      background: #f08134;
+      border-color: #f08134;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 24px;
+        width: 14px;
+        border-right: solid 1px #fff; /* no */
+        border-bottom: solid 1px #fff; /* no */
+        transform: rotate(45deg);
+        top: 0;
+        left: 10px;
+      }
+    }
+  }
+}

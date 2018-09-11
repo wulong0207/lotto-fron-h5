@@ -1,0 +1,11 @@
+.user-icon {
+  img {
+    width: 60px;
+    height: 60px;
+  }
+  &.login {
+    img {
+      border-radius: 50%;
+    }
+  }
+}

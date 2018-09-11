@@ -1,0 +1,44 @@
+
+.msg-cont{
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
+  background-color: #fff;
+  .slick-prev{
+    display: none !important;
+  }
+  .slick-next{
+    display: none !important;
+  }
+  .cont{
+    width: 100%;
+    height: 65px;
+    background: url('../images/msg.png') no-repeat 25px center;
+    background-size: 115px 30px;
+    border-bottom: 1px solid #f2f2f2;/*no*/
+    overflow: hidden;
+    .acc{
+      padding-left: 160px;
+      font-size: 24px;
+      color: #333;
+      line-height: 65px;
+      overflow: hidden;
+      .msg{
+          float: right;
+          width:100%;
+          display: flex;
+          justify-content: space-between;
+      }
+    }
+    .ant-carousel .slick-slide {
+        text-align: center;
+        height: 65px;
+        line-height: 65px;
+        overflow: hidden;
+    }
+      
+    .ant-carousel .slick-slide h3 {
+        color: #333;
+    }
+  }
+}

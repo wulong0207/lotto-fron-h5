@@ -1,0 +1,10 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-06-20 15:10:19
+ * @Desc: scss 基类
+ */
+
+
+@function parseInt($n) {
+    @return $n / ($n * 0 + 1);
+}

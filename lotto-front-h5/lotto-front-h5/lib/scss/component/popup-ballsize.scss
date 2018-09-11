@@ -1,0 +1,34 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-07-14 15:08:47
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-07-14 15:19:25
+*/
+.alert-show {
+	.alert-cover {
+		.alert-warp {
+			.alert-con {
+				.content {
+					.random-bet {
+						display: block;
+						text-align:center;
+
+					    .yc-ball {
+					    	display:inline-block;
+					        width: 46px;
+					        margin-right: 10px;
+					        .ball {
+					            width: 46px;
+					            height: 46px;
+					            line-height: 46px;
+					        }
+					        .des {
+					            display: none;
+					        }
+					    }
+					}
+				}
+			}
+		}
+	}
+}

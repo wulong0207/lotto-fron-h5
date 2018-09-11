@@ -1,0 +1,202 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-05-14 15:18:47
+ * @Desc: 安全支付
+ */
+
+@import "~lib/scss/base/base";
+@import "../../../../../lib/scss/base/mixins";
+
+.pay {
+  .pay-endtime {
+    text-align: center;
+  }
+  .pay-info {
+    padding: 0 15px 10px;
+    background: #fff;
+    .pay-list {
+      &:first-of-type .pay-item > div:first-of-type {
+        color: #333;
+      }
+      .pay-item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #f4f4f4; /*no*/
+        align-items: center;
+        padding: 15px 10px;
+        font-size: 28px;
+
+        > div {
+          &:first-of-type {
+            flex: 2.5;
+            color: #666;
+          }
+          &:nth-of-type(2) {
+            flex: 5;
+            font-size: 24px;
+          }
+          &:nth-of-type(3) {
+            flex: 3;
+            font-size: 24px;
+            text-align: right;
+            color: #ed1c24;
+            & > p:first-of-type:nth-last-child(1) {
+              font-size: 28px;
+            }
+          }
+          &:last-of-type {
+            flex: 0.5;
+            padding-left: 5px;
+            text-align: center;
+          }
+        }
+        .pay-name {
+          flex: auto !important;
+        }
+        .arrows {
+          @include arrows($rotate: 45, $size: 20px, $color: #ccc);
+        }
+      }
+
+      // 红包展开
+      @at-root .red-package {
+        // 没有可用红包的时候
+        .not-usable-package {
+          text-align: center;
+          font-size: 32px;
+          img {
+            padding-top: 50px;
+          }
+          p {
+            padding: 50px 0;
+          }
+        }
+        ul {
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+          max-height: 0.95 * 400px;
+          li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #f4f4f4; /*no*/
+            color: #999;
+            > div {
+              flex: 1;
+              .selected {
+                @include select(35px);
+              }
+              .not-selected {
+                @include not-select(35px);
+              }
+              &:first-of-type {
+                flex: 7;
+                font-size: 28px;
+                color: #333;
+              }
+              &:last-of-type {
+                flex: 1;
+                text-align: center;
+              }
+              em {
+                font-size: 24px;
+                padding-left: 10px;
+              }
+            }
+
+            // 红包不可用
+            &.package-disabled {
+              > div {
+                &:first-of-type {
+                  color: #999 !important;
+                }
+              }
+              color: #999 !important;
+              opacity: 0.8;
+              background: #ccc;
+            }
+          }
+        }
+      }
+
+      // 支付方式展开
+      .pay-way {
+        ul {
+          overflow-y: auto;
+          max-height: 350px;
+          li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10px;
+            border-bottom: 1px solid #f4f4f4; /*no*/
+            &:first-of-type {
+              .bal-selected {
+                @include select(50px, 2);
+              }
+              .not-bal-selected {
+                @include not-select(50px, 2);
+              }
+            }
+            // 不可用的支付方式
+            &.not-use {
+              opacity: 0.8;
+              background: #ccc;
+              color: #999;
+              img {
+                filter: grayscale(100%);
+                filter: gray;
+              }
+              .min {
+                color: #fff;
+                float: right;
+                margin-right: -50px;
+              }
+            }
+            > div {
+              &:first-of-type {
+                flex: 1;
+                text-align: center;
+                img {
+                  width: 35px;
+                }
+              }
+              &:nth-of-type(2) {
+                flex: 9;
+              }
+              &:last-of-type {
+                flex: 1;
+                text-align: center;
+                .selected {
+                  @include select(35px);
+                }
+                .not-selected {
+                  @include not-select(35px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pay-btn {
+    padding-top: 50px;
+    p {
+      padding: 20px;
+      .button {
+        width: 100%;
+      }
+    }
+    .agreement {
+      color: #999;
+      font-size: 20px;
+      text-align: center;
+      a {
+        color: #666;
+      }
+    }
+  }
+}

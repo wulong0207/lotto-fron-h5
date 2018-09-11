@@ -1,0 +1,49 @@
+.bet-content {
+  .num-bet {
+    margin-top: 19px;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      line-height: 60px;
+      padding: 0 30px;
+      color: #999999;
+      background: #fafafa;
+      border-top: 1px solid #e5e5e5; /*no*/
+      border-bottom: 1px solid #e5e5e5; /*no*/
+    }
+    .plan-list {
+      background: #fff;
+      margin-top: 0;
+      .bet-list {
+        padding: 38px 30px;
+        border-bottom: 1px solid #e5e5e5; /*no*/
+        .bet-top {
+          word-wrap: break-word;
+          word-break: keep-all;
+          i {
+            margin: 0 10px;
+          }
+          span {
+            margin-right: 10px;
+          }
+          b {
+            margin: 0 5px;
+          }
+        }
+        .bet-bottom {
+          span {
+            color: orange;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .load-more {
+      background: #fff;
+    }
+    .grey {
+      color: #999999 !important;
+    }
+  }
+}

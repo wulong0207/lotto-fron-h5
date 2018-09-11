@@ -1,0 +1,25 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-11-11 17:34:46
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-11-11 17:44:32
+*/
+.copyRight {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 30px 0 60px;
+
+  .telPhone {
+    line-height: 42px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 28px;
+    text-align: center;
+  }
+  .copyRight_message {
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 24px;
+    text-align: center;
+  }
+}

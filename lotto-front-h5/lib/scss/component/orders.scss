@@ -1,0 +1,138 @@
+@import "../base/base";
+
+.orders-popup {
+  .scheme-list {
+    height: 600px;
+    overflow-y: auto;
+    padding: 10px 20px;
+    li {
+      padding-bottom: 10px;
+    }
+    .order-summary {
+      display: flex;
+      font-size: 28px;
+      padding: 20px;
+      background: #F7F7F7;
+      align-items: center;
+      .scheme-num {
+        flex: 1;
+        padding-top: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .selected, .not-selected {
+          display: inline-block;
+          height: 40px;
+          width: 40px;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+        .not-selected {
+          border: solid 1px #A9A9A9; /* no */
+          border-radius: 50%;
+        }
+        .selected {
+          background: url(../../img/icon_state_checked@2x.png) no-repeat;
+          background-size: 40px 40px;
+        }
+      }
+      .scheme-money {
+        padding-top: 6px;
+        width: 150px;
+        color: #ED1C24;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .scheme-pay {
+        width: 115px;
+        span {
+          display: block;
+          border: solid 2px #FF7A0D;
+          border-radius: 4px;
+          color: #FF7A0D;
+          text-align: center;
+          padding: 5px 0;
+        }
+      }
+    }
+    .order-detail {
+      margin-top: 2px;
+      background: #F7F7F7;
+      padding: 20px 30px 20px 80px; 
+      table{
+        width: 100%;
+      }
+      td{
+        display: block;
+        em{
+          font-style: normal;
+          color: #ED1C24;
+          display: block;
+          word-wrap: break-word;
+          word-break: keep-all;
+          width: 590px;
+        }
+      }
+      td:nth-child(2){
+        float: left;
+      }
+    }
+  }
+  .scheme-desc {
+    font-size: 24px;
+    color: #999;
+    padding: 20px 30px;
+  }
+  .footer {
+    display: flex;
+    height: 100px;
+    .footer-oper {
+      flex: 1;
+      display: flex;
+      border-top: solid 1px #f4f4f4; /* no */
+      //align-items: center;
+      //justify-content: center;
+      > span {
+        flex: 1;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 60px;
+        color: #666;
+        border-right: 1px solid #f4f4f4;/*no*/
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        &:first-of-type {
+          color: #ff7a0d;
+        }
+        &:last-of-type {
+          border-right: none;
+        }
+      }
+      .sel-all {
+        background-image: url(../../img/public/icon_uture@2x.png);
+      }
+      .sel-normal {
+        background-position: center 15px;
+        background-image: url(../../img/public/detail_ballnomber_green@2x.png);
+        background-size: 35px 35px;
+      }
+      .invert{
+        background-image: url(../../img/public/icon_select@2x.png);
+      }
+      .delete {
+        background-image: url(../../img/public/icon_del@2x.png);
+      }
+    }
+    .bet-money-btn {
+      width: 450px;
+      background: #ED1C24;
+      color: #fff;
+      text-align: center;
+      font-size: 34px;
+      line-height: 100px;
+    }
+  }
+
+}

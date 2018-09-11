@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*
+ * @Author: yubei
+ * @Date: 2017-03-22 18:37:28
+ * @Desc: 基础变量
+ */
+
+// 常规定义
+$base-size: 100%;
+$base-width: 100%;
+$base-font-family: PingFangSC-Light, "helvetica neue", "hiragino sans gb",
+  tahoma, "microsoft yahei ui", "microsoft yahei", simsun, sans-serif;
+$base-font-style: normal;
+$base-font-size: $base-size;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+/* Responsive Web design */
+$mobile-phone1: 320; // 20em
+$mobile-phone1: 480; // 30em
+$mobile-phone3: 640; // 40em
+$on-laptop1: 800; // 50em
+$on-laptop2: 960; // 60em
+$on-laptop3: 1040; // 65em
+$on-laptop4: 1120; // 70em
+$on-laptop5: 1280; // 80em
+$wide-screen1: 1440; // 90em
+$wide-screen2: 1600; // 100em
+$wide-screen3: 1760; // 110em
+$wide-screen4: 1920; // 120em
+$wide-screen5: 2080; // 130em

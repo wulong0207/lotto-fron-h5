@@ -1,0 +1,128 @@
+.jjc-section {
+  .plan-content {
+    margin: 20px 0;
+    .plan-header {
+      display: flex;
+      justify-content: space-between;
+      line-height: 60px;
+      padding: 0 30px;
+      color: #b1b1b1;
+      background: #fafafa;
+      border-top: 1px solid #e5e5e5; /*no*/
+    }
+    .plan-list {
+      background: #fff;
+      table {
+        width: 100%;
+        tbody {
+          width: 100%;
+          tr {
+            width: 100%;
+            td {
+              text-align: center;
+              div {
+                display: flex;
+                flex-direction: column;
+                padding: 5px 0;
+              }
+            }
+          }
+        }
+      }
+      .table-header {
+        tr {
+          td {
+            padding: 27px 0;
+            border: 1px solid #e5e5e5; /*no*/
+          }
+        }
+      }
+      .order-content {
+        tr {
+          border-bottom: 1px solid #e5e5e5; /*no*/
+          td {
+            border-left: 1px solid #e5e5e5; /*no*/
+            border-right: 1px solid #e5e5e5; /*no*/
+          }
+        }
+        .orange-red {
+          color: #ed1b24;
+        }
+        b {
+          font-weight: normal;
+        }
+      }
+      .dan {
+        img {
+          display: block;
+          width: 30px;
+          height: 30px;
+          margin: 0 auto;
+        }
+      }
+      .col10 {
+        width: 10%;
+      }
+      .col20 {
+        width: 20%;
+      }
+      .col25 {
+        width: 25%;
+      }
+    }
+    // 抄单不可见
+    .open-see {
+      display: flex;
+      width: 100%;
+      height: 267px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        display: block;
+        width: 65px;
+        height: 71px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}
+.lot-item {
+  display: flex;
+  justify-content: space-between;
+  .lot-item-m {
+    margin-left: 36px;
+  }
+  .bonus-green {
+    color: #1e88d2;
+  }
+}
+
+.publish-copy {
+  position: fixed;
+  bottom: 120px;
+  right: 0px;
+  width: 181px;
+  height: 140px;
+  // display: flex;
+  // flex-direction: column;
+  background: url("../../img/fabu_chaodan.png") no-repeat;
+  background: contain;
+  button {
+    opacity: 0;
+    width: 100%;
+    height: 140px;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    position: absolute;
+    right: 10px;
+    top: -13px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.hide {
+  display: none;
+}

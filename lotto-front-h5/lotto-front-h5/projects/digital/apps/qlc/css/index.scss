@@ -1,0 +1,43 @@
+@import "../../../../../lib/scss/base/base";
+
+body,
+#app {
+  background: #fff !important;
+}
+.yc-qlc {
+  padding-bottom: 180px;
+  .number-panel-box {
+    border-bottom: solid 1px #f4f4f4; /* no */
+    &.last {
+      border: none;
+    }
+    .ball-panel {
+      position: relative;
+      .dm {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #999;
+      }
+    }
+  }
+  .ball-panel {
+    position: relative;
+    .dm {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: #999;
+    }
+  }
+  .bh-page {
+    .ball-panel {
+      position: relative;
+      .number-random-number-component {
+        position: absolute;
+        right: 30px;
+        bottom: 80px;
+      }
+    }
+  }
+}

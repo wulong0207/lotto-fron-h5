@@ -1,0 +1,45 @@
+.ssq{
+    background: #fff;
+    margin:30px 0;
+    padding:0 30px;
+    .pre-code{
+        font-size:28px;
+        padding: 30px 0;
+        border-bottom:1px solid #e5e5e5 ; /*no*/
+        .issue-title{
+            padding-bottom:20px;
+        }
+        .code{
+            span{
+                margin-right:10px;
+            }
+        }
+        .blue{
+            color:#1E88D2;
+        }
+        .red{
+            color:#ED1B24 ;
+        }
+    }
+    .title{
+        font-size:32px;
+        padding:30px 0;
+        border-bottom:1px solid #e5e5e5; /*no*/
+    }
+    .end-time{
+        font-size: 28px;
+        padding:30px 0;
+    }
+    .lottery-bet{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding-bottom:30px;
+        .change-button{
+            font-size:28px;
+            color:#333333;
+            border:1px solid #e5e5e5; /*no*/
+            padding:16px 32px;
+        }
+    }
+}

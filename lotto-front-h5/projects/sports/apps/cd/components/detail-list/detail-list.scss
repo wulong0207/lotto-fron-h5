@@ -1,0 +1,35 @@
+.detail-list {
+  background: #fff;
+  margin-top: 20px;
+  .item {
+    display: flex;
+    padding: 20px;
+    border-bottom: solid 1px #f4f4f4; /* no */
+    &:last-child {
+      border: none;
+    }
+    .info {
+      flex: 1;
+      .follow-info {
+        padding-bottom: 10px;
+        h2 {
+          font-size: 32px;
+          font-weight: normal;
+          display: inline-block;
+        }
+        span {
+          color: #999;
+        }
+      }
+      .datetime {
+        color: #999;
+      }
+    }
+    .amount {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+    }
+  }
+}

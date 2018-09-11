@@ -1,0 +1,54 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-05-14 10:40:03
+ * @Desc: 公用头部
+ */
+
+@import "../base/mixins";
+
+.header {
+    height: 87px;
+    font-size: 20px;
+    &:first-child:nth-last-child(2){
+        .header-fix {
+            box-shadow: none;
+        }
+    }
+
+    // 固定头部
+    .header-fix {
+        position: fixed;
+        @include z-index(navigator);
+        width: 100%;
+        padding: 0 20px;
+        // box-shadow: 0 3px 1px #999;
+        .header-con {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 88px;
+            .back {
+                display: flex;
+                width: 80px;
+                a{
+                    display: inline-block;
+                    @include size(60px, 50px);
+                    background: url(../../img/public/header/back@2x.png) no-repeat;
+                    background-size: 25px 44px;
+                }
+            }
+            .title {
+                font-size: 38px;
+                color: #fff;
+            }
+            .handle {
+                width: 80px;
+                > span, > a {
+                    font-size: 32px;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}

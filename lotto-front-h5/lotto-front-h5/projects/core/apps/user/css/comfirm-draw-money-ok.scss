@@ -1,0 +1,30 @@
+// @import '../base/base.scss';
+
+.comfirm-draw-money-ok {
+    .comfirm-ok {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        .icon-moneyback {
+            display: inline-block;
+            width: 459px;
+            height: 218px;
+            background: url("../../img/moneyback@2x.png") no-repeat;
+            margin-bottom: 74px;
+        }
+        p {
+            font-size: 34px;
+            font-weight: bold;
+            color: #333333;
+            em {
+                color: #fe7a0d;
+            }
+        }
+        .go-detail{
+            margin-top:30px;
+            font-size:28px;
+            color: #999999;
+        }
+    }
+}

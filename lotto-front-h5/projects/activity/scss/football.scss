@@ -1,0 +1,43 @@
+
+.select{
+    display: inline-block;
+    position:relative;
+    .selector{
+        font-size:24px;                   
+        margin:0 40px;
+        padding:0 10px;      
+        width:140px;
+        height:50px;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        .triangle{
+            display: inline-block;
+            width:20px;
+            height:12px;
+        }
+        // padding:10px 50px;   
+        // background:url("../img/triangle.png") no-repeat;
+        // background-position:98% 50%;
+    }
+    .drop-menu{
+        z-index:100;
+        position:absolute;
+        top:50px;
+        left:40px;
+        width:360px;
+        height:260px;
+        overflow-y: scroll;
+        box-shadow:5px 5px 5px rgba(0,0,0,.4);
+        .option-list{
+            display: inline-block;
+            width:100%;
+            text-align:center;
+            padding:10px;
+            white-space: nowrap;
+        }
+    }
+    .hide{
+        display: none;
+    }
+}

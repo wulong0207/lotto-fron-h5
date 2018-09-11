@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*
+ * @Author: yubei
+ * @Date: 2017-03-22 19:04:24
+ * @Desc: prefixer
+ */
+
+/*
+ @argument {string} $property
+   Property to prefix.
+
+ @argument {string} $value
+   Value to use.
+
+ @argument {list} $prefixes
+   Vendor prefixes to output.
+
+ @example scss
+   .element {
+     @include prefixer(appearance, none, ("webkit", "moz"));
+   }
+
+   // CSS Output
+   .element {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+   }
+*/
+
+
+
+@mixin prefixer($property, $value, $prefixes: ("webkit", "moz")){
+  @each $prefix in $prefixes{
+    #{"-" + $prefix + "-" + $property}: $value;
+  }
+  #{$property}: $value;
+}

@@ -1,0 +1,65 @@
+// @import '../base/base.scss';
+// @import "./component/common.scss";
+
+.verify-phone {
+    .verify-phone {
+        font-size: 28px;
+        color: #999;
+        margin-top: 58px;
+        padding-left: 32px;
+        padding-bottom: 20px;
+    }
+    .sf-section {
+        .yzm-section {
+            font-size: 32px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            .sf-item {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                input {
+                    margin-left: 20px;
+                    border: 0;
+                    flex-shrink: 1;
+                    outline: 0 none;
+                }
+                .icon-delete {
+                    flex-shrink: 0;
+                }
+                span {
+                    flex-shrink: 0;
+                }
+            }
+            .yzm {
+                font-size: 24px ;
+                color: #1e88d2;
+                padding: 10px 0;
+                border-left: 1px solid #e6e6e6;/*no*/
+                text-align: center;
+                width: 30%;
+            }
+        }
+    }
+    button {
+        display: block;
+        border: 0;
+        width: 90%;
+        height: 89px;
+        border-radius: 4px;
+        font-size: 34px;
+        margin: 80px auto 50px;
+        font-weight: 600;
+        color: #999999;
+    }
+
+    .btn-blue {
+        background: #1e88d2;
+        color: #fff;
+    }
+    .p-desc {
+        font-size: 24px;
+        margin: 38px 65px 65px 65px;
+    }
+}

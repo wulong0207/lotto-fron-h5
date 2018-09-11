@@ -1,0 +1,246 @@
+@import "../../../lib/scss/base/base.scss";
+
+.foract {
+  width: 100%;
+  height: 100%;
+  background: url("../img/backgroundImg.png") no-repeat top;
+  background-size: 100%;
+  .cont-title {
+    overflow: hidden;
+    .hand {
+      display: block;
+      width: 94%;
+      margin: 182px auto 0;
+    }
+  }
+  .cont {
+    width: 100%;
+    padding: 25px 25px 55px;
+    background-color: #ffd961;
+    border-top: 1px solid #ffcd62;
+    margin-top: -15px;
+    .cont-grid {
+      width: 100%;
+      height: 733px;
+      padding: 50px;
+      background: url("../img/marquee_light.png") no-repeat center;
+      background-size: 100% 100%;
+    }
+    .cont-msg {
+      width: 100%;
+      height: 105px;
+      margin-top: 20px;
+      background-color: #f5c93d;
+      position: relative;
+      border-radius: 10px;
+      .gold-left,
+      .gold-right {
+        img {
+          width: 110px;
+          height: 40px;
+        }
+      }
+      .gold-left {
+        position: absolute;
+        left: -15px;
+        top: 70px;
+      }
+      .gold-right {
+        position: absolute;
+        right: 0px;
+        top: 70px;
+      }
+      .scroll-cont {
+        width: 100%;
+        padding: 15px 10%;
+        .slick-prev {
+          display: none !important;
+        }
+        .slick-next {
+          display: none !important;
+        }
+        .scroll-box {
+          width: 100%;
+          height: 72px;
+          text-align: center;
+          overflow: hidden;
+          .over-scroll,
+          .content2 {
+            width: 100%;
+            height: 144px;
+            overflow: hidden;
+            .acc {
+              padding: 0px 30px;
+              font-size: 24px;
+              color: #a46715;
+              line-height: 36px;
+              overflow: hidden;
+              .left {
+                width: 40%;
+                float: left;
+              }
+              .right {
+                float: right;
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                i {
+                  color: #a46715;
+                }
+              }
+              span {
+                float: left;
+              }
+              .name {
+                display: block;
+                max-width: 50%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #a46715;
+              }
+            }
+          }
+        }
+      }
+    }
+    .cont-recommend {
+      width: 100%;
+      height: 416px;
+      margin-top: 20px;
+      background: url("../img/demen_bg.png") no-repeat center;
+      background-size: 100% 100%;
+      padding: 0 20px;
+      overflow: hidden;
+      .title {
+        width: 383px;
+        height: 80px;
+        margin: 20px auto;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .list-01,
+      .list-02 {
+        display: flex;
+        width: 100%;
+        height: 115px;
+        background-color: #fff;
+        border-radius: 10px;
+        align-items: center;
+        .double-logo {
+          width: 85px;
+          height: 85px;
+          margin-left: 34px;
+        }
+        .text {
+          margin-left: 20px;
+          color: #7f4623;
+          p:nth-child(1) {
+            font-weight: bolder;
+          }
+        }
+        .post {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          button {
+            border: 1px solid #f1583e; /*no*/
+            color: #f1583e;
+            font-size: 28px;
+            padding: 9px 27px;
+            margin-right: 37px;
+            background-color: #fff;
+            border-radius: 5px;
+          }
+        }
+      }
+      .list-01 {
+        margin-top: 30px;
+      }
+      .list-02 {
+        margin-top: 20px;
+      }
+    }
+    .downloade {
+      width: 100%;
+      height: 158px;
+      margin-top: 20px;
+      background: url("../img/bg_block.png") no-repeat center;
+      background-size: 100% 100%;
+      .down-cont {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img {
+          width: 90px;
+          height: 94px;
+          margin-left: 46px;
+        }
+        span {
+          color: #7f4623;
+          font-size: 24px;
+          margin-left: 24px;
+        }
+        .post {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          button {
+            color: #fff;
+            font-size: 28px;
+            padding: 15px 35px;
+            background-color: #f1583e;
+            border: none;
+            border-radius: 5px;
+            margin-right: 50px;
+          }
+        }
+      }
+    }
+    .cont-info {
+      width: 100%;
+      height: 848px;
+      margin-top: 20px;
+      background: url("../img/actInfo_bg.png") no-repeat center;
+      background-size: 100% 100%;
+      overflow: hidden;
+      .title {
+        width: 383px;
+        height: 80px;
+        margin: 20px auto 30px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .container {
+        border-radius: 4px;
+        padding: 0 48px;
+        .intro-list {
+          font-size: 24px;
+          line-height: 34px;
+          margin-bottom: 45px;
+          color: #7f4623;
+          li {
+            margin: 10px;
+            span {
+              font-weight: bolder;
+            }
+          }
+        }
+        .btn {
+          width: 500px;
+          line-height: 65px;
+          border: 1px solid #dc1615; /*no*/
+          color: #dc1615;
+          margin: 45px auto 50px;
+          text-align: center;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

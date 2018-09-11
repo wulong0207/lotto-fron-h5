@@ -1,0 +1,140 @@
+.trade-section {
+  margin-top: 10px;
+  background: #fff;
+  padding: 0 20px;
+  .trade-money {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 50px 0;
+    border-bottom: 1px solid #e6e6e6;
+    .number {
+      font-size: 38px;
+      b {
+        font-size: 60px;
+        margin: 0 20px;
+      }
+    }
+    .red {
+      color: #ed1b24;
+    }
+    .green {
+      color: #21ae6a;
+    }
+    p:nth-of-type(1) {
+      font-size: 32px;
+      color: #666;
+      margin-top: 14px;
+    }
+    p:nth-last-of-type(1) {
+      font-size: 28px;
+      color: #666;
+    }
+    .mini-btn-orange {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .trade-detail {
+    padding: 35px 0 15px 0;
+    border-bottom: 1px solid #e6e6e6;
+    div {
+      display: flex;
+      justify-content: space-between;
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+
+      .red-detail {
+        padding: 5px 8px;
+        border-radius: 8px;
+        background-color: #ed1b24;
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+  }
+
+  .trade-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    color: #999;
+    padding: 28px 0;
+    border-bottom: 1px solid #e6e6e6;
+    span {
+      flex: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: right;
+      margin-left: 10px;
+      &:last-child {
+        -webkit-box-flex: 1;
+        flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: right;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.trade-list {
+  padding: 0 43px;
+  margin-top: 30px;
+  background: #fff;
+  position: relative;
+  .flow-list {
+    margin-left: 15px;
+    padding: 30px 15px;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    div {
+      padding: 0 17px;
+    }
+    .top {
+      .circle {
+        position: absolute;
+        top: 45px;
+        left: -21px;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #dddddd;
+      }
+    }
+    .active {
+      .circle {
+        transform: scale(2);
+        background: #fe7a0d;
+      }
+      span {
+        color: #fe7a0d;
+      }
+    }
+    .bottom {
+      color: #999999;
+    }
+  }
+  .line {
+    position: absolute;
+    width: 0;
+    border: 1px solid #dddddd;
+    background: #dddddd;
+    left: 43px;
+    top: 45px;
+    bottom: 45px;
+  }
+}

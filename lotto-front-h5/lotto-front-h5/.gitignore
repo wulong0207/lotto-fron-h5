@@ -1,0 +1,8 @@
+node_modules
+build
+.vscode
+npm-debug.log
+.idea
+.DS_Store
+H5V*.zip
+npm-debug.log*

@@ -1,0 +1,88 @@
+@import "../base/base";
+
+$height: 94px;
+
+.yc-bet-bar{
+    display: flex;
+    height: 96px;
+    border-top: 1px solid #e6e6e6;/*no*/
+
+    .border-right{
+        border-right: 1px solid #e6e6e6;/*no*/
+    }
+
+    .icon{
+        width: 95px;
+        text-align: center;
+        height: $height;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+
+        img{ width: 46px; height: 46px;}
+
+        .icon-title{
+            color: #999;
+            font-size: 24px;
+            white-space: nowrap;
+        }
+    }
+
+    .btn-txt{
+        height: $height;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        position: relative;
+        white-space: nowrap;
+
+        .title{
+            font-size: 32px;
+            font-weight: 600;
+        }
+        .subtitle{
+            font-size: 24px;
+        }
+        .num-mark{
+            position: absolute;
+            top: 10px;
+            right: 18px;
+            min-width: 37px;
+            min-height: 37px;
+            line-height: 35px;
+            display: inline-block;
+            text-align: center;
+            font-size: 24px;
+            border: 1px solid #999;/*no*/
+            color: #999;
+            border-radius: 50%;
+            font-weight: 600;
+        }
+    }
+
+    .orange{
+        background-color: #ff7a0d;
+        color: #fff;
+        .btn-txt{
+            .num-mark{
+                border: 1px solid #ff7a0d;/*no*/
+                color: #ff7a0d;
+                background-color: #fff;
+            }
+        }
+    }
+
+    .red{
+        background-color: #ed1c24;
+        color: #fff;
+        .btn-txt{
+            .num-mark{
+                border: 1px solid #fff;/*no*/
+                color: #ed1c24;
+                background-color: #fff;
+            }
+        }
+    }
+}

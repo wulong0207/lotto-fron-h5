@@ -1,0 +1,48 @@
+@import "../../../../../../lib/scss/base/base.scss";
+
+.order {
+  background: #fff;
+  .order-header {
+    padding: 20px;
+    border-bottom: solid 1px #f4f4f4; /* no */
+    font-size: 28px;
+    strong {
+      font-size: 32px;
+      font-weight: normal;
+    }
+    span {
+      padding-right: 20px;
+    }
+  }
+  .order-detail {
+    padding: 0 20px;
+  }
+  .invisible-tip {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+  }
+  .invisible-tip-img {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    img {
+      height: 120px;
+      width: 120px;
+    }
+  }
+  &.not-winning {
+    background: #fff url("./images/ic_no_win_big@2x.png") no-repeat 100% 0;
+    background-size: 164px 126px;
+  }
+  &.winning {
+    background: #fff url("./images/ic_win_big@2x.png") no-repeat 100% 0;
+    background-size: 162px 132px;
+  }
+}

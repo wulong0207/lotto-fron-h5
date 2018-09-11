@@ -1,0 +1,20 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-11-11 11:58:46
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-11-11 17:48:30
+*/
+.betInfo {
+  margin-top: 27px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  .stopTime {
+    height: 54px;
+    line-height: 54px;
+    text-align: right;
+    padding-right: 40px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 24px;
+  }
+}

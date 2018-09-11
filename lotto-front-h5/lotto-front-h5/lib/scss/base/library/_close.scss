@@ -1,0 +1,17 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-05-11 15:51:28
+ * @Desc: 关闭
+ */
+
+
+// 圆圈关闭按钮
+@mixin close($size: 30px, $color: #9b9b9b){
+	display: inline-block;
+	@include size($size);
+	text-align: center;
+	line-height: $size - 0.04;
+	color: $color;
+	border: 2px solid $color;/*no*/
+	border-radius: 50%;
+}

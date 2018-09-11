@@ -1,0 +1,25 @@
+.resetsec {
+    img {
+        display: block;
+        margin: 45px auto;
+    }
+    p {
+        text-align: center;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .next-btn {
+        display: block;
+        width: 94%;
+        height: 90px;
+        margin: 30px auto 0;
+        background-color: #1e88d2;
+        border-radius: 8px;
+        font-size: 34px;
+        line-height: 90px;
+        text-align: center;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
+}

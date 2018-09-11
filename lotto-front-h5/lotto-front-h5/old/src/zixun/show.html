@@ -1,0 +1,115 @@
+<!--<!DOCTYPE HTML>-->
+<html id="html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>资讯内容</title>
+<meta name="viewport" id="ve" content="width=device-width, user-scalable=no, initial-scale=1,minimum-scale=1, maximum-scale=1"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<script src="../lib/jquery-1.8.0.min.js"></script>
+<script src="../utils/app.js?v={_VERSION_}" type="text/javascript"></script>
+<!--
+<link href="css/index.css?v={_VERSION_}" rel="stylesheet" type="text/css" />
+-->
+<style>
+  /*   头部样式    */
+  *{margin:0;padding:0;}
+  a{text-decoration: none;}
+  ul{list-style: none;}
+  body{font-family: Arial, Helvetica,sans-serif;
+    -webkit-text-size-adjust: none;background:#f4f4f4;}
+#zx_head{position:relative;overflow:hidden;}
+.zx_h_title{position:relative;height:2.66rem;line-height:2.66rem;background:#1e88d2;}
+.zx_h_title h1{text-align:center;font-size:1rem;}
+.zx_h_title a{position:absolute;top:0;width:2.6rem;}
+.zx_h_title a.h_back img{vertical-align: middle;height:1rem;}
+.zx_h_title a.h_back{color:#fff;left:0.8rem;height:100%;background:url(images/login_icon_arrow2.png);background-repeat:no-repeat;background-position: left center;background-size:35%}
+.zx_h_title a.h_person{right:1rem;height:100%;background-position: 0.8rem 0.75rem;background-image: url(images/zx_icon.png);
+    background-repeat: no-repeat;
+    background-size: 200%;}
+.zx_h_title a {position: absolute;top: 0;width: 2.2rem;}
+
+/*   新闻样式   */
+.zxNew_bottom{margin-top:0.5rem;}
+.advert{padding:15px;height:6.3rem;overflow:hidden;margin:15px 0;background:#fff;}
+.advert a{display: block;height:6.3rem;overflow:hidden;}
+.zx_show{background:#fff;}
+.zx_show ul{padding:0 15px;}
+.zx_show ul li{position:relative;padding: 0.7rem 0 0.9rem;border-bottom:solid 1px #e6e6e6;overflow:hidden;}
+.zx_show ul li p strong{font-size:1rem;font-weight: normal;color:#333;}
+.zx_show1 ul li p.zx_content_show1 a{color:#333;font-size:1rem;}
+.zx_show1 ul li p img{float:left;margin-right:0.5rem;width:7rem;height:5rem;}
+.zx_show1 ul li p strong span{margin-left:0.3rem;}
+.zx_show1 ul li p strong span.show1_bottom{left:0;margin-left:0;}
+.zx_show1 ul li p strong span.show1_bottom span{margin-right:0.3rem;margin-left:0;}
+.zx_show ul li span,.zx_show ul li a{font-size:0.75rem;}
+.zx_show ul li a{color:#1e88d2;font-size:0.75rem;overflow:hidden;}
+.zx_show ul li a.firstnew{display: block;height:3rem;position:relative;}y
+.zx_show ul li a.firstnew p:nth-child(1){width:100%;position:absolute;padding:0.1rem;bottom:0;z-index:2;background:rgba(0,0,0,.7);color:#fff;}
+.zx_show ul li a.firstnew p:nth-child(1) strong{color:#fff;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;width:100%;}
+.zx_show ul li a.firstnew p:nth-child(2){position:relative;}
+.hotNow{position:absolute;width:1.53rem;height:0.72rem;background:url(../img/hottag@2x.png) no-repeat;background-size:100%;}
+.hotNow em{display: block;color:#fff;width:1.3rem;text-align: center;line-height: 0.3rem;}
+.hotext{font-size:0.3rem;margin-top: 0.09rem;}
+.hotdate{font-size:0.28rem;}
+/*.zx_show ul li span.zx_left{margin-right:0.2rem;}*/
+.zx_show ul li p .oneStrong a.zx_title_r{color:#333;font-size:1rem;width:100%;height: initial;margin-bottom: 2rem;}
+.strong_length{margin-right:0.12rem;}
+.gray99 {
+    color: #999;
+}
+.zx_top{color:#999;font-size:0.64rem;border:solid 1px #e6e6e6;padding:0.01rem 0.06rem;border-radius:0.04rem;}
+.zx_share{width:1rem;height:1rem; background-position: 0.21rem -4.2rem;background-size:327%;}
+.zx_content_bottom{position:absolute;bottom:0.9rem;width:100%;left:6.8rem;}
+.zx_show ul li span.zx_content_bottom a{color: #1e88d2;font-size:0.75rem;}
+
+.zx_sl{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.zx_sl_2{overflow : hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.zx_show2 strong{width:100%;display:block;}
+.zx_tp_3{display:-webkit-flex;justify-content:space-between;margin-top:0.4rem;}
+.zx_tp_3 img{flex-grow:0;width:33%;height:5rem;}
+.zx_tp_3 img:nth-child(2){margin:0 0.1rem;}
+.zx_tp_1{margin-top:0.1rem;position:relative;}
+.zx_tp_1 img{height:3rem;}
+.zx_sp_mark{color:#fff;font-size:0.64rem;position:absolute;width:3.36rem;height:1rem;line-height:1rem;background:rgba(0,0,0,.5);border-radius:0.54rem;bottom:0.54rem;right:1rem;}
+.zx_sp_mark em{float:left;margin-left:0.1rem;width:1rem;height:1rem;background-size:300%; background-position: -2.1rem -4.75rem;}
+.zx_show_bottom {padding:0.7rem 0.07rem 0;}
+.zx_show_bottom span:nth-child(2){margin:0 0.5rem;}
+.zx_kt_ozb{margin-top:0.5rem;}
+.swiper2 .swiper-slide{padding:0.8rem 0.8rem 1.2rem;box-sizing: border-box;color:#333;}
+.zx_show_h2{font-weight:normal;font-size:0.8rem;border-bottom:solid 1px #e6e6e6;padding-bottom:0.8rem;margin-bottom:0.8rem;}
+
+</style>
+
+</head>
+<body>
+<!--  头部开始  -->
+<header id="zx_head" class="zx_content">
+   <!--   头部标题栏   -->
+ <section class="zx_h_title">
+        <a href="javascript:history.go(-1);" class="h_back"></a>
+        <h1 class="hshow_title white"></h1>
+        <a href="#" class="h_person white"></a>
+        <!--
+        <a href="#" class="h_share white"></a>
+        -->
+  </section>
+  <iframe id="ifr" frameborder="0" scrolling="no" src="" width="100%" height="100%"></iframe>
+  <section class="zxNew_bottom">
+  </section>
+</header>
+<script>
+    window.addEventListener('message', function(event) {
+        var po = typeof event.data ==='string'? JSON.parse(event.data) : event.data;
+        if (po.height) {
+            document.getElementById("ifr").style.height = po.height + "px";
+        }
+    }, false);
+</script>
+<script src="../lib/alloy-lever.js"></script>
+<script src="../lib/alloy-lever.config.js"></script>
+<script src="../utils/utils.js?v={_VERSION_}" type="text/javascript"></script>
+<script src="js/show.js?v={_VERSION_}" type="text/javascript"></script>
+
+</body>
+</html>

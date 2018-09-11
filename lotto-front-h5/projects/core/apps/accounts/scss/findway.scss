@@ -1,0 +1,45 @@
+.findway {
+    .findway-container {
+        padding: 0 20px;
+            .findway-text {
+                font-size: 30px;
+                line-height: 32px;
+                padding: 30px 0;
+                color: #999;
+                span {
+                    color: #ed1c24;
+                }
+        }
+        .valid-info-box{
+            width: 100%;
+            height: 160px;
+            background: #fff;
+            border-radius: 3px;
+            margin-bottom: 21px;
+            li{
+                overflow: hidden;
+                img{
+                    float: left;
+                    margin: 40px 24px 0;
+                    width: 77px;
+                    height: 77px;
+                }
+                .right{
+                    margin-top: 25px;
+                    .title{
+                        font-size: 32px;
+                        line-height: 36px;
+                        color:#333;
+                        margin-bottom: 13px;
+                    }
+                    .info{
+                        font-size: 28px;
+                        line-height: 32px;
+                        color:#666;
+                    }
+                }
+            }
+        }
+    }
+  }
+  

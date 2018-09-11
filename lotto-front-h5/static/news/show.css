@@ -1,0 +1,120 @@
+
+
+*{margin:0;padding:0;}
+
+#ifr{border: none;}
+#newCnone,#showAd{display: none;}
+
+.fadeIn{
+    -webkit-animation: fadeIn 0.5s 0.5s linear both;
+    -moz-animation: fadeIn 0.5s 0.5s linear both;
+    -o-animation: fadeIn 0.5s 0.5s linear both;
+    animation: fadeIn 0.5s 0.5s linear both;
+}
+@-webkit-keyframes fadeIn
+{
+0%{opacity:0}
+100%{opacity: 1}
+}
+@-moz-keyframes fadeIn
+{
+0%{opacity:0}
+100%{opacity: 1}
+}
+@-o-keyframes fadeIn
+{
+0%{opacity:0}
+100%{opacity: 1}
+}
+@keyframes fadeIn
+{
+0%{opacity:0}
+100%{opacity: 1}
+}
+
+
+/*  文章正文样式  */
+#zx-detail{
+    overflow:hidden;
+    padding:0.4rem;
+    background: #fff;
+}    
+#zx-detail .my-title{
+    font-size: 0.48rem;
+    color: #333;
+    font-weight: bold;
+    line-height: 0.7rem;
+}
+#zx-detail .sub-title{
+    display: none;
+}
+#zx-detail .sub-titlewap{
+    margin: 0.27rem 0 0.4rem;
+    color: #999;
+    font-size: 0.373rem;
+    display: block;
+}
+#zx-detail .sub-titlewap span:nth-child(1){
+    margin-right:0.4rem;
+}
+#zx-detail .my-html{
+    font-size: 0.4rem;
+    color: #333;
+    line-height:0.64rem;
+    text-align:justify;
+}
+
+#zx-detail .my-html p{
+    margin-bottom:0.53rem;
+}
+#zx-detail .my-html img{
+    max-width: 100%;
+}
+#zx-detail .article_footer{
+    display: block;
+}    
+#zx-detail .artical_browse{
+    color:#999;
+    font-size:0.32rem;
+    color: #999;
+    display:inline-block;
+    border-bottom:solid 1px #e6e6e6;/*no*/
+    width:100%;
+    padding-bottom:0.27rem;
+}
+#zx-detail .artical_browse .browse {
+    width: 0.41rem;
+    margin-right: 0.1rem;
+    height: 0.27rem;
+    display: inline-block;
+    background-size: 100%;
+    background-image:url(images/eyes.png);
+    background-repeat:no-repeat;
+    
+}
+#zx-detail .article_relevant .artical_key{
+    margin:0.53rem 0 0.53rem;
+}
+#zx-detail .article_relevant .artical_key a{
+    text-decoration:none;
+    color:#999;
+    border:solid 1px #e6e6e6;/*no*/
+    padding:0.12rem 0.213rem;
+    margin: 0 0.13rem;
+}
+#zx-detail .article_relevant .artical_remarks {
+    color: #999;
+    font-size: 0.32rem;
+    display: block;
+
+}
+#zx-detail .article_relevant .zx_copyright{line-height: 0.5rem;}
+#zx-detail .article_relevant .artical_remarks i{
+    color: #999;  
+}
+.artical_remarks i{font-style: normal;}
+.laiyuan{color:#1e88d2;}
+.my-footer{display: none;}
+
+
+

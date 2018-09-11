@@ -1,0 +1,102 @@
+.tabs {
+  position: relative;
+  z-index: 9;
+  .tab-panel {
+    background: #fff;
+  }
+  .tab-list {
+    height: 80px;
+    display: flex;
+    background: #faf7fa;
+    border-top: solid 1px #e6e6e6; /* no */
+    .tab-list-items {
+      flex: 1;
+      display: flex;
+    }
+    .tab {
+      cursor: pointer;
+      flex: 1;
+      font-size: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      &.active {
+        background: #fff;
+        color: #1e88d2;
+      }
+    }
+    .tab-dropdown {
+      position: relative;
+      padding-right: 30px;
+      &:after {
+        content: "";
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent;
+        border-top: solid 10px #999;
+        border-bottom: none;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+      }
+      &.active {
+        &:after {
+          border-top: solid 10px #1e88d2;
+          transform: rotate(0deg);
+          transition: 0.2s transform;
+        }
+      }
+    }
+    .dropdown {
+      .dropdown-list {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 9;
+        li {
+          border-bottom: solid 1px #f4f4f4; /* no */
+          font-size: 28px;
+          padding: 20px;
+          color: #666;
+          &:last-child {
+            border: none;
+          }
+          &.selected {
+            color: #1e88d2;
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              height: 15px;
+              width: 25px;
+              border-left: solid 2px #1e88d2; /* no */
+              border-bottom: solid 2px #1e88d2; /* no */
+              right: 20px;
+              top: 30px;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+      &.open {
+        .tab-dropdown {
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      .dropdown-mask {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 80px;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.25);
+        z-index: 7;
+      }
+    }
+  }
+}

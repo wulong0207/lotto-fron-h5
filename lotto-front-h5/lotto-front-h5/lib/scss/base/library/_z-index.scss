@@ -1,0 +1,26 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-03-30 20:36:18
+ * @Desc: 管理整个网页的全局z-index
+ */
+
+
+/*
+@example scss - Usage
+.element {
+    @include z-index(header);
+}
+
+@example css - CSS Output
+.element::after {
+    z-index: 100;
+}
+*/
+
+@function z-index($key) {
+    @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+    z-index: z-index($key);
+}

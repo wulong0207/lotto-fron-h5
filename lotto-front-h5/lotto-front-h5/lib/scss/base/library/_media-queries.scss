@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*
+ * @Author: yubei
+ * @Date: 2017-03-22 17:52:44
+ * @Desc: 媒体查询
+ */
+
+@mixin mq($mq) {
+  @if $mq == 320    { @media (min-width: 320px)  { @content; } }
+  @if $mq == 480    { @media (min-width: 480px)  { @content; } } 
+  @if $mq == 640    { @media (min-width: 640px)  { @content; } }
+  @if $mq == 768    { @media (min-width: 768px)  { @content; } }
+  @if $mq == 800    { @media (min-width: 800px)  { @content; } }
+  @if $mq == 900    { @media (min-width: 900px)  { @content; } }
+  @if $mq == 960    { @media (min-width: 960px)  { @content; } }
+  @if $mq == 1040   { @media (min-width: 1040px)  { @content; } }
+  @if $mq == 1120   { @media (min-width: 1120px)  { @content; } }
+  @if $mq == 1280   { @media (min-width: 1280px)  { @content; } }
+  @if $mq == 1440   { @media (min-width: 1440px)  { @content; } }
+  @if $mq == 1600   { @media (min-width: 1600px)  { @content; } }
+  @if $mq == 1800   { @media (min-width: 1800px)  { @content; } }
+
+
+  // WordPress (Admin Bar) specific Media Queries
+
+  @if $mq == bar1    { @media (max-width: 783px) { @content; } }
+  @if $mq == bar2    { @media (max-width: 600px) { @content; } }
+
+  @if $mq == lsp { @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape)  { @content; } } // Landscape Phone
+
+  @if $mq == retina {
+    @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (   min--moz-device-pixel-ratio: 2),
+      only screen and (     -o-min-device-pixel-ratio: 2/1),
+      only screen and (        min-device-pixel-ratio: 2),
+      only screen and (                min-resolution: 192dpi),
+      only screen and (                min-resolution: 2dppx) {
+        @content;
+    }
+  }
+}

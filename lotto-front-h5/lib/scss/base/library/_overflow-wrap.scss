@@ -1,0 +1,28 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-03-22 20:13:29
+ * @Desc: overflow-wrap
+ */
+@charset "UTF-8";
+
+/*
+ @argument {string} $wrap [break-word]
+   Accepted CSS values are `normal`, `break-word`, `inherit`, `initial`,
+   or `unset`.
+
+ @example scss
+   .wrapper {
+     @include overflow-wrap;
+   }
+
+   // CSS Output
+   .wrapper {
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+   }
+*/
+
+@mixin overflow-wrap($wrap: break-word) {
+  word-wrap: $wrap;
+  overflow-wrap: $wrap;
+}

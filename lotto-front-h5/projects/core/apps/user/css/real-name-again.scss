@@ -1,0 +1,42 @@
+// @import '../base/base.scss';
+
+.real-name-again {
+  .phone-detail {
+    .phone-ok,
+    .phone-done,
+    .phone-no {
+      width: 340px;
+      height: 224px;
+      margin: 80px auto 58px;
+      background: url("../img/index/phoneok@2x.png") no-repeat;
+      background-size: cover;
+    }
+    .phone-number {
+      p {
+        font-size: 34px;
+        color: #333333;
+        text-align: center;
+      }
+    }
+    .phone-desc {
+      font-size: 24px;
+      color: #999999;
+      margin: 38px 65px 65px 65px;
+    }
+    button {
+    }
+    .btn-blue {
+    }
+    .btn-white {
+      background: #fff;
+      color: #999999;
+    }
+    .icon-identify {
+      width: 416px;
+      height: 190px;
+      background: url("../img/index/identify@2x.png") no-repeat;
+      background-size: cover;
+      margin: 80px auto 58px;
+    }
+  }
+}

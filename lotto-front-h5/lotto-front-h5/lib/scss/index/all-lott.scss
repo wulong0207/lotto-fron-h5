@@ -1,0 +1,64 @@
+/*
+ * @Author: yubei 
+ * @Date: 2017-08-27 15:54:44 
+ * Desc: 所有彩种列表，更多彩种页面
+ */
+
+.all-lott {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background: #fff;
+    z-index: 10000;
+    transition: left .3s ease 0s;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    &.showAllLottPage {
+        left: 0;
+    }
+    .lott-category {
+        .lott-categoryName {
+            height: 65px;
+            line-height: 65px;
+            background: #f4f4f4;
+            font-size: 30px;
+            font-weight: normal;
+            color: #333;
+            border-top: 1px solid #e6e6e6;/*no*/
+            padding: 0 30px;
+        }
+        .lott-categoryList {
+            display: flex;
+            height: 149px;
+            border-top: 1px solid #e6e6e6;/*no*/
+            padding: 0 30px;
+            .lott-categoryItem {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 50%;
+                .lott-logo {
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+                .lott-item-desc {
+                    padding-left: 20px;
+                    h3 {
+                        font-size: 30px;
+                        font-weight: normal;
+                        color: #333;
+                    }
+                    p {
+                        font-size: 22px;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+ }

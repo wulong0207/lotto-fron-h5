@@ -1,0 +1,107 @@
+.my-chase {
+  .header {
+    background: #fff;
+  }
+  .header-con {
+    .title {
+      color: #333333 !important;
+    }
+    .back {
+      a {
+        background: url("../../img/arrow.png") no-repeat !important;
+        background-size: 33px 55px !important;
+      }
+    }
+  }
+  .chase {
+    .list {
+      background: #fff;
+      margin-top: 20px;
+      padding: 0 30px;
+      border-top: 1px solid #e5e5e5; /*no*/
+      &:first-child {
+        margin-top: 2px;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 105px;
+        font-size: 28px;
+        color: #333333;
+        border-bottom: 1px dashed #e5e5e5; /*no*/
+        .img {
+          display: block;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%; /*no*/
+          margin-right: 10px;
+        }
+        .issue {
+          .issue-orange {
+            margin: 0;
+            color: #ff8208;
+            font-weight: normal;
+          }
+        }
+        b {
+          margin: 0 5px;
+        }
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 67px;
+      }
+      .grey {
+        color: #999999;
+        margin-right: 10px;
+      }
+      .status-red {
+        color: #ed262e;
+      }
+    }
+  }
+  .no-message {
+    .img {
+      max-width: 460px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 5%;
+    }
+    .no-chase {
+      font-size: 36px;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+    p {
+      font-size: 32px;
+      text-align: center;
+    }
+    .buy {
+      width: 310px;
+      line-height: 70px;
+      background: #fff;
+      border: 1px solid #e5e5e5; /*no*/
+      font-size: 30px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 30px;
+      a {
+        color: #333333;
+      }
+    }
+  }
+  .load-more {
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+    height: 88px;
+    line-height: 88px;
+    span {
+      display: inline-block;
+    }
+  }
+}

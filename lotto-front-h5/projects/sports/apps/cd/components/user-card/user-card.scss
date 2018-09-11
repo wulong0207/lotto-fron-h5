@@ -1,0 +1,13 @@
+@import "../../../../../../lib/scss/base/base.scss";
+
+.user-card {
+  height: auto;
+  background: linear-gradient(to bottom, #1e88d2 50%, transparent 50%);
+  padding: 0 20px 20px;
+  .card {
+    background: #fff;
+    border-radius: 4px; /* no */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+    min-height: 200px;
+  }
+}

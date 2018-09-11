@@ -1,0 +1,133 @@
+// @import '../base/base.scss';
+@import "./common.scss";
+
+.advice-feed-back {
+  .sf-section {
+    margin-top: 20px;
+    background: #fff;
+    padding-left: 30px;
+    .sf-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e6e6e6; /*no*/
+      padding: 26px 32px 28px 0;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-size: 32px;
+        color: #333333;
+        position: relative;
+      }
+      input {
+        border: 0;
+        flex: 1;
+        font-size: 28px;
+        margin-left: 30px;
+        color: #999999;
+        outline: 0 none;
+        height: 68px;
+      }
+      .icon-delete {
+      }
+      .icon-arrow-d-grey {
+      }
+      em {
+        color: #999999;
+        flex: 1;
+        text-align: right;
+      }
+    }
+  }
+  .feedback-section {
+    position: relative;
+    width: 100%;
+    ul {
+      background: #fff;
+      width: 250px;
+      position: absolute;
+      top: 0;
+      right: 20px;
+      border-radius: 4px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      z-index: 1000;
+      &:after {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        border-bottom: 20px solid #fff; /*no*/
+        border-left: 10px solid transparent; /*no*/
+        border-right: 10px solid transparent; /*no*/
+      }
+      li {
+        height: 70px;
+        line-height: 70px;
+        font-size: 28px;
+        color: #333333;
+        border-bottom: 1px solid #e6e6e6; /*no*/
+        text-align: center;
+      }
+    }
+  }
+  .section-title {
+    font-size: 24px;
+    color: #999999;
+    padding: 19px 32px;
+  }
+  .fb-section {
+    background: #fff;
+    padding: 20px 30px;
+    margin-top: 10px;
+    textarea {
+      border: 0;
+      outline: none;
+      width: 100%;
+      height: 180px;
+      font-size: 28px;
+      color: #333333;
+    }
+    p {
+      text-align: right;
+      color: #999999;
+      font-size: 28px;
+    }
+    .fb-pic-section {
+      display: flex;
+      margin-top: 10px;
+      .fb-pic {
+        position: relative;
+        width: 160px;
+        height: 160px;
+        margin-right: 26px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        i {
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translate(50%, -50%);
+          border-radius: 50%;
+        }
+        .icon-delete-org {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background: #fff url("../img/deleteorg@2x.png") no-repeat center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  .cxHide {
+    display: none;
+  }
+  button {
+  }
+  .btn-blue {
+  }
+}

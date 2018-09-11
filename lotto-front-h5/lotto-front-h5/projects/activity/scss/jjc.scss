@@ -1,0 +1,347 @@
+@import "../../../lib/scss/base/base.scss";
+
+.jjc {
+  .header {
+    width: 100%;
+    height: 314px;
+    background: url("../img/title-bg.png") no-repeat;
+    background-size: 100%;
+    .title {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  .content {
+    width: 100%;
+    padding: 20px;
+    background-color: #08843f;
+    position: relative;
+    .banner {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: -18px;
+      left: 20%;
+      z-index: 100;
+      img {
+        display: inline-block;
+        width: 40%;
+      }
+      span {
+        margin-left: 10px;
+        display: inline-block;
+        color: #fff;
+        background: #065c2b;
+        border-radius: 16px;
+        padding: 0 20px;
+      }
+    }
+    // 什么是2串1
+    // .drop-menu{
+    //     position:absolute;
+    //     top:0;
+    //     left:50%;
+    //     z-index:100;
+    //     background: #fff8e8;
+    //     border:1px solid #f2bf46;
+    //     h3{
+    //         font-size:24px;
+    //     }
+
+    // }
+    .game {
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #007130;
+      margin-top: 20px;
+      .data {
+        .end-time {
+          display: flex;
+          color: #fff;
+          justify-content: flex-end;
+        }
+
+        .matchs {
+          .top {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logoImg {
+              width: 90px;
+              height: 90px;
+              border-radius: 50%;
+            }
+            .opacity {
+              // opacity: 0.5 !important;
+            }
+            .select {
+              .selector {
+                background-color: #07602d;
+                border: 1px solid #80c269; /*no*/
+                span {
+                  color: #80c269;
+                }
+              }
+              .drop-menu {
+                background-color: #07602d;
+                color: #80c269;
+                border: 1px solid #80c269; /*no*/
+              }
+            }
+          }
+          .bottom {
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+            div {
+              font-size: 24px;
+              width: 144px;
+              // height:86px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 10px;
+              border-radius: 6px;
+              background-color: #fff3da;
+              margin-right: 20px;
+              text-align: center;
+              word-wrap: nowrap;
+              &:last-of-type {
+                margin-right: 0;
+              }
+
+              span {
+                display: inline-block;
+                width: 100%;
+              }
+            }
+            .selected {
+              background-color: #009944;
+              border: 1px solid #8fc31f; /*no*/
+              color: #fff;
+              background: url("../img/lvse.png") no-repeat;
+              background-position: bottom right;
+            }
+          }
+        }
+      }
+      .noGame {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+        background-color: #007130;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          display: inline-block;
+          width: 60px;
+          height: 40px;
+        }
+        span {
+          margin-left: 10px;
+          display: inline-block;
+          color: #fff;
+        }
+      }
+      .gameHide {
+        display: none;
+      }
+      .gameShow {
+        display: block;
+      }
+    }
+    .activty {
+      margin-top: 30px;
+      border-top: 1px solid #095e2e; /*no*/
+      font-size: 20px;
+      .tou {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+          width: 200px;
+          height: 60px;
+          line-height: 60px;
+          word-wrap: nowrap;
+          color: #eeea59;
+          border: 1px solid #b3d465; /*no*/
+          border-radius: 6px;
+          background-color: #07602d;
+          margin-right: 10px;
+          text-align: center;
+          // overflow-x:hidden;
+          &:last-child {
+            margin-right: 0;
+            width: 230px;
+          }
+          span {
+            // display: flex;
+            // flex-wrap:wrap;
+          }
+        }
+        .active {
+          background-color: #fff45c !important;
+          color: #4e0909;
+          background: url("../img/active_03.png") no-repeat;
+          background-position: right bottom;
+        }
+        input {
+          display: inline-block;
+          width: 85px;
+          background-color: #b2aa40;
+          border: none;
+          color: #eeea59;
+          text-align: center;
+        }
+      }
+      .price {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        span {
+          color: #fff;
+          margin-right: 20px;
+          text-align: center;
+          &::last-of-type {
+            margin: 0;
+          }
+        }
+        .line {
+          text-decoration: line-through;
+        }
+        .orange {
+          color: #f39800;
+        }
+        .yello {
+          color: #d4d60d;
+        }
+      }
+      .pay {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 10px 0;
+        img {
+          display: block;
+          width: 250px;
+          height: 80px;
+        }
+        // span{
+        //     font-size:40px;
+        //     color:#a04100;
+        //     padding:10px 50px;
+        //     background-color:#fff100;
+        //     font-weight:bold;
+        //     border-radius:38px;
+        //     box-shadow:5px 5px 5px rgba(0,0,0,.4);
+        // }
+      }
+      .foot {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+    .load {
+      margin-top: 20px;
+      img {
+        width: 100%;
+        height: 100px;
+        border-radius: 8px;
+      }
+    }
+    .rule {
+      background-color: #007130;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 20px;
+      color: #ffffff;
+      // letter-spacing:4px;
+      p {
+        font-size: 24px;
+        padding: 10px 0;
+        font-weight: 400;
+      }
+      h3 {
+        font-size: 28px;
+      }
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+      color: #ffe000;
+      font-size: 34px;
+      background-color: #007130;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  }
+  .p-agree {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    .head {
+      width: 100%;
+      height: 7%;
+      background-color: #1e88d2;
+      display: flex;
+      align-items: center;
+      padding: 0 18px;
+      .back {
+        display: block;
+        width: 50px;
+        height: 60px;
+        background: url("../../../lib/img/back@2x.png") no-repeat center;
+        background-size: 70% 100%;
+      }
+      .title {
+        font-size: 36px;
+        color: #fff;
+        line-height: 87px;
+        flex: 2;
+        text-align: center;
+      }
+    }
+    .agree-content {
+      width: 100%;
+      height: 93%;
+      overflow-y: scroll;
+    }
+  }
+}
+
+// 弹层样式
+.message-alert {
+  padding-top: 30px;
+  .title {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .content {
+    span {
+      color: #e12f2f;
+    }
+  }
+  .red {
+    color: #e12f2f;
+  }
+  .line {
+    text-decoration: line-through;
+  }
+}

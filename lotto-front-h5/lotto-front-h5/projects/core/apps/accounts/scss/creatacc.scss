@@ -1,0 +1,260 @@
+.create-box,
+.identity-cont,
+.resetp-cont {
+  margin-top: 20px;
+  .title-line {
+    font-size: 30px;
+    line-height: 32px;
+    color: #14b665;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .phone {
+    font-size: 30px;
+    line-height: 32px;
+    color: #333;
+    text-align: center;
+    margin: 15px 0 30px;
+  }
+  .user-input,
+  .pwd-input {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    .text-left {
+      font-size: 32px;
+      line-height: 90px;
+    }
+    .input-part-phone {
+      width: 85%;
+    }
+    .input-part-ver {
+      width: 80%;
+    }
+    .pwdinput {
+      width: 88%;
+    }
+    .input-box {
+      .accinput {
+        width: 100%;
+      }
+      input {
+        width: 90%;
+        font-size: 30px;
+        line-height: 33px;
+        border: none;
+        outline: none;
+      }
+      .clear-part {
+        flex: 0;
+        img {
+          width: 37px;
+        }
+      }
+    }
+    .eye-part {
+      margin-right: 20px;
+      img {
+        width: 37px;
+      }
+    }
+  }
+  .password-level {
+    height: 213px;
+    width: 700px;
+    border: 1px solid #ccc; /*no*/
+    background-color: #f9f9f9;
+    margin: 30px auto 0;
+    padding: 25px 30px;
+    .pass-level-cont {
+      .level-pic {
+        margin-bottom: 12px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        .level-text {
+          font-size: 28px;
+          line-height: 45px;
+          color: #333;
+          float: left;
+        }
+        .level-box {
+          display: inline-block;
+          margin-left: 20px;
+          .blank {
+            display: inline-block;
+            width: 52px;
+            height: 20px;
+            margin-right: 4px;
+            background-color: #ccc;
+          }
+          .level-name {
+            font-size: 24px;
+            line-height: 30px;
+            color: #eb6100;
+            margin-left: 12px;
+          }
+        }
+        .level1 {
+          .blank {
+            display: inline-block;
+            width: 52px;
+            height: 20px;
+            margin-right: 4px;
+            background-color: #ccc;
+          }
+          .blank:nth-child(1) {
+            background-color: #ed1c24 !important;
+          }
+        }
+        .level2 {
+          .blank {
+            display: inline-block;
+            width: 52px;
+            height: 20px;
+            margin-right: 4px;
+            background-color: #ccc;
+          }
+          .blank:nth-child(1) {
+            background-color: #ffcc00 !important;
+          }
+          .blank:nth-child(2) {
+            background-color: #ffcc00 !important;
+          }
+        }
+        .level3 {
+          .blank {
+            display: inline-block;
+            width: 52px;
+            height: 20px;
+            margin-right: 4px;
+            background-color: #11cd6e;
+          }
+        }
+      }
+      .level-list-right {
+        font-size: 24px;
+        line-height: 36px;
+        color: #666;
+        padding-left: 30px;
+        background: url("../../../../../lib/img/account/right_green@2x.png")
+          no-repeat left center;
+        background-size: 3% 50%;
+      }
+      .level-list-wrong {
+        font-size: 24px;
+        line-height: 36px;
+        color: #666;
+        padding-left: 30px;
+        background: url("../../../../../lib/img/account/error_red@2x.png")
+          no-repeat left center;
+        background-size: 3% 50%;
+      }
+    }
+  }
+  .next-btn {
+    display: block;
+    width: 94%;
+    height: 90px;
+    margin: 30px auto 0;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    font-size: 34px;
+    line-height: 90px;
+    text-align: center;
+    color: #999;
+    border: none;
+    outline: none;
+  }
+  .next-btn-blue {
+    display: block;
+    width: 94%;
+    height: 90px;
+    margin: 30px auto 0;
+    background-color: #1e88d2;
+    border-radius: 8px;
+    font-size: 34px;
+    line-height: 90px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  .warm-msg {
+    width: 640px;
+    margin: 50px auto 0;
+    li {
+      text-align: left;
+      font-size: 22px;
+      line-height: 30px;
+      color: #999;
+      span {
+        padding: 0 10px;
+        color: #1e88d2;
+      }
+    }
+  }
+}
+
+.identity-cont {
+  .name-input {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    .text-left {
+      font-size: 32px;
+      line-height: 90px;
+    }
+
+    .input-box {
+      width: 80%;
+      .idinput {
+        width: 100% !important;
+      }
+      input {
+        width: 90%;
+        font-size: 30px;
+        line-height: 33px;
+
+        border: none;
+        outline: none;
+      }
+      .clear-part {
+        flex: 0;
+        img {
+          width: 37px;
+        }
+      }
+    }
+  }
+}
+
+.resetp-cont {
+  .pwd-input {
+    .input-box {
+      width: 65% !important;
+    }
+    .input {
+      width: 75% !important;
+      input {
+        float: left;
+      }
+    }
+  }
+  .password-level {
+    height: 253px !important;
+    text-align: left;
+  }
+}

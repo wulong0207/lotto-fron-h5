@@ -1,0 +1,22 @@
+/**
+ * Created by YLD on 2017/11/02.
+ */
+@import "../../../../../lib/scss/base/base";
+
+.ticket-draw {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 52px 20px;
+  font-size: 28px;
+
+  .label {
+    line-height: 34px;
+    min-width: 112px;
+  }
+
+  .draw {
+    font-size: 32px;
+    margin: 0 26px;
+    line-height: 34px;
+  }
+}

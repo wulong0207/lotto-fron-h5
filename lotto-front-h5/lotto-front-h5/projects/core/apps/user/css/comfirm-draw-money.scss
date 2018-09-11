@@ -1,0 +1,201 @@
+// @import '../base/base.scss';
+@import "./common.scss";
+
+.comfirm-draw-money {
+  .sf-section {
+    margin-top: 20px;
+    background: #fff;
+    padding-left: 32px;
+    .sf-item {
+      font-size: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 32px 32px 0;
+      border-bottom: 1px solid #e6e6e6; /*no*/
+      span {
+        font-size: 32px;
+        .green-i {
+          padding: 5px 10px;
+          border: 1px solid #22c354;
+          border-radius: 3px;
+          color: #22c354;
+          font-size: 24px;
+          margin-left: 17px;
+        }
+      }
+      em.orange {
+        color: #fe7a0d;
+      }
+      em.f16c333 {
+        color: #333333;
+      }
+      input {
+        border: 0;
+        flex: 1;
+        font-size: 28px;
+        margin-left: 30px;
+        color: #999999;
+        outline: 0 none;
+        height: 68px;
+      }
+      .icon-delete {
+      }
+    }
+    .dm-item {
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 30px;
+      em {
+        font-size: 28px;
+        color: #333333;
+      }
+    }
+    .pan-section {
+      display: flex;
+      .pan {
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        .pan-circle {
+          width: 170px;
+          height: 170px;
+          .canvas {
+            width: 170px;
+            height: 170px;
+          }
+        }
+      }
+      .pan-r {
+        flex: 1;
+        padding: 26px 30px;
+        border-left: 1px solid #e6e6e6; /*no*/
+
+        .pan-r-item {
+          display: flex;
+          font-size: 28px;
+          margin-bottom: 15px;
+          .square-orange {
+            width: 20px;
+            height: 20px;
+            background: #fe7a0d;
+            margin-top: 8px;
+          }
+          .square-green {
+            width: 20px;
+            height: 20px;
+            background: #22c354;
+            margin-top: 8px;
+          }
+          .square-blue {
+            width: 20px;
+            height: 20px;
+            background: #3da2e9;
+            margin-top: 8px;
+          }
+          span {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            em {
+              color: #999999;
+            }
+          }
+          em {
+            color: #333333;
+            flex: 1;
+            text-align: right;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+  .err-color {
+    background: #f5e4d7;
+    margin-bottom: 40px;
+    .sf-item {
+      background: #f5e4d7;
+      border-bottom: 1px solid #e8d3c4; /*no*/
+      font-size: 32px;
+      padding: 26px 32px 28px 30px;
+    }
+    .err-detail {
+      background: #fbeee4;
+
+      .dm-item {
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        em {
+          font-size: 28px;
+          color: #333333;
+          padding-right: 30px;
+        }
+      }
+      .err-info {
+        padding: 30px;
+        border-top: 1px solid #e8d3c4; /*no*/
+        font-size: 24px;
+        color: #333333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .recharge-detail {
+          display: flex;
+          flex-direction: column;
+          span {
+            display: inline-block;
+          }
+        }
+        .no-draw {
+          display: block;
+          padding: 14px 18px;
+          background: #22c354;
+          font-size: 24px;
+          color: #fff;
+          border-radius: 4px;
+        }
+      }
+      .explain {
+        padding: 0 30px 30px 30px;
+        border-bottom: 1px solid #e8d3c4; /*no*/
+      }
+    }
+  }
+  button {
+  }
+  .btn-blue {
+  }
+  .dm-desc {
+    font-size: 24px;
+    color: #999999;
+    margin: 20px 32px;
+  }
+  .hide {
+    display: none;
+  }
+  .err-draw {
+    opacity: 0.5;
+    .sf-item {
+      background: #d7d7d7 !important;
+      color: #000000;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      .orange {
+        color: #999999 !important;
+      }
+    }
+    .err-detail {
+      background: #f2f2f2;
+      .err-info {
+        border-bottom: 0;
+      }
+      .red {
+        color: #999999 !important;
+      }
+    }
+  }
+}

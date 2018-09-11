@@ -1,0 +1,20 @@
+//agree
+.agree{
+    display: auto;
+    .agree-cont {
+        padding: 20px;
+        line-height: 1.8;
+        h1{
+            font-size: 28px;
+            text-indent: 2em;
+        }
+        h3{
+            font-size: 24px;
+            padding: 20px 0;
+        }
+        p{
+            padding: 15px 0;
+            text-indent: 2em;
+        }
+    }
+}

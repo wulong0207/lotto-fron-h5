@@ -1,0 +1,100 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-06-19 18:06:38
+ * @Desc: 高清布局解决方案
+ */
+
+
+
+
+// @include font-dpr(16px); 定义字体大小
+@mixin font-dpr($font-size){
+    font-size: $font-size;
+
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+
+
+// 计算单位大小 px to rem | rem to px
+@function px2rem($px-values, $baseline-px: 75px, $support-for-ie:false) {
+
+    // 转换 baseline 为rem px
+    $baseline-rem: $baseline-px / 1rem * 1;
+
+    // 创建一个空变量，用来存储值
+    $list:();
+
+    // 遍历传入的值
+    @each $value in $px-values {
+        // 如果等于 auto 或者 0，直接复制
+        @if($value == auto or $value == 0) {
+            $list: append($list, $value);
+        }@else {
+            // 获取单位 em rem px
+            $unit: unit($value);
+            $val: parseInt($value);
+
+            @if($unit == 'rem') {
+                $list: append($list, ($val * $baseline-px));
+            } @else if($unit == 'px') {
+                $list: append($list, ($value / $baseline-rem));
+            }@else if($unit == '%') {
+                $list: append($list, $value);
+            } @else {
+                @warn 'There is no unit conversion for #{$unit}';
+            }
+        }
+    }
+    @return $list();
+}
+
+
+
+
+
+
+
+
+// // px转rem;
+// @function px2rem($px, $base-font-size: 75px) {
+//     @if (unitless($px)) {
+//         @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels for you";
+//         @return px2em($px + 0px); // That may fail.
+//     } @else if (unit($px) == em) {
+//         @return $px;
+//     }
+//     @return ($px / $base-font-size) * 1rem;
+// }
+
+
+// px2rem混合宏
+// @mixin px2rem($property, $px-values, $baseline-px:75px, $support-for-ie:false){
+//     //Conver the baseline into rems
+//     $baseline-rem: $baseline-px / 1rem * 1;
+//     //Print the first line in pixel values
+//     @if $support-for-ie {
+//         #{$property}: $px-values;
+//     }
+//     //if there is only one (numeric) value, return the property/value line for it.
+//     @if type-of($px-values) == "number"{
+//         #{$property}: $px-values / $baseline-rem;
+//     }
+//     @else {
+//         //Create an empty list that we can dump values into
+//         $rem-values:();
+//         @each $value in $px-values{
+//             // If the value is zero or not a number, return it
+//             @if $value == 0 or type-of($value) != "number"{
+//                 $rem-values: append($rem-values, $value / $baseline-rem);
+//             }
+//         }
+//         // Return the property and its list of converted values
+//         #{$property}: $rem-values;
+//     }
+// }

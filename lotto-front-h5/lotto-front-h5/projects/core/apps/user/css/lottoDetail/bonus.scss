@@ -1,0 +1,100 @@
+.bonus-content {
+    margin:20px 0;
+    .bonus-header{
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+        line-height:60px;
+        padding:0 30px;
+        color:#b1b1b1;
+        background: #fafafa;
+    }
+    .bonus-plan{   
+        background: #fff;
+        .header{
+            display:flex;
+            width:100%;
+            border-top:1px solid #e5e5e5; /*no*/
+            border-bottom: 1px solid #e5e5e5; /*no*/
+            span{
+                display: inline-block;
+                border-right:1px solid #e5e5e5; /*no*/
+                text-align:center;
+                padding:27px 0;
+                &:last-of-type{
+                    border-right:none;
+                }
+            }
+        } 
+        .bonus-list{
+            display: block;
+            width:100%;
+            table{
+                display: block;
+                width:100%;
+                tbody{
+                    display: block;
+                    tr{
+                        display:flex;
+                        border-bottom:1px solid #e5e5e5;  /*no*/
+                        td{
+                            border-right:1px solid #e5e5e5; /*no*/
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &:last-of-type{
+                                border-right:none;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .bet-col {
+                display: block;
+                width:100%;
+                .list{
+                    display: flex;
+                    border-bottom:1px solid #e5e5e5; /*no*/
+                    .list-vs{
+                        flex:1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding:10px 0;
+                        &:first-of-type{
+                            border-right:1px solid #e5e5e5; /*no*/
+                        }
+                        span{
+                            display: inline-block
+                        }
+                    }
+                    .column-div{
+                        div{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            span{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    &:last-of-type{
+                        border-bottom: none;
+                    }
+                }
+            }
+
+        }  
+        .col10{width:10%;}
+        .col15{width:15%;}
+        .col30{width:30%;}
+        .col60{width:60%;}
+        .orange-fill{
+            background: #fff !important;
+            color: red !important;
+        }
+    }
+}

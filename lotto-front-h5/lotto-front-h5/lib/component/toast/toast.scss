@@ -1,0 +1,13 @@
+@import "../../scss/base/base";
+
+.toast-dialog-component {
+  .dialog-box {
+    box-shadow: none;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+  }
+  .dialog-content {
+    padding: 20px;
+    text-align: center;
+  }
+}

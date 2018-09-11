@@ -1,0 +1,146 @@
+/**
+ * Created by YLD
+ * date 2017-08-8
+ * desc: 竞彩篮球
+ */
+@import "../../../../../../lib/scss/base/base";
+$lowcolor: #999999;
+.ct-match {
+  .zhibo {
+    position: relative;
+  }
+  .zhibo::before {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    margin-left: 10px;
+    background: url(../../img/icon_detail@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+
+  .date {
+    color: $lowcolor;
+    text-align: center;
+    font-size: 28px;
+    border-bottom: 1px solid #e6e6e6; /*no*/
+    line-height: 50px;
+  }
+
+  ul {
+    li {
+      padding: 0 20px 0 80px;
+      .team {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .team-bet {
+          color: $lowcolor;
+          line-height: 30px;
+          &.red {
+            color: #ed1c24;
+          }
+          &.green {
+            color: #01af63;
+          }
+        }
+
+        h3 {
+          width: 100%;
+        }
+      }
+
+      &.first-child {
+        padding: 0 80px 0 20px;
+      }
+      &.active {
+        background-color: #01af63;
+        h3,
+        .team,
+        .team-bet,
+        .green {
+          color: #fff;
+        }
+
+        .team-bet {
+          .green {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+    .tl {
+      text-align: left;
+    }
+    .tr {
+      text-align: right;
+    }
+    .ver-line {
+      padding: 0;
+      margin: 0;
+      width: 1px; /*no*/
+      background-color: #e6e6e6;
+    }
+    .logo {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      margin: 50px 0;
+      background-color: #f3f3f3;
+    }
+
+    .sep {
+      line-height: 48px;
+      width: 50px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #e6e6e6; /*no*/
+      margin: 0 auto;
+      background-color: #fff;
+      position: absolute;
+      right: -105px;
+      top: 0;
+      color: $lowcolor;
+      font-size: 24px;
+    }
+
+    .dxf {
+      color: #fe7a0d !important;
+    }
+    .green {
+      color: #01af63 !important;
+    }
+    .rise {
+      color: #ed1b24 !important;
+    }
+    .fall {
+      color: #04b46c !important;
+    }
+
+    .pl-change {
+      width: 120px;
+      text-align: center;
+      border: 1px solid #e6e6e6; /*no*/
+      margin: 0 auto;
+      background-color: #fff;
+      position: absolute;
+      right: -140px;
+      top: 0;
+      font-size: 24px;
+      color: $lowcolor !important;
+    }
+
+    h3 {
+      position: relative;
+      color: #333333;
+      line-height: 60px;
+      font-size: 32px;
+      .gray {
+        color: #999999;
+        font-size: 26px;
+      }
+    }
+  }
+}

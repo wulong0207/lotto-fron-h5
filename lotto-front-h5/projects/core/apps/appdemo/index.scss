@@ -1,0 +1,25 @@
+/*
+ * @Author: yubei 
+ * @Date: 2017-11-16 16:35:23 
+ * Desc: appdemo
+ */
+
+@import "~lib/scss/base/base.scss";
+
+.appdemo {
+  padding: 20px;
+  fieldset {
+    border: 1px solid #ccc; /*no*/
+    padding: 10px 0 10px 10px;
+    legend {
+      padding: 0 15px;
+      margin-left: 50px;
+      font-size: 48px;
+      font-weight: bold;
+    }
+    a {
+      color: #fff;
+      margin: 10px 10px 10px 0;
+    }
+  }
+}

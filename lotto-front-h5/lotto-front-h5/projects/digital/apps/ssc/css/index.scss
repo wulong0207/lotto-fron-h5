@@ -1,0 +1,58 @@
+@import "../../../../../lib/scss/base/base";
+
+body,
+#app {
+  background: #fff !important;
+}
+.yc-k3 {
+  .ball-panel {
+    padding-left: 20px;
+    padding-right: 20px;
+    td {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 50px;
+      width: 16.666666667%;
+      &.selected {
+        .ball-label {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .histories-component {
+    &:before {
+      display: none;
+    }
+  }
+  .ball-panel-box {
+    &.top {
+      margin-top: -30px;
+    }
+    .ball-panel-title {
+      font-size: 32px;
+      background: rgb(30, 136, 210);
+      color: #fff;
+      padding: 0 80px 0 20px;
+      height: 60px;
+      line-height: 60px;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        right: -30px;
+        top: 0;
+        background: #fff;
+        transform: rotate(-45deg);
+      }
+    }
+    .ball-panel-tip {
+      padding: 30px;
+      text-align: center;
+    }
+  }
+}

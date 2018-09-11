@@ -1,0 +1,81 @@
+/*
+ * @Author: YLD
+ * @Date: 2017-07-03 16:24:00
+ * @Desc: 数字彩球组件
+ */
+
+@import '../../base/base.scss';
+
+$red: #ed1c24;
+#1e88d2: #1e88d2;
+
+.yc-ball {
+    position: relative;
+    width: 90px;
+    height: 100px;
+    padding-top: 16px;
+
+    .ball{
+        width: 64px;
+        height: 64px;
+        line-height: 62px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #e6e6e6;/*no*/
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        font-size: 30px;
+        margin: 0 auto;
+        span {
+            padding: 0 5px;
+        }
+    }
+
+    &.redball{
+        .ball{
+            color: $red;
+
+            &.select, &.set-dan{
+                color: #fff;
+                background-color: $red;
+            }
+        }
+    }
+
+    &.blueball{
+        .ball{
+            color: #1e88d2;
+
+            &.select, &.set-dan{
+                color: #fff;
+                background-color: #1e88d2;
+            }
+        }
+    }
+
+    &.blueball, &.redball{
+        .ball{
+            &.set-dan:after{
+                content: "";
+                background-image: url(../../../img/component/dan_icon.png);
+                background-size: cover;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                right: 0;
+                top: 4px;
+            }
+        }
+    }
+
+    .des{
+        color: #999;
+        font-size: 20px;
+        text-align: center;
+        height: 24px;
+        line-height: 24px;
+
+        &.red{ color: $red;}
+        &.blue{ color: #1e88d2;}
+    }
+}

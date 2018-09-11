@@ -1,0 +1,118 @@
+.recommend {
+  background: #fff;
+  margin-bottom: 20px;
+  &.not-winning {
+    background: #fff url("./images/ic_no_honor@2x.png") no-repeat 90% 70%;
+    background-size: 92px 94px;
+  }
+  &.winning {
+    background: #fff url("./images/ic_honor@2x.png") no-repeat 90% 70%;
+    background-size: 92px 94px;
+  }
+  .content {
+    display: flex;
+    border-bottom: dashed 1px #f6f6f6; /* no */
+    padding: 30px 20px;
+    color: #666;
+    .info {
+      flex: 1;
+      font-size: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #333;
+      .summary {
+        color: #333;
+        span {
+          padding-right: 30px;
+          position: relative;
+          &:after {
+            content: "";
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background: #d8d8d8;
+            position: absolute;
+            right: 10px;
+            top: 16px;
+          }
+          &:last-child {
+            padding-right: 0;
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+      .end-status {
+        padding-left: 40px;
+        position: relative;
+        color: #666;
+        line-height: 30px;
+        &:before {
+          position: absolute;
+          content: "";
+          height: 30px;
+          width: 30px;
+          border: solid 1px #bcbcbc; /* no */
+          border-radius: 50%;
+          top: 0;
+          left: 0;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          height: 12px;
+          width: 12px;
+          border-left: solid 1px #bcbcbc; /* no */
+          border-bottom: solid 1px #bcbcbc; /* no */
+          left: 12px;
+          top: 7px;
+        }
+      }
+    }
+    .roi {
+      display: flex;
+      width: 160px;
+      margin-right: 40px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h3 {
+        font-size: 40px;
+        color: #ed1c24;
+        font-weight: normal;
+        line-height: 1;
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    padding: 0 20px;
+    height: 88px;
+    color: #999;
+    align-items: center;
+    .date-time {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+    .follow-button {
+      color: #f01614;
+      border: solid 1px #f01614; /* no */
+      width: 176px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      font-size: 28px;
+      border-radius: 4px; /* no */
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.follower-list {
+  background: #fff;
+  .follower {
+    display: flex;
+    padding: 40px 20px;
+    font-size: 28px;
+    border-bottom: solid 1px #f4f4f4; /* no */
+    color: #999;
+    &:last-child {
+      border: none;
+    }
+    .info {
+      flex: 1;
+      h2 {
+        font-size: 32px;
+        color: #333;
+        font-weight: normal;
+      }
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+  }
+}

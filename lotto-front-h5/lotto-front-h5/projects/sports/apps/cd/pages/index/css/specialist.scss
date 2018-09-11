@@ -1,0 +1,85 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-10-18 18:53:00
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-11-30 11:56:43
+*/
+.specialist {
+  height: 348px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #fff;
+
+  .title {
+    height: 88px;
+    color: #333;
+    font-size: 32px;
+    background-color: #fff;
+    position: relative;
+    font-family: 'microsoft Yahei';
+    font-weight: 700;
+
+    .txt {
+      line-height: 88px;
+      font-size: 32px;
+      color: #333;
+      text-indent: 20px;
+    }
+    .link {
+      width: 88px;
+      height: 88px;
+      line-height: 88px;
+      text-align: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      .arrow {
+        display: inline-block;
+        width: 16px;
+        height: 26px;
+        background-image: url("../../../img/arrow.png");
+        background-size: cover;
+      }
+    }
+  }
+
+  .contentBox {
+    overflow: auto;
+
+    .content_null {
+      width: 100%;
+      height: 260px;
+      line-height: 260px;
+      color: #999;
+      text-align: center;
+      font-size: 28px;
+      background-color: #f5f5f5;
+    }
+    .content {
+      display: flex;
+      padding-left: 20px;
+      .skip {
+        margin-right: 80px;
+        .specialistBox {
+          img {
+            width: 128px;
+            height: 128px;
+            border: none;
+            border-radius: 50%;
+          }
+          .percentage {
+            text-align: center;
+            color: #f01614;
+            font-size: 34px;
+          }
+          .txt {
+            text-align: center;
+            color: #999;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

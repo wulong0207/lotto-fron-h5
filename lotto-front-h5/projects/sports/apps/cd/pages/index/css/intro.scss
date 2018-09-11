@@ -1,0 +1,59 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-10-18 16:57:15
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-12-07 16:39:48
+*/
+.intro {
+		height: 170px;
+		background-color: #FFF;
+		display: flex;
+		margin-bottom: 20px;
+
+		.introMes {
+			width: 50%;
+			overflow:hidden;
+			flex:1;
+
+			.introBox {
+				position: relative;
+				height: 170px;
+				overflow:hidden;
+				text-align:center;
+				.title {
+					font-size:32px;
+					line-height: 32px;
+					color:#333;
+					margin-top: 40px;
+					font-family: 'microsoft Yahei';
+					font-weight: 700;
+				}
+				.label {
+					font-size:24px;
+					color:#333;
+				}
+				img {
+					width: 80px;
+					height: 80px;
+					margin-top: 30px;
+				}
+				
+			}
+
+			&:first-child {
+				.introBox{
+					&::after {
+						content:'';
+						display:block;
+						width: 50px;
+						height: 22px;
+						background-image: url("../../../img/update.png");
+						background-size: cover;
+						position: absolute;
+						right: 16px;
+						top: 15px;
+					}
+				}
+			}
+		}
+	}

@@ -1,0 +1,124 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-10-20 15:48:32
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-10-20 16:42:26
+*/
+.list {
+  .listMes {
+    display: block;
+    height: 212px;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+    .listBox {
+      .box {
+        height: 212px;
+        margin: 0 20px;
+        display: flex;
+        position: relative;
+
+        img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          margin-top: 34px;
+          margin-right: 20px;
+        }
+        .attentionBtn {
+          width: 100px;
+          height: 48px;
+          line-height: 48px;
+          font-size: 24px;
+          color: #f01614;
+          text-align: center;
+          border: 1px solid #d6d6d6; /*no*/
+          position: absolute;
+          top: 34px;
+          right: 32px;
+          overflow: hidden;
+
+          .icon_gou {
+            display: inline-block;
+            width: 28px;
+            height: 22px;
+            background-image: url("../../../img/ic_attention@2x.png");
+            background-size: cover;
+            margin-right: 4px;
+            vertical-align: middle;
+          }
+          .txt {
+            display: inline-block;
+            height: 48px;
+            line-height: 48px;
+            color: #999;
+          }
+        }
+        .contentBox {
+          .nameBox {
+            height: 44px;
+            margin-top: 36px;
+            margin-bottom: 20px;
+
+            .name {
+              font-size: 32px;
+              color: #333;
+              margin-right: 20px;
+            }
+            .icon-zhuan,
+            .icon-jian {
+              display: inline-block;
+              width: 36px;
+              height: 32px;
+              line-height: 32px;
+              text-align: center;
+              background-color: #00c3c7;
+              color: #fff;
+              font-size: 24px;
+              margin-right: 10px;
+            }
+            .icon-jian {
+              background-color: #fa5a3a;
+            }
+          }
+          .message {
+            height: 28px;
+            line-height: 28px;
+            font-size: 28px;
+            color: #666;
+            margin-bottom: 18px;
+
+            .icon_dot {
+              display: inline-block;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #d8d8d8;
+              margin: 0 8px 4px;
+              padding-bottom: 10px;
+            }
+          }
+          .item-data {
+            .probability {
+              display: inline-block;
+              background-color: #ffe8db;
+              color: #f01614;
+              font-size: 24px;
+              line-height: 32px;
+              margin-right: 8px;
+              padding: 0 6px;
+            }
+            .continuous {
+              display: inline-block;
+              background-color: #f01614;
+              color: #fff;
+              line-height: 32px;
+              font-size: 24px;
+              padding: 0 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

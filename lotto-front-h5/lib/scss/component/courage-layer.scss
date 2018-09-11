@@ -1,0 +1,191 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-05-12 20:21:19
+ * @Desc: 设胆弹层
+ */
+
+@import "../base/mixins";
+
+.set-courage {
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+}
+.set-courage-layer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    .courage {
+        background: #fff;
+        padding: 0 10px;
+        .oper {
+            display: flex;
+            justify-content: space-around;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 32px;
+            > div {
+                flex: 1;
+                &:last-of-type {
+                    border-left: 1px solid #f4f4f4;/*no*/
+                }
+                span {
+                    font-size: 24px;
+                }
+            }
+        }
+        // 设胆区块
+        .courage-area {
+            padding-bottom: 30px;
+            // 头
+            .area-header {
+                height: 20px;
+                border: 6px solid #f7f7f7;/*no*/
+                box-shadow: 0 0 10px #999 inset, 0 -3ppx 15px #ccc;
+                border-radius: 50px;/*no*/
+            }
+            // 剩余部分
+            .area-extender {
+                max-height: 700px;
+                margin: -10px 20px 0;
+                box-shadow: 0 -2px 15px #ccc;
+                border-top-left-radius: 8px;/*no*/
+                border-top-right-radius: 8px;/*no*/
+                overflow-y: auto;
+                overflow-x: hidden;
+
+                // 内容
+                .area-content {
+                    position: relative;
+                    background: #f7f7f7;
+                    // 过期
+                    &.area-content-overdue {
+                        .mask {
+                            display: block;
+                        }
+                        .area-data {
+                            .stop-race {
+                                display: flex;
+
+                            }
+                            .title-sub {
+                                .close {
+                                    @include close($color: #fff);
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-last-of-type(2){
+                        margin-bottom: 0;
+                    }
+
+                    .mask {
+
+                    }
+                    .area-data {
+                        padding: 0 9px;
+                        padding-bottom: 20px;
+                        .stop-race {
+                            display: none;
+                            position: absolute;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100%;
+                            color: #fff;
+                            @include z-index(float);
+                        }
+                        .title-sub {
+                            position: relative;
+                            display: flex;
+                            align-items: flex-end;
+                            padding: 0 10px;
+                            line-height: 60px;
+                            > div:first-of-type{
+                                padding-right: 20px;
+                            }
+                            .selected {
+                                @include select();
+                            }
+                            .not-selected {
+                                display: inline-block;
+                                height: 30px;
+                                width: 30px;
+                                background: url(../../img/component/icon_unselectc.png) center no-repeat;
+                                background-size: cover;
+                            }
+                            .set-text {
+                                font-size: 32px;
+                                color: #ed1c24;
+                                padding-left: 10px;
+                            }
+                            .close {
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                                height: 38px;
+                                width: 38px;
+                                background: url(../../img/icon_shut_down@2x.png) center no-repeat;
+                                background-size: cover;
+                                @include z-index(float);
+                            }
+                            .disabled {
+                                background: #ccc;
+                            }
+                        }
+
+                        .data-list {
+                            line-height: 50px;
+                            font-size: 20px;
+                            border-top: 1px solid #f4f4f4;/*no*/
+                            // item
+                            .data-item {
+                                display: flex;
+                                text-align: center;
+                                min-height: 70px;
+                                > div {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                    padding: 10px 0;
+                                    border-left: 1px solid #f4f4f4;/*no*/
+                                    border-bottom: 1px solid #f4f4f4;/*no*/
+                                    p {
+                                        width: 100%;
+                                        display: flex;
+                                        > span {
+                                            flex: 1;
+                                        }
+                                    }
+                                    &:first-of-type {
+                                        flex: 1;
+                                        border-left: none;
+                                    }
+                                    &:last-of-type {
+                                        flex: 4;
+                                        //border-bottom: none;
+                                        > span {
+                                            flex: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 尾
+            .area-footer {
+                height: 5px;
+                margin: 0 20px;
+                background: linear-gradient(135deg, transparent, transparent 45%, #ccc, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #ccc, transparent 55%, transparent 100%);
+                background-size: 0.5em 0.5em;
+                background-repeat: repeat-x, repeat-x;
+            }
+        }
+    }
+}

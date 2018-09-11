@@ -1,0 +1,63 @@
+// @import '../base/base.scss';
+// @import "./component/common.scss";
+
+.modify-user-name {
+  .sf-section {
+    background: #fff;
+    .sf-item {
+      padding: 30px 30px 30px 30px;
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 32px;
+        color: #333333;
+      }
+      input {
+        border: 0;
+        flex: 1;
+        font-size: 32px;
+        margin-left: 30px;
+        height: 68px;
+      }
+      .icon-delete {
+        width: 68px;
+        height: 68px;
+        background: url("../img/deletegrey@2x.png") no-repeat center;
+        background-size: 50%;
+      }
+    }
+  }
+  button {
+    display: block;
+    border: 0;
+    width: 90%;
+    height: 89px;
+    border-radius: 4px;
+    font-size: 34px;
+    margin: 80px auto 50px;
+    font-weight: 600;
+    color: #999999;
+  }
+
+  .btn-blue {
+    background: #1e88d2;
+    color: #fff;
+  }
+
+  .btn-grey {
+    background: #e6e6e6;
+    color: #999999;
+  }
+  .progressbar {
+  }
+  p {
+    font-size: 20px;
+    color: #999999;
+    margin: 0 53px;
+  }
+  .msg3 {
+    border: 1px solid #b4b4b4;
+    padding-bottom: 10px;
+    box-shadow: 0 0 1px #dedede;
+  }
+}

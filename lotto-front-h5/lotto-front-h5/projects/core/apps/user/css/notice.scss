@@ -1,0 +1,33 @@
+
+// @import '../base/base.scss';
+
+// buy-notice  购彩提醒设置 
+// no-bother-notice 勿扰模式设置
+// lotteryy-notice 开奖消息设置
+// account-notice 账户消息设置
+
+.sf-section {
+    margin-top: 20px;
+    background: #fff;
+    padding-left: 30px;
+    .sf-item {
+        padding: 30px 30px 30px 0;
+         border-bottom: 1px solid #e6e6e6;/*no*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .sf-item-l {
+            display: flex;
+            flex-direction: column;
+            span {
+                font-size: 32px;
+            }
+            em {
+                color: #999999;
+            }
+        }
+        em {
+            color: #999999;
+        }
+    }
+}

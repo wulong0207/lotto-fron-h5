@@ -1,0 +1,57 @@
+.ball-panel {
+  padding: 20px 0;
+  .panel-title {
+    padding: 0 20px 20px;
+    color: #999;
+  }
+}
+.ball-table {
+  width: 100%;
+  td {
+    border: none;
+    text-align: center;
+    padding-bottom: 40px;
+    .random {
+      font-size: 24px;
+    }
+  }
+  .ball,
+  .random {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    border: solid 1px #f4f4f4; /* no */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 64px;
+    font-size: 30px;
+    position: relative;
+    .ball-data,
+    .label {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      left: 0;
+      right: 0;
+      color: #999;
+      font-size: 22px;
+      line-height: 1.4;
+      &.max {
+        color: #ed1c24;
+      }
+      &.min {
+        color: #1e88d2;
+      }
+    }
+    .fixed-icon {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      font-size: 0;
+      background: url(../../../../lib/img/component/dan_icon.png) no-repeat;
+      background-size: cover;
+      top: -5px;
+      right: -5px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.sd11x5 {
+  background: #fff;
+  margin-top: 30px;
+  padding: 0 30px;
+  .title {
+    font-size: 32px;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e5e5; /*no*/
+  }
+  .end-time {
+    font-size: 28px;
+    padding: 30px 0;
+  }
+  .lottery-bet {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .greed {
+      widows: 73px;
+      height: 24px;
+      margin-right: 6px;
+      color: #999999;
+    }
+    .change-bet {
+      img {
+        width: 35px;
+        height: 35px;
+        display: block;
+      }
+    }
+  }
+  .lottery-rule {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    span {
+      color: #999999;
+    }
+    .change-button {
+      font-size: 28px;
+      color: #333333;
+      border: 1px solid #e5e5e5; /*no*/
+      padding: 16px 32px;
+    }
+  }
+}

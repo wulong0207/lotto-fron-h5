@@ -1,0 +1,67 @@
+/**
+ * Created by YLD
+ * date 2017-08-8
+ * desc: 竞彩篮球
+ */
+@import "../../../../../../lib/scss/base/base";
+.vs-info {
+  padding: 20px;
+  box-shadow: 1px 1px 13px #eaeaea; /*no*/
+
+  .logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  .zhibo {
+    position: relative;
+  }
+  .zhibo::before {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    margin-left: 10px;
+    background: url(../../img/icon_analysis@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+
+  .date {
+    color: #999999;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+  }
+
+  .sep {
+    margin: 15px 0;
+    height: 1px; /*no*/
+    background-color: #e6e6e6;
+    position: relative;
+    div {
+      line-height: 43px;
+      width: 45px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #e6e6e6; /*no*/
+      margin: 0 auto;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -23px;
+    }
+  }
+
+  h3 {
+    color: #333333;
+    line-height: 50px;
+    font-size: 32px;
+    .gray {
+      margin: 0 6px;
+      color: #999999;
+      font-size: 26px;
+    }
+  }
+}

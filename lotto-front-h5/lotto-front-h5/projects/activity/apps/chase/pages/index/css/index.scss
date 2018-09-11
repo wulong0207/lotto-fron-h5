@@ -1,0 +1,177 @@
+.chase {
+  width: 100%;
+  .chase-header {
+    width: 100%;
+    height: 530px;
+    background-image: url("../../../img/header.png");
+    background-size: cover;
+    z-index: 10;
+    position: relative;
+    .myChase {
+      float: right;
+      margin-top: 55px;
+      width: 145px;
+      height: 66px;
+      background: url("../../../img/chase.png") center no-repeat;
+      background-size: cover;
+    }
+    .buze {
+      display: block;
+      max-width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .chase-content {
+    z-index: 100;
+    width: 100%;
+    padding: 0 30px;
+    background: url("../../../img/footer.png") center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    .title {
+      font-size: 36px;
+      width: 55%;
+      z-index: 1000;
+      margin: 5px auto;
+      margin-top: 36px;
+      text-align: center;
+      background: #a246e5;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      .start {
+        display: block;
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .new-exclusive {
+      padding: 0 30px 50px 30px;
+      background: linear-gradient(to right, #8919be, #7a11bc);
+      border-radius: 4px;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .title {
+        width: 85%;
+      }
+      .new-bug {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        border-radius: 8px;
+        background: #a246e5;
+        z-index: 1000;
+        position: relative;
+        .bug-num {
+          font-size: 34px;
+          display: flex;
+          flex-direction: column;
+          .orange {
+            font-weight: normal;
+            color: #feed20;
+          }
+        }
+        .bgo {
+          display: block;
+          width: 165px;
+          height: 70px;
+        }
+        .ssq {
+          display: block;
+          width: 88px;
+          height: 88px;
+          border-radius: 50%; /*no*/
+        }
+        .personal {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 97px;
+          height: 93px;
+        }
+      }
+    }
+    .ssq-package {
+      background: #8912c0;
+      z-index: 100;
+      border-radius: 4px;
+      margin-top: 36px;
+      font-size: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 15px;
+      margin-bottom: 30px;
+      .bug {
+        margin-bottom: 40px;
+        overflow: hide;
+        .package-bug {
+          width: 48%;
+          float: left;
+          background: linear-gradient(to right, #b44bde, #a246e5);
+          border-radius: 20px;
+          text-align: center;
+          padding: 50px 0 40px 0;
+          position: relative;
+          margin-right: 10px;
+          margin-top: 10px;
+          &:nth-child(even) {
+            margin-right: 0;
+          }
+          .inline {
+            font-size: 36px;
+            .orange {
+              color: #feed20;
+              font-weight: normal;
+            }
+          }
+          .f28 {
+            font-size: 28px;
+          }
+          .hot-sale {
+            display: block;
+            max-width: 90px;
+            max-height: 90px;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          .bug-white {
+            width: 190px;
+            height: 65px;
+            background: url("../../../img/bugw.png") center center no-repeat;
+            background-size: contain;
+            margin: 0 auto;
+            margin-top: 40px;
+          }
+        }
+      }
+      .title {
+        .title-ssq {
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+    .chase-rule {
+      background-color: #7e12bc;
+      padding: 20px 40px 60px 40px;
+      border-radius: 10px;
+      margin-top: 20px;
+      color: #ffffff;
+      z-index: 100;
+      p {
+        font-size: 28px;
+        font-weight: 400;
+      }
+    }
+  }
+}

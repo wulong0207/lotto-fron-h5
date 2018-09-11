@@ -1,0 +1,131 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-10-19 09:56:11
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-12-07 17:02:33
+*/
+.transcribeBox_index {
+  background-color: red;
+  em {
+    color: #f01614;
+  }
+  .transcribeMes {
+    display: block;
+    height: 300px;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+    .transcribe_index {
+      .box {
+        height: 208px;
+        margin: 0 20px;
+        display: flex;
+        border-bottom: 1px dashed #e6e6e6; /*no*/
+        img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          margin-top: 34px;
+          margin-right: 20px; 
+        }
+        .contentBox {
+          .nameBox {
+            height: 44px;
+            margin-top: 36px;
+            margin-bottom: 20px;
+
+            .name {
+              font-size: 32px;
+              color: #333;
+              margin-right: 10px;
+            }
+            .icon-zhuan,
+            .icon-jian {
+              display: inline-block;
+              width: 36px;
+              height: 32px;
+              line-height: 32px;
+              text-align: center;
+              background-color: #00c3c7;
+              color: #fff;
+              font-size: 24px;
+              margin-right: 10px;
+            }
+            .icon-jian {
+              background-color: #fa5a3a;
+            }
+          }
+          .message {
+            height: 28px;
+            line-height: 28px;
+            font-size: 28px;
+            color: #666;
+            margin-bottom: 10px;
+
+            .icon_dot {
+              display: inline-block;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #d8d8d8;
+              margin: 0 8px 4px;
+              padding-bottom: 10px;
+            }
+          }
+          .item-data {
+            .probability {
+              display: inline-block;
+              background-color: #ffe8db;
+              color: #f01614;
+              font-size: 24px;
+              line-height: 32px;
+              margin-right: 8px;
+              padding: 0 6px;
+            }
+            .continuous {
+              display: inline-block;
+              background-color: #f01614;
+              color: #fff;
+              line-height: 32px;
+              font-size: 24px;
+              padding: 0 6px;
+            }
+          }
+        }
+      }
+    }
+    .buttonBox {
+      display: flex;
+      position: relative;
+      height: 88px;
+      .icon_clock {
+        display: block;
+        width: 28px;
+        height: 28px;
+        background-image: url("../../../img/ic_time.png");
+        background-size: cover;
+        margin: 30px 16px 0 22px;
+      }
+      .time {
+        height: 28px;
+        line-height: 28px;
+        color: #999;
+        font-size: 28px;
+        margin-top: 30px;
+      }
+      .btn {
+        width: 176px;
+        height: 60px;
+        border: 1px solid #f01614; /*no*/
+        background-color: #fff;
+        border-radius: 10px;
+        position: absolute;
+        right: 20px;
+        top: 14px;
+        font-size: 28px;
+        color: #f01614;
+        outline: none;
+      }
+    }
+  }
+}

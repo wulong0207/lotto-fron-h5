@@ -1,0 +1,259 @@
+@import "~lib/scss/base/base.scss";
+// @import "./component/common.scss";
+
+// index 个人中心
+.index {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  .main-cont {
+    width: 100%;
+    height: 100%;
+    .head {
+      width: 100%;
+      background: #2592de;
+      .account {
+        height: 60%;
+        display: flex;
+        align-items: flex-end;
+        .account-cont {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          padding: 30px 0;
+          position: relative;
+          img {
+            width: 128px;
+            height: 128px;
+            border-radius: 50%;
+            border: 1px solid #f0f9ff; /*no*/
+            background-color: #f0f9ff;
+            margin-left: 42px;
+          }
+          p {
+            font-size: 27px;
+            color: #fff;
+            flex: 2;
+            padding-left: 18px;
+          }
+          .top-pop {
+            display: block;
+            line-height: 45px;
+            padding: 0 27px 10px;
+            font-size: 24px;
+            background: url("../img/index/top-pop.png") no-repeat;
+            background-size: cover;
+            color: #fff;
+            position: absolute;
+            top: 15px;
+            left: 130px;
+            z-index: 10000;
+          }
+          .personal {
+            display: block;
+            width: 20px;
+            height: 35px;
+            background: url("../img/index/top-right.png") no-repeat;
+            background-size: 100%;
+            float: right;
+            margin-right: 30px;
+          }
+          .nk_nm {
+            margin-top: 15px;
+          }
+          .wrap {
+            //background-color: #333;
+            display: block;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
+      .recorde {
+        height: 40%;
+        background-color: #2087cf;
+        .balance {
+          position: relative;
+          background: #1e88d2;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          div {
+            flex: 1;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            span {
+              display: block;
+              font-size: 24px;
+              line-height: 48px;
+            }
+            span:nth-child(2) {
+              opacity: 0.6;
+            }
+          }
+          .font20 {
+            font-size: 34px;
+          }
+          .border {
+            display: block;
+            width: 2px;
+            height: 53px;
+            background: #fff;
+          }
+          .num-cont {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            span {
+              flex: 1;
+              font-size: 24px;
+              opacity: 0.6;
+              text-align: center;
+            }
+            // .eye-close::after,
+            // .eye-open::after {
+            //     content: '';
+            //     position: absolute;
+            //     top: -10px;
+            //     bottom: -10px;
+            //     left: -10px;
+            //     right: -10px;
+            // }
+          }
+          .eye-open {
+            display: block;
+            width: 34px;
+            height: 48px;
+            z-index: 999;
+            background: url("../img/index/eye-open.png") no-repeat center;
+            background-size: 100%;
+            position: absolute;
+            left: 37%;
+            top: 48%;
+          }
+          .eye-close {
+            display: block;
+            width: 34px;
+            height: 48px;
+            z-index: 999;
+            background: url("../img/index/eye-close.png") no-repeat center;
+            background-size: 100%;
+            position: absolute;
+            left: 37%;
+            top: 48%;
+          }
+          .redbao {
+            position: absolute;
+            top: 10px;
+            right: 4px;
+            border: 1px solid #fff; /*no*/
+            border-radius: 24px;
+            font-size: 16px !important;
+            color: #fff;
+            padding: 2px 16px 0;
+            background-color: #1b77b8;
+          }
+        }
+      }
+    }
+    .list {
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      .linklist-box {
+        margin-top: 40px;
+      }
+      .linklist-box:last-child {
+        margin-bottom: 120px;
+      }
+    }
+  }
+  .icon-buy,
+  .icon-buya,
+  .icon-live,
+  .icon-livea,
+  .icon-selfcon,
+  .icon-selfcona,
+  .icon-servi,
+  .icon-servia,
+  .icon-me,
+  .icon-mea {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../img/index/buy@2x.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-buya {
+    background: url("../img/index/buya@2x.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-live {
+    background: url("../img/index/live@2x.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-livea {
+    background: url("../img/index/livea@2x.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-selfcon {
+    background: url("../img/index/selfcon@2x.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-selfcona {
+    background: url("../img/index/selfcona@2x.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-servi {
+    background: url("../img/index/servi@2x.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-servia {
+    background: url("../img/index/servia@2x.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-me {
+    background: url("../img/index/me@2x.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-mea {
+    background: url("../img/index/mea@2x.png") no-repeat;
+    background-size: cover;
+  }
+  .sc-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background: #fff;
+    border-top: 1px solid #e6e6e6; /*no*/
+    dl {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: #999;
+      &:active {
+        color: #1e88d2;
+      }
+    }
+  }
+}

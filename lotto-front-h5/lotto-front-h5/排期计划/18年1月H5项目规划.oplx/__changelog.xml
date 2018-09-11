@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="yubei" date="2018-01-02T11:30:52.129Z" timestamp="2018-01-02T11:30:52.129Z">
+    <change idref="t15" attribute="internalAssignments" type="string" from="" to="2"/>
+    <change idref="t16" attribute="internalAssignments" type="string" from="" to="2"/>
+  </task-change-set>
+  <task-change-set user="yubei" date="2018-01-09T03:24:40.620Z" timestamp="2018-01-09T03:24:40.620Z">
+    <change idref="t9" attribute="noEarlierThanConstraintDate" type="date" to="2018-01-24T00:00:00.000Z" resolved="yes"/>
+    <change idref="t38" attribute="effort" type="real" from="403200" to="316800" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="yubei" date="2018-01-09T03:27:10.273Z" timestamp="2018-01-09T03:27:10.273Z">
+    <change idref="t47" to="t8" to-position="3" resolved="yes">
+      <change idref="t47" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t47" attribute="internalAssignments" type="string" from="" to="5"/>
+      <change idref="t47" attribute="internalPrerequisitesString" type="string" to="38FS"/>
+      <change idref="t47" attribute="title" type="string" to="竞技彩其他玩法新增赛事详情入口"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="yubei" date="2018-01-09T03:29:24.050Z" timestamp="2018-01-09T03:29:24.050Z">
+    <change idref="t9" attribute="internalPrerequisitesString" type="string" to="48FS" resolved="yes"/>
+    <change idref="t48" to="t30" to-position="3" resolved="yes">
+      <change idref="t48" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t48" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t48" attribute="internalPrerequisitesString" type="string" to="36FS"/>
+      <change idref="t48" attribute="title" type="string" to="年会活动BUG修复"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="yubei" date="2018-01-09T03:32:11.805Z" timestamp="2018-01-09T03:32:11.805Z">
+    <change idref="t6" attribute="title" type="string" from="追号计划方案详情修改 - 改接口字段" to="追号计划订单新增追号失败状态" resolved="yes"/>
+  </task-change-set>
+</changelog>

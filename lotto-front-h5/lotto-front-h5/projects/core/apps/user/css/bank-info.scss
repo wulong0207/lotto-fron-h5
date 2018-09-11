@@ -1,0 +1,61 @@
+// @import '../base/base.scss';
+@import "./common.scss";
+
+.bank-info {
+  .sf-section {
+    .sf-item {
+      span {
+        font-size: 32px;
+      }
+      em {
+        font-size: 28px;
+      }
+    }
+  }
+  .cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+    z-index: 100;
+    .cover-bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      animation: bottomup 0.4s;
+      animation-fill-mode: forwards;
+      ul {
+        li {
+          width: 100%;
+          background: #fff;
+          height: 88px;
+          line-height: 88px;
+          text-align: center;
+          font-size: 32px;
+          border-bottom: 1px solid #afafbc; /*no*/
+          color: #333333;
+          &:first-child {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+          }
+          &:nth-child(2) {
+            color: #ed1b24;
+          }
+          &:last-child {
+            color: #1e88d2;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .cxHide {
+    display: none;
+  }
+}

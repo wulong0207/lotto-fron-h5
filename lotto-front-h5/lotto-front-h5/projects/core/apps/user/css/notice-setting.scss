@@ -1,0 +1,23 @@
+// @import '../base/base.scss';
+@import "./common.scss";
+
+.notice-setting {
+  .sf-section {
+    margin-top: 20px;
+    background: #fff;
+    padding-left: 30px;
+    .sf-item {
+      padding: 30px 30px 30px 0;
+      border-bottom: 1px solid #e6e6e6; /*no*/
+      display: flex;
+      justify-content: space-between;
+      em {
+        color: #999999;
+        margin-left: 20px;
+        flex: 1;
+      }
+      .icon-arrow-r {
+      }
+    }
+  }
+}

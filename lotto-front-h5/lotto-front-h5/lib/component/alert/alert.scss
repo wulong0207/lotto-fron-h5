@@ -1,0 +1,37 @@
+@import "../../scss/base/base";
+
+.alert-dialog-component {
+  .dialog-content {
+    padding: 0;
+  }
+  .alert-message {
+    padding: 30px;
+    text-align: center;
+    font-size: 32px;
+  }
+  .alert-footer {
+    button {
+      display: block;
+      font-size: 32px;
+      width: 100%;
+      text-align: center;
+      border: none;
+      border-top: solid 1px #f4f4f4; /* no */
+      color: #1e88d2;
+      background: none;
+      padding: 20px 30px;
+      outline: 0;
+      border-radius: 0 0 20px 20px;
+      &:active {
+        background: rgba(0, 0, 0, .05);
+      }
+    }
+  }
+  .dialog-header {
+    h4 {
+      padding-bottom: 0;
+      font-weight: bold;
+      line-height: 1;
+    }
+  }
+}

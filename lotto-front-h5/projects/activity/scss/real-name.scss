@@ -1,0 +1,83 @@
+@import "../../../lib/scss/base/base.scss";
+
+.sf-section {
+  background: #fff;
+  border-radius: 8px;
+  .head {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    position: relative;
+    span {
+      color: #333;
+      font-weight: bold;
+    }
+    .del {
+      img {
+        width: 35px;
+        height: 35px;
+      }
+      position: absolute;
+      right: 0px;
+      top: -10px;
+    }
+  }
+  .input-box {
+    padding: 0 23px;
+    margin-top: 18px !important;
+    .sf-item {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 32px;
+        color: #333333;
+      }
+      input {
+        border: none;
+        outline: none;
+        flex: 1;
+        font-size: 32px;
+        margin-left: 30px;
+        height: 55px;
+      }
+      .icon-delete {
+        width: 68px;
+        height: 68px;
+        background: url("../../../lib/img/deletegrey@2x.png") no-repeat center;
+        background-size: 50%;
+        margin-right: 20px;
+      }
+    }
+    .title {
+      color: #676767;
+      display: inline-block;
+      text-align: left;
+      line-height: 40px !important;
+      margin-bottom: 22px;
+    }
+    .submit {
+      margin: 30px auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      button {
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+        padding: 30px 50px;
+        border-radius: 8px;
+        border: none;
+        flex: 0.5;
+      }
+      .loginBtn {
+        background: #e6e6e6;
+        color: #999;
+      }
+      .loginBtn-act {
+        background: #1e88d2;
+        color: #fff;
+      }
+    }
+  }
+}

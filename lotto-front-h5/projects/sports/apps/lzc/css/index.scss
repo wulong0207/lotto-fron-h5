@@ -1,0 +1,340 @@
+/**
+ * Created by zouyuting
+ * date 2017-07-05
+ * desc: 老足彩
+ */
+
+@import "~lib/scss/base/base";
+@import "~lib/scss/base/mixins";
+@import "~lib/scss/component/header";
+
+// 头部
+.operation {
+  display: flex;
+  width: auto;
+  position: relative;
+  > div {
+    @include size(46px);
+    background-size: cover;
+  }
+  .opermore {
+    @include size(46px);
+    display: inline-block;
+    position: relative;
+    background: url(~lib/img/public/header/icon_more@2x.png) no-repeat;
+    background-size: cover;
+  }
+  > span,
+  a {
+    font-size: 32px;
+    color: #fff;
+  }
+  .filt {
+    background: url(~lib/img/public/header/icon_bolt@2x.png) no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+  }
+  .oper-menu {
+    position: absolute;
+    top: 80px;
+    right: -10px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #999;
+    @include z-index(tips);
+    .arrows {
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      @include arrows($rotate: -45, $size: 20px, $line-size: 20px, $color: #fff);
+    }
+    li {
+      img {
+        vertical-align: middle;
+        margin-right: 20px;
+        height: 46px;
+        width: 46px;
+      }
+      font-size: 28px;
+      line-height: 85px;
+      padding: 0 35px;
+      border-bottom: 2px solid #f4f4f4;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      a {
+        display: block;
+        color: #333;
+      }
+    }
+  }
+}
+
+.lzc-page {
+  .header-tab {
+    height: 86px;
+    overflow: hidden;
+    ul {
+      display: flex;
+      position: fixed;
+      background: #01af63;
+      width: 100%;
+      z-index: 99;
+      li {
+        flex: 1;
+        text-align: center;
+      }
+      button {
+        color: #fff;
+        display: inline-block;
+        opacity: 0.6;
+        font-size: 30px;
+        padding: 20px;
+        background: none;
+        border: none;
+        &.active {
+          opacity: 1;
+          border-bottom: solid 2px #fff; /*no*/
+        }
+      }
+    }
+  }
+  .football-status-bar {
+    height: 65px;
+  }
+  .issue-bar {
+    height: 65px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background: #f5f5f5;
+    z-index: 9;
+    display: flex;
+    .bar {
+      color: #999;
+      text-align: center;
+      font-size: 24px;
+      padding: 15px 0;
+      flex: 1;
+    }
+    .issue-list-container {
+      position: fixed;
+      display: none;
+      left: 0;
+      bottom: 0;
+      top: 238px;
+      width: 100%;
+      z-index: 9;
+      .issue-list-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .issue-list {
+        position: relative;
+        background: #fff;
+        font-size: 28px;
+        li {
+          padding: 30px;
+          border-bottom: solid 1px #f4f4f4; /*no*/
+          &.active {
+            color: #01af63;
+          }
+          span {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    .arrow-container {
+      padding: 10px 30px 0 0;
+    }
+    .arrow {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      @include arrows($size: 20px, $color: #666, $line-size: 2px);
+      &:after {
+        transition: none;
+      }
+      &.open {
+        &:after {
+          margin-top: 15px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  .match-list {
+    background: #fff;
+    .match {
+      display: flex;
+      .match-detail {
+        width: 230px;
+        background: #fafafa;
+        border: solid 1px #f4f4f4; /*no*/
+        border-bottom: none;
+        padding: 20px 30px;
+        h4 {
+          font-weight: normal;
+        }
+        span {
+          display: block;
+          color: #999;
+        }
+      }
+    }
+    .match-betting-box {
+      flex: 1;
+      display: flex;
+    }
+    .match-betting-container {
+      flex: 1;
+      display: flex;
+      .betting-cell {
+        border-top: solid 1px #f4f4f4; /*no*/
+        border-right: solid 1px #f4f4f4; /*no*/
+        text-align: center;
+        padding-top: 40px;
+        position: relative;
+        &.selected {
+          background: #01af63;
+          color: #fff;
+          span,
+          em,
+          sup {
+            color: #fff;
+          }
+        }
+        h4 {
+          font-weight: normal;
+          padding-bottom: 10px;
+        }
+        span {
+          color: #999;
+        }
+        em {
+          color: #eb6100;
+        }
+        sup {
+          position: absolute;
+          top: 20px;
+        }
+      }
+      .draw {
+        width: 120px;
+      }
+      .win,
+      .fail {
+        flex: 1;
+      }
+      .win {
+        sup {
+          left: 20px;
+        }
+      }
+      .fail {
+        sup {
+          right: 20px;
+        }
+      }
+    }
+    .match-betting-courege-button {
+      width: 80px;
+      padding-top: 60px;
+      text-align: center;
+      border-top: solid 1px #f4f4f4; /*no*/
+      &.selected {
+        background: #01af63;
+        color: #fff;
+      }
+    }
+  }
+  .betting-box {
+    height: 120px;
+    &.show-attach {
+      height: 180px;
+    }
+    .betting-container {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: #fff;
+    }
+    .betting-bar {
+      height: 100px;
+      display: flex;
+      .submit-button {
+        width: 220px;
+        height: 100px;
+        padding-top: 10px;
+        background: #ed1c24;
+        text-align: center;
+        color: #fff;
+        h5 {
+          font-size: 34px;
+          font-weight: normal;
+        }
+      }
+      .betting-tip {
+        border-top: solid 1px #f4f4f4; /*no*/
+        height: 100px;
+        flex: 1;
+        text-align: center;
+        padding-top: 10px;
+        p {
+          font-size: 28px;
+        }
+        span {
+          display: block;
+          color: #999;
+        }
+      }
+      .betting-times {
+        font-size: 28px;
+        padding-top: 20px;
+        .number-input-component {
+          height: auto;
+          width: auto;
+          .minus,
+          .plus {
+            display: none;
+          }
+          .number-input {
+            width: auto;
+            overflow: auto;
+            border: none;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    .betting-attach {
+      height: 60px;
+      padding: 10px 30px;
+      display: flex;
+      border-top: solid 1px #f4f4f4; /*no*/
+      .clear {
+        height: 38px;
+        width: 35px;
+        img {
+          height: 38px;
+          width: 35px;
+        }
+      }
+      .attach-tip {
+        flex: 1;
+        text-align: right;
+        color: #999;
+      }
+    }
+  }
+  .header .header-fix .header-con .handle {
+    width: auto;
+  }
+}

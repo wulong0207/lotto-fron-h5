@@ -1,0 +1,39 @@
+@import "../../scss/base/base";
+.prompt-dialog-component {
+  .dialog-content {
+    padding: 0;
+  }
+  .prompt-message {
+    padding: 30px;
+    text-align: center;
+    font-size: 32px;
+  }
+  .prompt-input {
+    padding-top: 20px;
+    input {
+      width: 100%;
+      border: solid 1px #f4f4f4; /* no */
+      padding: 15px;
+      line-height: 1;
+    }
+  }
+  .prompt-footer {
+    display: flex;
+    button {
+      flex: 1;
+      display: block;
+      font-size: 32px;
+      width: 100%;
+      text-align: center;
+      border: none;
+      border-top: solid 1px #f4f4f4; /* no */
+      color: #1e88d2;
+      background: none;
+      padding: 20px 30px;
+      outline: 0;
+      &:first-child {
+        border-right: solid 1px #f4f4f4; /* no */
+      }
+    }
+  }
+}

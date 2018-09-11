@@ -1,0 +1,112 @@
+.pick {
+  .header {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5; /*no*/
+  }
+  .header-con {
+    .title {
+      color: #333333 !important;
+    }
+    .back {
+      a {
+        background: url("../../img/arrow.png") no-repeat !important;
+        background-size: 33px 55px !important;
+      }
+    }
+  }
+  .pick-content {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    background: url("../../img/bgpur.png") center center no-repeat;
+    background-size: cover;
+    .bet-info {
+      height: 440px;
+      width: 80%;
+      margin: 0 auto;
+      background: url("../../img/coupon.png") center center no-repeat;
+      background-size: contain;
+      margin-top: 60px;
+      z-index: 100;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .logo {
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-65px);
+        width: 130px;
+        height: 130px;
+        // border-radius: 50%; /*no*/
+        // background: blue;
+      }
+      .title {
+        width: 90%;
+        height: 128px;
+        font-size: 28px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 100px;
+        background: url("../../img/input.png") center center no-repeat;
+        background-size: contain;
+
+        b {
+          font-size: 34px;
+          margin-top: 20px;
+          display: inline-block;
+          width: 100%;
+        }
+      }
+      .rule {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        color: #999999;
+      }
+    }
+    .bet {
+      max-width: 90%;
+      height: 580px;
+      background: url("../../img/num-mach.png") center center no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .now-bug {
+        width: 90%;
+        height: 80px;
+        background: url("../../img/bet.png") center center no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        z-index: 101;
+      }
+      .bet-ball {
+        .ball {
+          display: flex;
+          justify-content: center;
+          margin-top: 90px;
+        }
+        .change-ball {
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 32px;
+          .refresh {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

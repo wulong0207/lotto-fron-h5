@@ -1,0 +1,72 @@
+/*
+ * @Author: YLD
+ * @Date: 2017-07-04 16:24:00
+ * @Desc: 数字彩球投注信息
+ */
+
+@import '../base/base.scss';
+
+.bet-info{
+    .bet-info-msg{
+        background-color: #F4F4F4;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+
+    .bet-info-root{
+        display: none;
+
+        .bet-info-tip{
+            width: 100%;
+            border-top: 1px solid #F4F4F4;/*no*/
+            color: #999;
+            font-size: 26px;
+            background: #fff;
+            display: flex;
+            align-items:center;
+
+            .del{
+                background: url(../../img/component/icon_del@2x.png) center no-repeat;
+                width: 50px;
+                height: 50px;
+                margin: 10px 15px;
+                background-size: 100%;
+            }
+
+            .info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction:column;
+                padding: 10px 0;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .bet-info-msg,.bet-info-root{
+        em{
+            color: #FF7A0D;
+            margin: 0 3px;
+
+            &.red{color: #ed1c24}
+            &.blue{color: #1e88d2}
+        }
+
+        .tr{text-align: right;}
+        .tc{text-align: center;}
+        .tl{text-align: left;}
+    }
+
+    &.show-tip{
+        .bet-info-msg{
+            display: none;
+        }
+
+        .bet-info-root{
+            display: block;
+        }
+    }
+}

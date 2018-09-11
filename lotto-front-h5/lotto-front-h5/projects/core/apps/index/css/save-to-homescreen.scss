@@ -1,0 +1,27 @@
+.save-to-home-screen-tip-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.save-to-home-screen-tip {
+  width: 724px;
+  height: 342px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -362px;
+  .save-tip-image {
+    width: 724px;
+    height: 342px;
+  }
+  .close-home-screen-tip {
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}

@@ -1,0 +1,34 @@
+.betting-tips {
+  position: fixed;
+  bottom: 96px;
+  left: 0;
+  right: 0;
+  color: #999;
+  background: #fff;
+  .empty-node {
+    line-height: 1.5;
+    background: #f4f4f4;
+    color: #999;
+    text-align: center;
+    padding: 15px 20px;
+  }
+  .betting-info {
+    padding: 10px 20px;
+    display: flex;
+    border-top: solid 1px #f4f4f4; /* no */
+    align-items: center;
+    .profit-info {
+      flex: 1;
+      text-align: right;
+    }
+    .betting-delete-icon {
+      height: 46px;
+      width: 46px;
+      background: url(../../../../lib/img/component/icon_del@2x.png) no-repeat;
+      background-size: 46px 46px;
+      border: none;
+      margin-top: 10px;
+      outline: 0;
+    }
+  }
+}

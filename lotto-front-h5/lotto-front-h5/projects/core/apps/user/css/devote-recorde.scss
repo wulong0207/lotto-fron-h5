@@ -1,0 +1,190 @@
+.sc-content {
+  //position: fixed;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  .tab-list {
+    overflow: hidden;
+  }
+  .tab-header {
+    position: fixed;
+    z-index: 999;
+    //margin-top: 20px;
+    display: flex;
+    font-size: 28px;
+    color: #333333;
+    background: #fff;
+    justify-content: space-between;
+    height: 88px;
+    line-height: 88px;
+    border-bottom: 1px solid #e5e5e5; /*no*/
+    width: 100%;
+    div {
+      flex: 1;
+      text-align: center;
+      position: relative;
+    }
+    .tab-active {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 70%;
+        height: 2px;
+        background: #1e88d2;
+        transform: translateX(-50%);
+      }
+      color: #1e88d2;
+      .icon-arrow-d,
+      .icon-arrow-d-blue,
+      .icon-arrow-u-blue {
+        display: inline-block;
+        width: 26px;
+        height: 15px;
+        background: url("../img/mainnor@2x.png") no-repeat;
+        background-size: cover;
+        margin-left: 10px;
+      }
+      .icon-arrow-d-blue {
+        background: url("../img/mainall@2x.png") no-repeat;
+        background-size: cover;
+      }
+      .icon-arrow-u-blue {
+        background: url("../img/mainhide@2x.png") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  .all-plan {
+    position: absolute;
+    width: 100%;
+    top: 188px;
+    bottom: -10px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    li {
+      font-size: 28px;
+      border-bottom: 1px solid #e5e5e5; /*no*/
+      padding: 0 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      height: 88px;
+      line-height: 40px;
+      .icon-choice {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background: url("../img/greenchoice@2x.png") no-repeat;
+        background-size: cover;
+      }
+      .blue {
+        color: #1e88d2;
+      }
+    }
+  }
+  .cxHide {
+    display: none;
+  }
+  .no-order {
+    .no-order-desc {
+      background: #fff;
+      padding: 36px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid #e5e5e5; /*no*/
+      border-bottom: 1px solid #e5e5e5; /*no*/
+      p {
+        background: url("../img/cry@2x.png") no-repeat 0;
+        background-size: 58px 51px;
+        padding-left: 71px;
+        height: 51px;
+        line-height: 51px;
+        font-size: 26px;
+        color: #666;
+      }
+    }
+    .no-order-lottery {
+      background: #fff;
+      padding: 32px 42px 45px;
+      border-bottom: 1px solid #e5e5e5; /*no*/
+      .ssq-img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 24px;
+        background: url("../img/ssq@2x.png") no-repeat;
+        background-size: cover;
+      }
+      .no-order-ssq {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        position: relative;
+        span {
+          display: block;
+          width: 101px;
+          height: 34px;
+          background: url("../img/greybg@2x.png") no-repeat;
+          background-size: cover;
+          text-align: center;
+          line-height: 34px;
+        }
+        em {
+          position: absolute;
+          right: 0;
+          top: 0;
+          display: block;
+          background: url("../img/refresh@2x.png") no-repeat 0;
+          background-size: cover;
+          background-size: 24px 24px;
+          padding-left: 35px;
+          color: #1e88d2;
+        }
+      }
+      .no-order-number {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        span {
+          display: block;
+          width: 64px;
+          height: 64px;
+          line-height: 64px;
+          border-radius: 50%;
+          background: #ed1c24;
+          text-align: center;
+          color: #fff;
+          font-size: 30px;
+          &:last-child {
+            background: #1e88d2;
+          }
+        }
+      }
+    }
+    .no-order-buy {
+      border-bottom: 1px solid #e5e5e5; /*no*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: #fff;
+      padding: 40px 30px 30px 30px;
+      button {
+        margin: 0;
+        color: #fff;
+        background-color: #ed1c24;
+      }
+      p {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 26px;
+        color: #666666;
+      }
+    }
+  }
+}

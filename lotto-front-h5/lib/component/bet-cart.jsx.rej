@@ -1,0 +1,9 @@
+diff a/src/component/bet-cart.jsx b/src/component/bet-cart.jsx	(rejected hunks)
+@@ -9,6 +9,7 @@
+ import {PropTypes} from "prop-types";
+ import Dialog from '../services/message';
+ 
++
+ export default class BetCart extends Component {
+     constructor(args) {
+         super(args);

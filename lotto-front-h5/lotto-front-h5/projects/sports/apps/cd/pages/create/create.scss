@@ -1,0 +1,109 @@
+@import "../../../../../../lib/scss/base/base.scss";
+
+.page-label {
+  background: transparent;
+  padding: 15px 30px;
+  color: #959595;
+}
+.recommend {
+  position: relative;
+  padding-bottom: 36px;
+  background-color: #fff;
+  .textarea {
+    background: #fff;
+    width: 100%;
+    padding: 15px 30px;
+    height: 300px;
+    outline: 0;
+    font-size: 28px;
+    border: none;
+    margin: 0;
+    overflow: hidden;
+  }
+  .textNum {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    color: #999;
+  }
+}
+
+.visible {
+  background: #fff;
+  padding-left: 30px;
+  .item {
+    font-size: 28px;
+    padding: 25px 30px 25px 0;
+    border-bottom: solid 1px #f4f4f4; /* no */
+    &:last-child {
+      border: none;
+    }
+    &.selected {
+      color: #007bc8;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 28px;
+        width: 28px;
+        background: url("../../../../../../lib/img/greenchoice@2x.png")
+          no-repeat;
+        background-size: cover;
+        top: 50%;
+        margin-top: -14px;
+        right: 30px;
+      }
+    }
+  }
+}
+.commission {
+  background: #fff;
+  padding: 50px;
+  .rangeslider__fill {
+    background: #dd6068;
+    box-shadow: none;
+  }
+  .rangeslider {
+    box-shadow: none;
+    font-size: 26px;
+  }
+  .rangeslider__handle-tooltip {
+    font-size: 22px;
+    background: #dd6068;
+    width: 80px;
+    &:after {
+      border-top: solid 8px #dd6068;
+    }
+  }
+  .rangeslider__handle {
+    background: #dd6068;
+    height: 12px;
+    width: 15px;
+    box-shadow: none;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    &:after {
+      display: none;
+    }
+  }
+  .rangeslider__label-item {
+    font-size: 22px;
+  }
+}
+.submit {
+  padding: 30px;
+  .submit-button {
+    font-size: 38px;
+    color: #fff;
+    background: #3f87cc;
+    border: none;
+    padding: 20px 0;
+    border-radius: 6px; /* no */
+    width: 100%;
+  }
+  .submit-tip {
+    padding: 0 20px 50px;
+    color: #999;
+  }
+}

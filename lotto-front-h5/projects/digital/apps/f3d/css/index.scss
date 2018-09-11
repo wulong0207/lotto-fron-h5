@@ -1,0 +1,41 @@
+@import "~lib/scss/base/base";
+
+body,
+#app {
+  background: #fff !important;
+}
+.yc-f3d {
+  .f3d-content {
+    position: relative;
+    padding-bottom: 180px;
+  }
+  .number-panel-box {
+    //padding: 20px 0;
+    //padding-bottom: 20px;
+    border-bottom: solid 1px #f4f4f4; /* no */
+    &.last {
+      border: none;
+    }
+  }
+}
+
+.number-lottery-empty-tip {
+  font-size: 28px;
+  padding-top: 20px;
+  .balls {
+    text-align: center;
+    padding: 15px 0;
+    .ball {
+      display: inline-block;
+      font-weight: 700;
+      line-height: 50px;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin: 0 10px;
+      background: #ed1c24;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,1312 @@
+﻿/**
+ * Created by yubei
+ * date 2017-03-21
+ * desc: 竞彩足球
+ */
+
+@import "../base/base";
+@import "../base/mixins";
+@import '../component/header';
+@import '../component/footer';
+@import './optimiztion';
+.header {
+    .header-fix {
+        padding-right: 0;
+        .header-con {
+            .handle {
+                width: auto !important;
+            }
+        }
+    }
+}
+ // 头部
+.operation  {
+    display: flex;
+    width: auto;
+    position: relative;
+    padding-right: 20px;
+    > div {
+        @include size(46px);
+        background-size: cover;
+    }
+    .opermore {
+        @include size(46px);
+        display: inline-block;
+        position: relative;
+        background: url(../../img/public/header/icon_more@2x.png) no-repeat;
+        background-size: cover;
+    }
+    > span, a {
+        font-size: 32px;
+        color: #fff;
+    }
+    .filt {
+        background: url(../../img/public/header/icon_bolt@2x.png) no-repeat;
+        background-size: cover;
+        margin-right: 20px;
+    }
+    .oper-menu {
+        position: absolute;
+        top: 80px;
+        right: 10px;
+        width: 300px;
+        background: #fff;
+        border-radius: 10px;/*no*/
+        box-shadow: 0 0 30px #999;
+        @include z-index(tips);
+        .arrows {
+            position:  absolute;
+            top: -10px;
+            right: 20px;
+            @include arrows($rotate: -45, $size: 20px, $line-size: 20px, $color: #fff);
+        }
+        li {
+            img {
+                vertical-align: middle;
+                margin-right: 20px;
+                height: 46px;
+                width: 46px;
+            }
+            font-size: 28px;
+            line-height: 85px;
+            padding: 0 35px;
+            border-bottom: 2px solid #f4f4f4;/*no*/
+            &:last-of-type {
+                border-bottom: none;
+            }
+            a {
+                display: block;
+                color: #333;
+            }
+        }
+    }
+}
+
+
+.header-menu {
+    height: 73px;
+    .menu-fix {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        color: #d7d7d7;
+        font-size: 30px;
+        line-height: 73px;
+        background: #01af63;
+        // box-shadow: 0 3px 10px #999;
+        z-index: 102;
+        > div {
+            padding: 0 20px;
+            &.curr-tab {
+                color: #fff;
+                border-bottom: 4px solid #fff;/*no*/
+            }
+        }
+        .mix-tab {
+            display: flex;
+            align-items: center;
+            .arrows {
+                margin-left: 20px;
+                @include arrows($size: 15px, $line-size: 1px, $color: #fff);
+            }
+        }
+        .menu-small {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 100%;
+            box-shadow: 0 0 3px #999;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                // width: 100%;
+                li {
+                    background: #fff;
+                    font-size: 28px;
+                    color: #333;
+                    // flex: 1;
+                    width: 33.333333%;
+                    height: 88px;
+                    line-height: 88px;
+                    border-right: 1px solid #f4f4f4;/*no*/
+                    border-bottom: 1px solid #f4f4f4;/*no*/
+                }
+            }
+        }
+        // .filter-mask {
+        //     position: fixed;
+        //     width: 100%;
+        //     left:0;
+        //     z-index: -1;
+        //     height: 100%;
+        //     background: rgba(0, 0, 0, .6);
+        // }
+    }
+}
+
+// 主体框架
+.mainPage {
+    .main {
+        padding-bottom: 100px;
+        .page-status {
+            padding: 100px;
+            text-align: center;
+            color: #999;
+            font-size: 30px;
+        }
+        .data-list {
+            margin-bottom: 10px;
+            &:first-child {
+                .nav-date {
+                    box-shadow: 0 2px 8px rgba(#000, .15);
+                }
+            }
+            .nav-date {
+                background: #f4f4f4;
+                box-shadow: 0 2px 8px rgba(#000, .15), 0 -2px 4px rgba(#000, .1);
+                border-bottom: 1px solid #fafafa;/*no*/
+                height: 55px;
+                line-height: 55px;
+                color: #333;
+                text-align: center;
+                font-size: 20px;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 10px;
+                .date {
+                    display: flex;
+                    justify-content: space-around;
+                    flex: 9.5;
+                    span {
+                        flex: 1;
+                        &:first-of-type {
+                            flex: 2;
+                            text-align: left;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+                .toggle {
+                    flex: .5;
+                    .arrows {
+                        @include arrows($rotate: -45, $size: 12px, $line-size: 1px);
+                    }
+                }
+                &.open {
+                    .arrows {
+                        @include arrows($size: 12px, $line-size: 1px);
+                    }
+                }
+            }
+
+            .loading {
+                font-size: 30px;
+                text-align: center;
+                padding: 100px 0;
+                color: #999;
+            }
+
+            .jjc-con {
+                margin: 0 0 10px;
+                color: #333;
+                box-shadow: 0 3px 8px rgba(#000, .15);
+                padding-top: 10px;
+                @at-root .jjc-list {
+                    display: flex;
+                    justify-content: space-between;
+                    // border-bottom: 1px solid #f4f4f4;/*no*/
+                    .match {
+                        //width: 250px;
+                        //height: 162px;
+                        background: #fafafa;
+                        padding: 0 30px;
+                        border: solid #f4f4f4;
+                        border-width: 1px 0 0 1px;/*no*/
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        position: relative;
+                        p {
+                            align-items: center;
+                        }
+                        sub{
+                            font-size: 14px;
+                            color: #999;
+                            margin-left: 10px;
+                            vertical-align: bottom;
+                            line-height: 50px;
+                        }
+                        .alter-ico, .single-icon {
+                            @include size(20px);
+                            background: url(../../img/jcz/icon_detail@2x.png) no-repeat;
+                            background-size: cover;
+                        }
+
+                        .single-icon {
+                            @include size(36px);
+                            background: url(../../img/jcz/dan@2x.png) no-repeat;
+                            background-size: cover;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+
+                    }
+                    .match-detail {
+                        background: #fff;
+                        flex: 2;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        > div {
+                            display: flex;
+                            // height: 100%; // safari bug
+                            .detail-grid {
+                                border: 1px solid #f4f4f4;
+                                border-width: 1px 0 0 1px; /* no */
+                                flex: 1;
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                height: 142px;
+                                sup{
+                                    position: absolute;
+                                    font-size: 14px;
+                                    top: 20px;
+                                }
+                                .sup-l {
+                                    left: 12px;
+                                }
+                                .sup-r {
+                                    right: 12px;
+                                }
+                                sub {
+                                    margin-left: 5px;
+                                    line-height: 40px;
+                                    vertical-align: bottom;
+                                }
+                            }
+                            .grid-col2 {
+                                flex: 2;
+                            }
+                            .grid-col3 {
+                                flex: 3;
+                            }
+                        }
+                        .grid-nosell {
+                            background: #e6e6e6;
+                            color: #999;
+                            justify-content: center;
+                        }
+                    }
+                    .two-row-detail {
+                        >div {
+                            .detail-grid {
+                                height: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        // 混合过关
+        .mix, .single, .allGoals {
+            .data-list{
+                .match {
+                    line-height: 50px;
+                    h4 {
+                        color: #999;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    p:last-of-type {
+                        font-size: 24px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .sup-l {
+                        font-size: 14px;
+                        color: #999;
+                        margin-left: 10px;
+                        vertical-align: bottom;
+                        line-height: 50px;
+                    }
+                    .team-sel{
+                        font-size: 14px;
+                        color: #999;
+                        padding-top: 5px;
+                    }
+                }
+                .match-detail {
+                    line-height: 80px;
+                    .detail-grid {
+                        .sup-l {
+                            color: #e60012;
+                        }
+                        .sub-sub {
+                            color: #019d59;
+                        }
+                    }
+                }
+                .more-text {
+                    color: #999;
+                    font-size: 18px;
+                    em {
+                        color: #e60012;
+                    }
+                }
+            }
+        }
+
+        // 2选1 | 单场致胜
+        .alternative, .singleWin {
+            .data-list {
+                .match {
+                    line-height: 40px;
+                    padding: 10px 30px;
+                    h4 {
+                        color: #333;
+                        font-weight: normal;
+                    }
+                    p {
+                        color: #999;
+                        &:last-of-type {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+                .match-detail {
+                    line-height: 40px;
+                    .detail-grid {
+                        p:last-of-type {
+                            color: #999;
+                            span:last-of-type {
+                                color: #eb6100;
+                            }
+                        }
+                    }
+                    sup {
+                        color: #999 !important;
+                    }
+                }
+            }
+        }
+
+        // 单场致胜
+        .singleWin {
+            .data-list {
+                .match-detail {
+                    line-height: 40px;
+
+                    .detail-grid {
+                        &:nth-of-type(2) {
+                            flex: .5;
+                        }
+                        .draw {
+                            color: #999;
+                        }
+                        .sub-add, .sub-sub {
+                            font-size: 24px;
+                            color: #ec6941;
+                            vertical-align: text-bottom;
+                        }
+                        .sub-sub {
+                            color: #01af63;
+                        }
+                    }
+                }
+             }
+        }
+
+        // 半全场
+        .semi {
+            .data-list {
+                .match {
+                    line-height: 30px;
+                    h4 {
+                        color: #999;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    sub {
+                        line-height: 40px;
+                    }
+                    p:last-of-type {
+                        font-size: 24px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+                .match-detail {
+                    line-height: 80px;
+                    .detail-grid{
+                        p {
+                            color: #999;
+                            span:last-of-type {
+                                margin-left: 10px;
+                                color: #eb6100;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // 总进球数
+        .allGoals {
+            .data-list {
+                .match-detail {
+                    line-height: normal;
+                    h5 {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #666;
+                    }
+                    p {
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        // 全场比分
+        .allScore {
+            .data-list {
+                .nav-date {
+                    .date {
+                        flex: 9.3;
+                        span:last-of-type {
+                            flex: 2;
+                            text-align: right;
+                        }
+                    }
+                    .toggle {
+                        flex: .7;
+                        .arrows:after {
+                            margin-left: 15px;
+                        }
+                    }
+                }
+
+                .jjc-con {
+                    .score-title{
+                        display: flex;
+                        justify-content: space-between;
+                        color: #999;
+                        font-size: 18px;
+                        line-height: 85px;
+                        text-align: center;
+                        > div {
+                            flex: 1;
+                            &:last-of-type {
+                                display: flex;
+                                flex-direction: row-reverse;
+                                align-items: center;
+                                .score-icon {
+                                    @include size(20px);
+                                    background: url(../../img/jcz/icon_detail@2x.png) no-repeat;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                        h3 {
+                            flex: 3;
+                            color: #333;
+                            font-size: 28px;
+                            font-weight: normal;
+                            sub, span {
+                                font-size: 20px;
+                                vertical-align: middle;
+                                bottom: 0;
+                            }
+                            sub {
+                                color: #999;
+                            }
+                            span {
+                                color: #d7d7d7;
+                            }
+                        }
+                    }
+                    .jjc-list {
+                        .match {
+                            display: flex;
+                            flex-direction: column;
+                            flex: none;
+                            justify-content: space-between;
+                            padding: 0;
+                            width: 50px;
+                            background: #fff;
+                            span {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-bottom: 1px solid #f4f4f4;/*no*/
+                                border-right: none;
+                                flex: 1;
+                                &:first-of-type, &:last-of-type {
+                                    flex: 2;
+                                }
+                            }
+                        }
+                        .match-detail {
+                            line-height: normal;
+                            .detail-grid {
+                                padding: 15px 0;
+                                h5 {
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                    color: #666;
+                                }
+                                p {
+                                    color: #333;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .match-score {
+                background: #fff;
+                padding: 0 15px 15px;
+                margin-bottom: 15px;
+            }
+        }
+
+        // 奖金优化
+        .bonusOpti {
+            .sel-itme {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 30px;
+                background: #f4f4f4;
+                line-height: 55px;
+                align-items: center;
+                color: #333;
+                .icon-question {
+                    @include size(24px);
+                    background: url(../../img/public/bonuns_help@2x.png) no-repeat;
+                    background-size: cover;
+                }
+            }
+            .optiList {
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 30px;
+                    background: #fff;
+                    border-bottom: 1px solid #f4f4f4;/*no*/
+                    line-height: 90px;
+                    &:first-of-type {
+                        h3 {
+                            width: 30%;
+                        }
+                    }
+                    &.nonsupport {
+                        opacity: .3;
+                        background: #000;
+                        color: #999;
+                    }
+                    h3, h4 {
+                        width: 22%;
+                        font-weight: normal;
+                        & ~ span:first-of-type {
+                            width: 80%;
+                        }
+                    }
+                    h3 {
+                        font-size: 28px;
+                        & ~ span:first-of-type {
+                            color: #666;
+                        }
+                    }
+                    h4 {
+                        color: #999;
+                        & ~ span:first-of-type {
+                            color: #ed1c24;
+                        }
+                    }
+                    > span:last-child {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 15%;
+                        text-align: right;
+                    }
+                    .icon-right {
+                        @include size(40px);
+                        background: url(../../img/public/icon_state_two@2x.png) no-repeat;
+                        background-size: cover;
+                    }
+                    .arrows {
+                        @include size(20px);
+                        @include arrows($rotate: 45,  $size: 10px, $line-size: 3px, $color: #ccc);
+                    }
+                }
+            }
+        }
+
+        // 奖金优化明细
+        .optiDetail {
+            text-align: center;
+            .opti-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                height: 55px;
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #f4f4f4;/*no*/
+                }
+            }
+            .mode {
+                flex: 1;
+            }
+            .group {
+                flex: 2;
+            }
+            .mult {
+                flex: 1.7;
+            }
+            .bonus {
+                flex: 1.3;
+            }
+            section {
+                background: #fff;
+                .opti-item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    > div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #f4f4f4;/*no*/
+                    }
+                    .mode {
+                        flex: 1;
+                    }
+                    .group {
+                        flex: 2;
+                        flex-direction: column;
+                        font-size: 20px;
+                        padding: 18px;
+                        > div {
+                            display: flex;
+                            flex-direction: row;
+                            line-height: 40px;
+                            &:first-of-type {
+                                margin-bottom: 18px;
+                            }
+                            span:first-of-type {
+                                width: 120px;
+                                border: 1px solid #f4f4f4;/*no*/
+                            }
+                            span:last-of-type {
+                                width: 130px;
+                                color: #fff;
+                                background: #8fc31f;
+                            }
+                        }
+                    }
+                    .mult {
+                        flex: 1.7;
+                    }
+                    .bonus {
+                        flex: 1.3;
+                        color: #ed1c24;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popPage {
+    background: #1a2632;
+    .main {
+        overflow-x: auto;
+        padding-bottom: 110px;
+    }
+    .popHeader {
+        height: 373px;
+        .popHeader-fix {
+            position: fixed;
+            width: 100%;
+            background: #1a2632;
+            @include z-index(header);
+            .menu {
+                display: flex;
+                align-items: center;
+                padding: 7px 0;
+                background: #01af63;
+                height: 70px;
+                margin: 30px 0;
+                color: #fff;
+                .back {
+                        width: 105px;
+                        border-right: 2px solid #006237;/*no*/
+                        text-align: center;
+                }
+                .menu-tips {
+                        margin: 0 20px;
+                        color: #333;
+                }
+            }
+            .comp {
+                display: flex;
+                align-items: stretch;
+                background: #01af63;
+                text-align: center;
+                height: 170px;
+                > div {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .comp-plan {
+                    background: #019d59;
+                    font-size: 20px;
+                    line-height: 46px;
+                    padding: 0 10px;
+                    li {
+                        position: relative;
+                        @include arrows();
+                        border-bottom: 1px solid #006237;/*no*/
+                        &:after {
+                            position: absolute;
+                            left: 50%;
+                            bottom: -8px;
+                            margin-left: -6px;
+                            background: #019d59;
+                        }
+                        &:last-of-type {
+                            border-bottom: none;
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .comp-vs {
+                    flex: 1.7;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #fff;
+                    sub {
+                        font-size: 18px;
+                        color: #006237;
+                        line-height: 35px;
+                        vertical-align: text-bottom;
+                    }
+                    .comp-img {
+                        span {
+                            display: inline-block;
+                            background: #fff;
+                            border-radius: 50%;
+                            @include size(68px);
+                            box-sizing: content-box;
+                            padding: 10px;
+                            img {
+                                @include size(68px);
+                            }
+                        }
+
+                    }
+                }
+                .comp-date {
+                    font-size: 20px;
+                    line-height: 35px;
+                    background: #019d59;
+
+                }
+            }
+            .tab {
+                display: flex;
+                justify-content: space-around;
+                height: 72px;
+                margin-top: 1px;
+                background: #01af63;
+                font-size: 30px;
+                color: #d7d7d7;
+                line-height: 72px;
+                > span {
+                    padding: 0 20px;
+                }
+                .curr {
+                    color: #fff;
+                    border-bottom: 3px solid #fff;/*no*/
+                }
+            }
+        }
+    }
+    .popFooter {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background: #ff7a0d;
+        text-align: center;
+        border: 1px solid #f4f4f4;/*no*/
+        .del {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 130px;
+            background: #fff;
+            font-size: 18px;
+            color: #999;
+            line-height: 25px;
+            img {
+                @include size(46px);
+            }
+        }
+        .num-basket {
+            flex: 1;
+            border-left: 1px solid #f4f4f4;/*no*/
+            font-size: 34px;
+            color: #fff;
+            line-height: 100px;
+            sup {
+                display: inline-block;
+                @include size(32px);
+                font-size: 20px;
+                border-radius: 50%;
+                background: #fff;
+                color: #ff7a0d;
+                line-height: 32px;
+                text-align: center;
+                vertical-align: text-top;
+            }
+        }
+    }
+
+    .main {
+        .selBetTab {
+            padding-top: 30px;
+            .match-header {
+                margin-bottom: 30px;
+                background: #01af63;
+                padding: 10px;
+                display: flex;
+                .match-date {
+                    flex: 1;
+                    padding: 10px 0 0 10px;
+                    h4 {
+                        font-size: 24px;
+                        display: inline;
+                        font-weight: normal;
+                        padding-right: 20px;
+                    }
+                    time {
+                        color: #fff;
+                        padding-left: 20px;
+                    }
+                }
+                .back-btn {
+                    display: inline-block;
+                    padding: 10px 30px;
+                    border-right: solid 1px #141E28;/*no*/
+                    vertical-align: middle;
+                }
+                .detail-back {
+                    height: 32px;
+                    height: 32px;
+                }
+            }
+            .match-summary {
+                background: #01af63;
+                display: flex;
+                .match-teams {
+                    flex: 2;
+                    display: flex;
+                    padding: 30px 0;
+                    .match-team {
+                        flex: 1;
+                        justify-content: center;
+                        text-align: center;
+                        color: #fff;
+                        img {
+                            background: #fff;
+                            border-radius: 50%;
+                            height: 82px;
+                            width: 82px;
+                            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .3);
+                        }
+                        p {
+                            text-align: center;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+                .match-schedule {
+                    flex: 1;
+                    background: #019d59;
+                }
+                .match-status {
+                    flex: 1;
+                    background: #019d59;
+                    padding: 45px 0;
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+            .detail-grid {
+                flex: 1;
+                line-height: 80px;
+                height: 80px;
+                border-right: 1px solid #1a2632;/*no*/
+                border-bottom: 1px solid #1a2632;/*no*/
+                justify-content: center;
+                &.grid-sel {
+                    background: #283039;
+                    color: #EB6100 !important;
+                    * {
+                        color: #EB6100 !important;
+                    }
+                }
+                span:last-of-type, p.goal-sp-value, p.score-sp-value  {
+                    color: #fff;
+                    margin-left: 18px;
+                }
+                h5, p {
+                    display: inline;
+                    font-size: 24px;
+                }
+                h5 {
+                    font-weight: normal;
+                }
+            }
+            .table-row {
+                display: flex;
+                justify-content: center;
+            }
+            .score-table {
+                display: flex;
+                justify-content: center;
+                .score-table-row {
+                    flex: 1;
+                    .grid-col2, .grid-col3 {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        text-align: center;
+                        p {
+                            display: block;
+                            line-height: 1;
+                            margin: 0;
+                        }
+                        height: 160px;
+                    }
+                    .grid-col3 {
+                        height: 240px;
+                    }
+                }
+            }
+            .bet-tab {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 55px;
+                padding: 0 40px;
+                font-size: 20px;
+                color: #fff;
+                background: #141e28;
+                > div {
+                    &:first-of-type {
+                        width: 300px;
+                        span {
+                            margin-left: 20px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        flex: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    &:last-of-type {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 60px;
+                        .arrows {
+                            @include arrows($size: 18px, $color: #fff, $line-size: 3px);
+                            &:after{
+                                margin-top: -10px;
+                            }
+                        }
+                    }
+                }
+                .single-icon {
+                    @include size(36px);
+                    background: url(../../img/jcz/dan@2x.png) no-repeat;
+                    background-size: cover;
+                }
+            }
+            // 未开售
+            .not-sale {
+                color: #999;
+                line-height: 80px;
+                text-align: center;
+                background: #374451;
+            }
+
+            // 投注详细
+            .bet-desc {
+                background: #374451;
+                color: #999;
+                text-align: center;
+                .desc-list {
+                    display: flex;
+                    line-height: 80px;
+                    > div {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-bottom: 1px solid #1a2632;/*no*/
+                        &:not(:last-of-type()) {
+                            border-right: 1px solid #1a2632;/*no*/
+                        }
+                        &:nth-of-type(2) {
+                            flex: .7;
+                        }
+                        > span {
+                           &:last-of-type {
+                               color: #fff;
+                               margin-left: 18px;
+                           }
+                        }
+                    }
+                    // 选择
+                    .curr {
+                        background: #283039;
+                        & > span {
+                            color: #eb6100!important;
+                        }
+                    }
+                }
+
+                // range
+                .range {
+                    line-height: 40px;
+                    .range-sel {
+                        flex: 7;
+                        border-right: 1px solid #1a2632;/*no*/
+                        > div {
+                            padding: 20px 0;
+                            &:not(:last-of-type) {
+                                border-bottom: 1px solid #1a2632;/*no*/
+                            }
+                        }
+                        .range-name {
+                            color: #d5d5d5;
+                            line-height: 50px;
+                        }
+                        .range-area {
+                            padding: 0 30px;
+                            .range-input {
+                                //margin-top: 30px;
+                            }
+                            .range-scale {
+                                > p {
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                                .scale-text {
+                                    margin-top: -10px;
+                                    padding: 0 10px;
+                                    span {
+                                        height: 6px;
+                                        border-right: 1px solid #019d59;/*no*/
+                                    }
+                                }
+                                .scale-num {
+                                    padding-left: 5px;
+                                    span {
+                                        font-size: 20px;
+                                        color: #aab1b8;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .range-score {
+                        flex: 3;
+                        display: flex;
+                        flex-direction: column;
+                        span:last-of-type {
+                            color: #fff;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+            .score-table {
+                table {
+                    border-collapse: collapse;
+                    tr {
+                        float: left;
+                        width: 20%;
+                    }
+                    td {
+                        display: block;
+                        border-right: solid 1px #1a2632;/*no*/
+                        border-bottom: solid 1px #1a2632;/*no*/
+                        border-top: none;
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.score-slider {
+    display: flex;
+    .sliders {
+        flex: 1;
+        border-right: 1px solid #141e28;/*no*/
+        .slider {
+            padding: 30px 80px 60px;
+            &.h-slider {
+                border-bottom: 1px solid #141e28;
+            }
+            h4 {
+                text-align: center;
+                color: #fff;
+                padding-bottom: 20px;
+            }
+            .rc-slider-rail, .rc-slider-track {
+                height: 8px;
+            }
+            .rc-slider-rail {
+                background: #4f5f6e;
+                border: 1px solid #141e28;/*no*/
+            }
+            .rc-slider-dot {
+                display: none;
+            }
+            .rc-slider-mark-text {
+                color: #fff;
+                font-size: 24px;
+            }
+            .rc-slider-handle {
+                height: 20px;
+                width: 15px;
+                background: #01af63;
+                border: 1px solid #141e28;/*no*/
+                border-radius: 0 0 5px 5px;/*no*/
+            }
+            .rc-slider-track {
+                background: #01af63;
+            }
+        }
+    }
+    .score-box {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        h4 {
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+}
+
+.saleout-content {
+    line-height: 60px;
+    p {
+        a {
+            margin-right: 10px;
+        }
+    }
+}
+
+.football-sale-countdown-tip {
+    padding: 20px 0;
+    text-align: center;
+    time {
+        color: red;
+        padding-left: 10px;
+    }
+}
+
+.football-empty-component {
+    padding: 200px 0;
+    text-align: center;
+    color: #999;
+    img {
+        width: 200px;
+        height: 140px;
+    }
+    .message {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+}
+
+/* 奖金详细 */
+.profit-detail {
+    padding: 30px;
+    .profit-detail-modal-header {
+        h3 {
+            font-size: 32px;
+            font-weight: normal;
+            padding-right: 10px;
+            display: inline-block;
+        }
+    }
+    .profit-detail-table {
+        margin-top: 30px;
+        width: 100%;
+        td, th {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;/*no*/
+        }
+    }
+    .profit-detail-container {
+        max-height: 500px;
+        overflow: auto;
+    }
+}
+
+.score-table {
+    table {
+        width: 100%;
+        td {
+            border: solid 1px #f4f4f4;/*no*/
+        }
+    }
+}
+
+.pass-way-modal {
+    .modal-close {
+        display: none;
+    }
+}
+
+#mode_filter_mask {
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 101;
+}

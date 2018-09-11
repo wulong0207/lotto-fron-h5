@@ -1,0 +1,68 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-03-30 20:15:06
+ * @Desc: 箭头函数
+ */
+
+
+/*
+@example scss - Usage
+.element {
+    @include arrows;
+}
+
+@example css - CSS Output
+.element::after {
+    content: '';
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    border-right: .2rem solid #666;
+    border-top: .2rem solid #666;
+    transform: rotate(45deg);
+}
+*/
+
+
+@mixin arrows($rotate: 135, $size: 15px, $line-size: 1px, $color: #666) {
+    text-align: center;
+    &:after {
+        content: '';
+        display: inline-block;
+        width: $size;
+        height: $size;
+        border-right: $line-size solid $color;/*no*/
+        border-top: $line-size solid $color;/*no*/
+
+        transform: rotate($rotate + deg); /*箭头方向可以自由切换角度*/
+        transition: transform .3s ease 0s;
+    }
+}
+
+// 向上箭头
+.arrows-t {
+	&:after {
+		transform: rotate(-45deg) !important;
+	}
+}
+
+// 向右箭头
+.arrows-r {
+	&:after {
+		transform: rotate(45deg) !important;
+	}
+}
+
+// 向下箭头
+.arrows-d {
+	&:after {
+		transform: rotate(135deg) !important;
+	}
+}
+
+// 向左箭头
+.arrows-l {
+	&:after {
+		transform: rotate(225deg) !important;
+	}
+}

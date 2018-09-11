@@ -1,0 +1,77 @@
+.nine-bet {
+  .plan-col {
+    display: flex;
+  }
+  .plan-list {
+    background: #fff;
+    .order-list {
+      table {
+        display: block;
+        width: 100%;
+        tbody {
+          display: block;
+          tr {
+            display: flex;
+            border-bottom: 1px solid #e5e5ee; /*no*/
+            td {
+              border-right: 1px solid #e5e5e5; /*no*/
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 10px 0;
+              &:last-of-type {
+                border-right: none;
+              }
+            }
+            .dan {
+              img {
+                display: block;
+                width: 30px;
+                height: 30px;
+                margin: 0 auto;
+              }
+            }
+            .orange-red {
+              color: #ed1b24;
+            }
+          }
+        }
+      }
+      .home-game {
+        display: flex;
+        flex-direction: column;
+        span {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .game-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span {
+          display: inline-block;
+          i {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .col10 {
+    width: 10%;
+  }
+  .col20 {
+    width: 20%;
+  }
+  .col25 {
+    width: 25% !important;
+  }
+  em {
+    color: #333333 !important;
+  }
+  i {
+    color: #333333 !important;
+  }
+}

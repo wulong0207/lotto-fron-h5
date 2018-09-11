@@ -1,0 +1,54 @@
+/**
+ * Created by YLD on 2017/12/05.
+ */
+ @import "../../../lib/scss/base/base";
+
+ .box-menu{
+    .title{
+        font-size: 24px;
+        border-bottom: 1px solid #ececec;/*no*/
+        padding: 16px 30px;
+        color: #686b6a;
+        position: relative;
+
+        span{
+            margin-right: 20px;
+            &.active{
+                color: #01af63;
+                button{
+                    color: #01af63;
+                }
+            }
+        }
+
+        .arrows:after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-right: 1px solid #999;/*no*/
+            border-top: 1px solid #999;/*no*/
+            transform: rotate(135deg);
+            transition: transform .3s ease 0s;
+            margin-bottom: 5px;
+            position: absolute;
+            right: 30px;
+            top: 16px;
+        }
+
+        &.noshow{
+            .arrows:after{
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                transition: -webkit-transform .3s ease 0s;
+                transition: transform .3s ease 0s;
+                transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
+                top: 30px;
+            }
+        }
+    }
+
+    .cd-area{
+        border-bottom: 1px solid #ececec;/*no*/
+    }
+ }

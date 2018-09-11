@@ -1,0 +1,47 @@
+// @import '../base/base.scss';
+@import "./common.scss";
+
+.register-bank {
+  .section-title {
+    font-size: 28px;
+    color: #999999;
+    padding: 14px 30px;
+    margin-top: 26px;
+    background: #f4f4f4;
+  }
+  .sf-section {
+    .sf-item {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-bottom: 1px solid #e6e6e6; /*no*/
+      span {
+        font-size: 32px;
+        color: #333333;
+      }
+      input {
+        border: 0;
+        flex: 1;
+        font-size: 28px;
+        margin-left: 30px;
+        color: #999999;
+        outline: 0 none;
+        height: 68px;
+      }
+      .icon-delete {
+      }
+    }
+    .yzm-section {
+    }
+
+    .se-delete {
+    }
+  }
+  button {
+  }
+  .btn-blue {
+  }
+  .p-desc {
+  }
+}

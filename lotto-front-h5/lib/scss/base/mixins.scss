@@ -1,0 +1,42 @@
+/*
+ * @Author: yubei 
+ * @Date: 2017-12-02 15:17:55 
+ * Desc: mixins
+ */
+
+// 引用
+@import "library/_functions";
+
+@import "library/_arrows";
+// @import "library/_box-sizing";
+@import "library/_button";
+@import "library/_close";
+@import "library/_clearfix";
+@import "library/_ellipsis";
+@import "library/_extends";
+@import "library/_flexible";
+@import "library/_hide-text";
+@import "library/_media-queries";
+@import "library/_mixin";
+@import "library/_overflow-wrap";
+@import "library/_prefixer";
+@import "library/_select";
+@import "library/_z-index";
+
+// z-index map对象
+$z-index: (
+  header: 100,
+  footer: 100,
+  tabTips: 102,
+  tips: 1000,
+  alert: 1005,
+  float: 1001,
+  mask: 1000,
+  maskContent: 1001,
+  keyboard: 999,
+  toast: 100000,
+  share: 10000,
+  entry: 9999999,
+  navigator: 103,
+  loading: 9999
+);

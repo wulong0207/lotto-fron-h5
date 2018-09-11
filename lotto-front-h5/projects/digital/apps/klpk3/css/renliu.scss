@@ -1,0 +1,27 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-10-12 12:00:21
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-10-12 12:15:19
+*/
+.yc-11x5 {
+	.renliu-page {
+		.number-panel-box {
+			position: relative;
+
+			.number-random-number-component {
+				width: 90px;
+				position: absolute;
+				bottom:80px;
+				right:50px;
+
+				.random-number-box {
+					.number-input {
+						display: none;
+					}
+				}
+			}
+		}
+		
+	}	
+}

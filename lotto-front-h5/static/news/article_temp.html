@@ -1,0 +1,261 @@
+<html lang="en" style="overflow:hidden">
+<head>
+	<meta charset="UTF-8">
+	<title th:text="${articleTitle}"></title>
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+</head>
+<style>
+	
+	html{
+		overflow:hidden;
+		line-height: 28px;
+		font-family: tahoma, arial, "microsoft yahei", \5b8b\4f53, sans-serif;
+	}
+	#zx-detail {
+	  	background: #fff; 
+	  	margin: 0;
+	}
+  	#zx-detail .my-title {
+    	font-size: 26px;
+    	color: #333; 
+    }
+  	#zx-detail .sub-title {
+  		color: #999;
+    	margin-top: 20px;
+    	margin-bottom: 30px; 
+    }
+  	#zx-detail .my-footer {
+    	margin-top: 40px; 
+    }
+    #zx-detail .my-footer .div-1 a {
+      	margin-right: 15px; 
+      	text-decoration: none;
+    }
+    #zx-detail .my-footer .div-1 a:hover{
+    	color: #1e88d2;
+    }
+    #zx-detail .my-footer .div-2 {
+      margin-top: 20px;
+      margin-bottom: 10px; 
+  	}
+  	#zx-detail .recommend-reading {
+    	margin-top: 45px; 
+	}
+    #zx-detail .recommend-reading .div-1 {
+      	padding-bottom: 10px;
+      	border-bottom: solid 1px #e5e5e5; 
+    }
+    #zx-detail .recommend-reading .div-2 {
+     	margin-top: 30px; 
+  	}
+    #zx-detail .recommend-reading .div-2 a {
+        display: inline-block;
+        width: 370px;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 15px;
+        background: url(../../img/jczx/009.png) no-repeat left center; 
+    }
+    #zx-detail .zx-fs14{
+		font-size: 14px
+	}
+	#zx-detail .zx-fs12{
+		font-size: 12px
+	}
+	#zx-detail .zx-333{
+		color: #333;
+	}
+    #zx-detail .zx-666{
+		color: #666;
+	}
+	#zx-detail .zx-999{
+		color: #999;
+	}
+    .article_footer{display: none;}
+	.my-footer{display: block;}
+	#zx-detail .sub-titlewap{display:none;}
+	
+</style>
+<script type="text/javascript">
+	function getQueryString(key){
+	    var reg = new RegExp("(^|&)"+key+"=([^&]*)(&|$)");
+	    var result = window.location.search.substr(1).match(reg);
+	    return result?decodeURIComponent(result[2]):null;
+	}
+	var burl = getQueryString('domain')+'/';
+	goPAGE();
+	function goPAGE() {
+		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));			
+		loadStyles(burl+"/static/show.css");
+	    }else{
+			return false;
+		}
+	}	
+    
+	function loadStyles(url) {
+		var link = document.createElement("link");
+		link.type = "text/css";
+		link.rel = "stylesheet";
+		link.href = url;
+		document.getElementsByTagName("head")[0].appendChild(link);
+	}
+	
+   
+	
+</script>
+<body >
+<iframe id="myifr" style="display:none" src=""></iframe>
+
+<div id="zx-detail">
+	<div class="my-title" th:text="${articleTitle}"></div>
+	<div class="sub-title">
+	    <span th:text="${releaseTime}"></span>     已浏览<span id="click"></span>次
+	</div>
+	<div class="sub-titlewap">
+	    <span th:text="${releaseTime}"></span>     已浏览<span id="click"></span>次
+	</div>
+	<!-- 这里存放html富文本 -->
+	<div class="my-html" th:utext="${articleContent}">
+		
+	</div>
+	<div class="my-footer">
+	   	<div class="zx-fs14 zx-999 div-1">
+	    	<span>文章关键词：</span>
+	    	<!-- 文章关键词点击不让跳 -->
+	    	<a th:each="tag : ${#strings.arraySplit(articleLabel, ',')} " th:text="${tag}" class="zx-333"></a>
+	    </div>
+	    <div class="zx-fs12 zx-999 div-2">
+	    	<span th:if="${articleFrom == ''}">© 此文版权归2N彩票所有，非商业性转载请注明来源2N彩票及原文链接，商业转载请先联系我们。</span>
+	    </div>
+	    <div class="zx-fs12 zx-999 div-3">
+	    	<span th:if="${articleFrom != ''}">来源：<a th:text="${articleFrom}" th:href="${fromUrl}" target="_blank"></a></span>  作者：<span th:text="${createBy}"></span>
+	    </div>
+	</div>
+	<section class="article_footer">
+		<span class="artical_browse"><em class="browse"></em><em id="clickMobile"></em>次</span>
+		<section class="article_relevant">
+				<span class="artical_remarks artical_key" id="tagSpan">文章关键词：<a th:each="tag : ${#strings.arraySplit(articleLabel, ',')} " th:text="${tag}"></a></span>
+				<span class="artical_remarks zx_copyright" th:if="${articleFrom == ''}">© 此文版权归2N彩票所有；非商业性转载请注明来源2N彩票及原文链接；商业转载请先联系我们</span>
+				<span class="artical_remarks"><i th:if="${articleFrom != ''}">来源：<a class="laiyuan" th:text="${articleFrom}" th:href="${fromUrl}" target="_blank"></a></i> <i class="author" th:text="' 作者：'+${createBy}"></i></span>
+		</section>
+    </section>
+
+	<input type="hidden" id="articleId" th:value="${articleId}">
+</div>
+
+
+<script type="text/javascript" src="//tajs.qq.com/stats?sId=63335482" charset="UTF-8"></script>
+<script type="text/javascript">
+	window.onload = function() {
+            
+		var doc = document
+		var height = calcPageHeight(doc)
+		var myifr = doc.getElementById('myifr')
+		if (myifr) {
+			myifr.src = burl+'transitpage.html?height=' + height
+		}
+		function calcPageHeight(doc) {
+			/*
+			var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight)
+			var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight)
+			var height  = Math.max(cHeight, sHeight)
+			*/
+			var height  = document.getElementById('zx-detail').offsetHeight;
+			return height
+        }
+
+    	var articleId = document.getElementById('articleId').value;
+        ajaxCall("post", getUrl()+"/api/lotto/pc/news/click?articleId="+ articleId, function(response) {
+    		var json = JSON.parse(response);
+    		if (json.errorCode == 10001) {
+    			var clickPc = document.getElementById('click');
+    			var clickMobile = document.getElementById('clickMobile');
+    			if(clickPc)
+    				clickPc.innerText = json.data;
+    			if(clickMobile)
+    				clickMobile.innerText = json.data;
+       
+    		}
+    	});
+
+    
+	};
+
+
+
+	// 第一个关键字加蓝色样式
+	var firstTag = document.getElementById('tagSpan').childNodes[1];
+	firstTag.className = "key_blue";
+    
+	function ajaxCall(type, url, callback, data) {
+		var xhr = (function() {
+			try {
+				return new XMLHttpRequest();
+			} catch (e) {
+			}
+			
+			try {
+				return new ActiveXObject("Msxml2.XMLHTTP.6.0");
+			} catch (e) {
+			}
+	
+			try {
+				return new ActiveXObject("Msxml2.XMLHTTP.3.0");
+			} catch (e) {
+			}
+	
+			try {
+				return new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e) {
+			}
+	
+			throw new Error("Ajax not supported in this browser.");
+		}()), STATE_LOADED = 4, STATUS_OK = 200;
+	
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState !== STATE_LOADED) {
+				return;
+			}
+	
+			if (xhr.status === STATUS_OK) {
+				callback(xhr.responseText);
+			}
+		};
+	
+		xhr.open(type.toUpperCase(), url);
+		xhr.send(data);
+	}
+	
+	function getUrl() {
+		// 获取当前网址
+	    var curWwwPath = window.document.location.href;
+	    // 获取主机地址之后的目录
+	    var pathName = window.document.location.pathname;
+	    var pos = curWwwPath.indexOf(pathName);
+	    // 获取主机地址
+	    var localhostPath = curWwwPath.substring(0, pos);
+	    // 获取带"/"的项目名,如:/myapp,这里会获取为空"_article"
+	    //var projectName = pathName.substring(0, pathName.substr(1).indexOf('/') + 1);
+		return localhostPath;
+	}
+	
+    function calcPageHeight(doc) {
+		var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight)
+		var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight)
+		var height  = Math.max(cHeight, sHeight)
+		return height
+	}
+
+	// 百度统计
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?2c414fb6a9e0dfd43624cbdf212cca0b";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+</body>
+</html>

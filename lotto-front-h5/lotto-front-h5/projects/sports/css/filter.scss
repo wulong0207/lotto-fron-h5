@@ -1,0 +1,118 @@
+/**
+ * Created by YLD
+ * date 2017-08-22
+ * desc: 竞彩篮球
+ */
+ @import "../../../lib/scss/base/base";
+
+  .filter-content {
+      .filter-title {
+          padding: 20px 30px;
+          border-bottom: 1px solid #e6e6e6;/*no*/
+          font-size: 30px;
+          font-weight: normal;
+      }
+      .filter-area{
+          height: 400px;
+          height: 60vh;
+          overflow: auto;
+      }
+      .match-dates {
+          border-bottom: 1px solid #e6e6e6;/*no*/
+          ul {
+              padding: 0 10px;
+              white-space: nowrap;
+              overflow-x: auto;
+              li {
+                  display: inline-block;
+                  padding: 20px 10px;
+                  &.active {
+                      position: relative;
+                      &:after {
+                          content: "";
+                          position: absolute;
+                          height: 4px;
+                          background: #019d59;
+                          bottom: -1px;
+                          left: 0;
+                          right: 0;
+                      }
+                  }
+              }
+          }
+      }
+      .matchs {
+          padding: 20px;
+          overflow-y: auto;
+          .match-row {
+              display: flex;
+          }
+          .match {
+              flex: 0 0 33.3333333333%;
+              padding: 10px;
+              font-size: 28px;
+              &.active {
+                  .match-box {
+                     background: #8fc31f;
+                     border-color: #8fc31f;
+                     color: #fff;
+                  }
+              }
+              .match-box {
+                  width: 100%;
+                  display: flex;
+                  padding: 16px 30px;
+                  border: 1px solid #e6e6e6;/*no*/
+                  border-radius: 4px;/*no*/
+                  &.noflex{display: block}
+                  &.active {
+                     background: #8fc31f;
+                     border-color: #8fc31f;
+                     color: #fff;
+                  }
+              }
+              h4 {
+                  display: inline;
+                  flex: 1;
+                  font-weight: normal;
+                  font-size: 28px;
+              }
+
+              &.half{
+                  flex: 0 0 50%;
+              }
+          }
+      }
+      .make-sure-btn {
+          display: block;
+          width: 100%;
+          border: none;
+          text-align: center;
+          padding: 30px;
+          background: #ed1c24;
+          color: #fff;
+          font-size: 40px;
+      }
+      .shortcuts {
+          background: #e6e6e6;
+          padding: 20px 30px;
+          button {
+              color: #717171;
+              margin-right: 30px;
+              background: none;
+              border: none;
+              &.active {
+                  color: #01af63;;
+              }
+          }
+
+          .hot-area{
+              margin-right: 30px;
+              button{
+                  margin-right: 0px;
+                  padding-right: 10px
+              }
+          }
+      }
+  }
+

@@ -1,0 +1,48 @@
+@import "~lib/scss/base/base";
+
+.detail {
+  .user-img {
+    display: block;
+    width: 42px;
+    height: 41px;
+    margin-left: 50%;
+  }
+  iframe {
+    border: none;
+  }
+  .list {
+    margin-top: 20px;
+    background: #fff;
+    padding: 0 30px;
+    .list-title {
+      border-bottom: 1px solid #e5e5e5; /*no*/
+      padding: 30px 0;
+      display: flex;
+      .left {
+        img {
+          display: block;
+          max-width: 210px;
+          height: 150px;
+        }
+      }
+      .right {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+          font-size: 32px;
+        }
+        .date {
+          color: #999999;
+          span {
+            margin-right: 10px;
+          }
+          .blue {
+            color: #1e88d2;
+          }
+        }
+      }
+    }
+  }
+}

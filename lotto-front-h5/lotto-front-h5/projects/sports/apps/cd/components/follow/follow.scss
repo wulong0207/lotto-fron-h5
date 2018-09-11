@@ -1,0 +1,41 @@
+@import "../../../../../../lib/scss/base/base.scss";
+
+.follow-button {
+  display: inline-block;
+  border: solid 1px #d6d6d6; /* no */
+  color: #999;
+  padding: 12px 15px;
+  font-size: 28px;
+  line-height: 1;
+  margin: 0;
+  background: transparent;
+  border-radius: 2px; /* no */
+  outline: 0;
+  &.unfollowed {
+    position: relative;
+    padding-left: 45px;
+    &:after {
+      content: "+";
+      font-size: 46px;
+      position: absolute;
+      left: 10px;
+      top: -3px;
+    }
+  }
+  &.followed {
+    position: relative;
+    padding-left: 45px;
+    &:after {
+      content: "";
+      height: 15px;
+      width: 25px;
+      content: "";
+      position: absolute;
+      border-right: solid 2px #999; /* no */
+      border-top: solid 2px #999; /* no */
+      top: 15px;
+      left: 10px;
+      transform: rotate(135deg);
+    }
+  }
+}

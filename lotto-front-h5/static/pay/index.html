@@ -1,0 +1,53 @@
+<!--
+ * @Author: yubei 
+ * @Date: 2017-08-17 13:47:17 
+ * Desc: 这个只是一个临时的充值和支付的跳转页面，因支付宝不支持回调地址带哈希值，所以用一个临时页面做跳转
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        var _speedMark = new Date();
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="data:image/ico;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAVFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/9/f/P//////////////////////7Oz9/yco7f+mpvj/6en9/x8g7f8VFuz/FRbs/7m6+f/f3/z/FRbs/xUW7P/DxPr////////////9/f//4+P9/8fH+v8fIO3/1NT7//////8yM+7/FRbs/xUW7P/j4/3//////xUW7P8VFuz/GRrs/5KS9v/+/v///////6qq+P8eH+3/FRbs/9TU+///////MjPu/xUW7P8VFuz/4+P9//////8VFuz/FRbs/xUW7P8VFuz/VVbx/+zs/f//////s7P5/xUW7P/U1Pv//////zIz7v8VFuz/FRbs/+Pj/f//////FRbs/xUW7P9LTPD/PDzv/xUW7P8sLe7/7e3+//////8oKe7/0ND7//////81Nu//FRbs/xUW7P/l5f3//////xUW7P8VFuz/+fn+/+zs/f8xMu7/HB3t/+Hh/f//////MTLu/7Cw+f//////g4T1/xUW7P9LTPD//v7//+vr/f8VFuz/FRbs/6en+P//////+fr///Dw/v//////zc77/xUW7P9KS/D//f3////////r6/3//f3///////+AgfX/FRbs/xUW7P8dHu3/l5j3/+7v/v/9/f//vb36/y4v7v8VFuz/FRbs/1la8v/Y2Pz//////+np/f+AgfX/Fhfs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==">
+    <link rel="Shortcut Icon" href="data:image/ico;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAVFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/9/f/P//////////////////////7Oz9/yco7f+mpvj/6en9/x8g7f8VFuz/FRbs/7m6+f/f3/z/FRbs/xUW7P/DxPr////////////9/f//4+P9/8fH+v8fIO3/1NT7//////8yM+7/FRbs/xUW7P/j4/3//////xUW7P8VFuz/GRrs/5KS9v/+/v///////6qq+P8eH+3/FRbs/9TU+///////MjPu/xUW7P8VFuz/4+P9//////8VFuz/FRbs/xUW7P8VFuz/VVbx/+zs/f//////s7P5/xUW7P/U1Pv//////zIz7v8VFuz/FRbs/+Pj/f//////FRbs/xUW7P9LTPD/PDzv/xUW7P8sLe7/7e3+//////8oKe7/0ND7//////81Nu//FRbs/xUW7P/l5f3//////xUW7P8VFuz/+fn+/+zs/f8xMu7/HB3t/+Hh/f//////MTLu/7Cw+f//////g4T1/xUW7P9LTPD//v7//+vr/f8VFuz/FRbs/6en+P//////+fr///Dw/v//////zc77/xUW7P9KS/D//f3////////r6/3//f3///////+AgfX/FRbs/xUW7P8dHu3/l5j3/+7v/v/9/f//vb36/y4v7v8VFuz/FRbs/1la8v/Y2Pz//////+np/f+AgfX/Fhfs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/FRbs/xUW7P8VFuz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" type="image/x-icon">
+    <title>充值-支付loading</title>
+</head>
+<body>
+    <div id="app"></div>
+    <div id="loading"></div>
+    <div id="entry"></div>
+
+    <script type="text/javascript" src="../utils/utils.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var urlParams = utils.getParameter();
+            var params = '';
+            for(var item in urlParams){
+               params += '&' + item + '=' +  urlParams[item];
+            }
+            params = params.substr(1);
+            // 跳转到结果页
+            location.href = '/sc.html#/recharge-result?'+params;
+        }
+    </script>
+
+    <script type="text/javascript" src="//tajs.qq.com/stats?sId=63335482" charset="UTF-8"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?2c414fb6a9e0dfd43624cbdf212cca0b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+</html>

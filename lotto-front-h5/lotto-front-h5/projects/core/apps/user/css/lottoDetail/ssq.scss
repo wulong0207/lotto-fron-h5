@@ -1,0 +1,113 @@
+
+.plan-list {
+    .plan-item {
+        // padding: 30px 30px 10px 30px;
+        .plan-item-h {
+            display: flex;
+            color: #999999;
+            // margin-bottom: 20px;
+            padding:30px 30px 0 30px;
+        } // dlt
+        // 方案详情分开 f3d 11x5 ssq
+        .sd11x5{
+            display: flex;
+            .name{
+                width:34%;
+            }
+            .draw{
+                width:30%;
+                display: block;
+                word-wrap:break-word; 
+                word-break:keep-all;
+                // color:#ed1c24;
+                i{
+                    padding:0 5px;
+                    b{
+                        font-weight: normal;
+                    }
+                    .hide{
+                        display: none;
+                    }
+                }
+            }
+            .tou{
+                text-align: right;
+                width:36%;
+                span{
+                    word-wrap: normal;
+                }
+            }
+            .red{
+                color:#ed1c24;
+            }
+        }
+        .plan-item-f {
+            padding:30px 30px 0 30px;
+            .plan-item-f-w {
+                display: flex;
+                color: #999999;
+                span {
+                    flex: 1;
+                }
+                .orange {
+                    color: #fe7a0d;
+                    text-align: right;
+                }
+                em {
+                    margin: 0 10px;
+                    color: #999999;
+                }
+                .name{
+                    width:35%;   
+                }
+        
+            }
+        }
+    }
+    // 追号新的改变 scroll
+    .zhuihao{
+        width:100%;
+        background: #fff;
+        overflow-x: scroll;
+        .citem1 {
+            width: 200px;
+            
+        }
+        .citem2 {
+            width:100px;
+            
+        }
+        .citem3 {
+            width:250px;
+            
+        }
+        .citem4 {
+            width: 350px;
+            white-space:nowrap;
+        }
+        .chase-item {
+            width:1300px;
+            display: inline-block;
+            text-align:center;
+            border-bottom: 1px solid #E6E6E6;/*no*/
+            padding:0;
+            margin:0;
+            span {
+                display: inline-block;
+                line-height: 80px;
+                border-right: 1px solid #E6E6E6;  /*no*/
+
+            }               
+        }
+        .plan-other {
+            display: flex;
+            height: 88px;
+            width:1250px;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            font-size: 28px;
+        }
+    }
+    
+}

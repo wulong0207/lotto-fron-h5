@@ -1,0 +1,28 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-11-10 18:44:21
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-11-22 18:23:46
+*/
+.jckt {
+  background-color: #33965f;
+  padding-bottom: 40px;
+
+  .jckt_main {
+    padding: 0 10px;
+    position: relative;
+
+    .jckt_title {
+      font-size: 32px;
+      height: 32px;
+      text-align: center;
+      color: #007130;
+      font-weight: 700;
+      text-shadow: 1px 0px #fff, -1px 0px #fff, 0 -1px #fff, 0 1px #fff; /*no*/
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/*
+ * @Author: yubei
+ * @Date: 2017-03-22 19:01:24
+ * @Desc: clear
+ */
+
+/*
+@example scss - Usage
+.element {
+    @include clearfix;
+}
+
+@example css - CSS Output
+.element::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+*/
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}

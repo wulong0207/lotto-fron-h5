@@ -1,0 +1,140 @@
+
+@import "../base/mixins";
+
+.yc-bet-order{
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    overflow: hidden;
+    display: flex;
+    @include z-index(float);
+    flex-direction:column;
+
+    .dead-line{
+        font-weight: 400;
+        text-align: center;
+        color: #fff;
+        font-size: 28px;
+        padding: 30px 0 30px 0;
+        position: relative;
+        margin-top: 10px;
+
+        .close{
+            background: url(../../img/icon_Shut_down2@2x.png) 100% no-repeat;
+            background-size: cover;
+            background-position: 50% 0;
+            position: absolute;
+            height: 83px;
+            width: 50px;
+            right: 27px;
+            top: 25px;
+        }
+    }
+
+    .cart{
+        display: flex;
+        flex-direction:column;
+        flex: 1;
+        background-color: #fff;
+
+        .message{
+            padding: 28px;
+            font-size: 24px;
+            color: #999;
+        }
+
+        .slide{
+            display: flex;
+            flex-direction:column;
+            flex: 1;
+            padding-bottom: 20px;
+
+            .cart-area{
+                flex: 1;
+                overflow-y: auto;
+                height: 414px;
+
+                .grey{color: #999;}
+                .red{color: #ed1c24;}
+                .blue{color: #1e88d2;}
+
+                .cart-all{
+                    flex: 1;
+                    padding: 0px 28px;
+                    background-size: 100% auto;
+
+                    .cart-item{
+                        padding: 19px 0px 0px 0px;
+
+                        .select, .unselect, .tk-p{
+                            width: 72px;
+                        }
+
+                        .buy-info{
+                            min-height: 69px;
+                            background-color: #F7F7F7;
+                            display: flex;
+
+                            .select{
+                                background: url(../../img/component/icon_selectc.png) center no-repeat;
+                                background-size: 80%;
+                            }
+
+                            .unselect{
+                                background: url(../../img/component/icon_unselectc.png) center no-repeat;
+                                background-size: 50%;
+                            }
+
+                            .order-code{
+                                padding: 14px 0;
+                                justify-content: center;
+                                align-items: center;
+                                flex: 1;
+                                color: #333333;
+                                font-size: 28px;
+                                text-align: left;
+
+                                .current-fa{
+                                    font-size: 24px;
+                                    color: green;
+                                }
+
+                                .red{font-size: 24px;}
+                            }
+
+                            .go-pay{
+                                display: block;
+                                width: 110px;
+                                height: 41px;
+                                line-height: 39px;
+                                text-align: center;
+                                border: 1px solid #FF7A0D;/*no*/
+                                color: #FF7A0D;
+                                border-radius: 4px;
+                                font-size: 24px;
+                                margin: 15px 20px 0 0;
+                            }
+                        }
+
+                        .content-area{
+                            display: flex;
+                            background-color: #F7F7F7;
+                            margin-top: 5px;
+                            font-size: 28px;
+
+                            .main-area{
+                                flex: 1;
+
+                                .lo-item{
+                                    padding: 10px 0;
+                                    padding-right:150px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

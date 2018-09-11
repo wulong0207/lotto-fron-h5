@@ -1,0 +1,270 @@
+// @import '../../base/base.scss';
+
+// 公共颜色
+.blue {
+  color: #1e88d2 !important;
+}
+.red {
+  color: #ed1c24 !important;
+}
+.green {
+  color: #21ae6a !important;
+}
+.orange {
+  color: #fe7a0d !important;
+}
+
+.showflex {
+  display: flex;
+}
+.flex {
+  flex: 1;
+}
+
+.sf-section {
+  margin-top: 20px;
+  background: #fff;
+  padding-left: 30px;
+  .sf-item {
+    padding: 30px 30px 30px 0;
+    border-bottom: 1px solid #e6e6e6; /*no*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .sf-item-l {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 32px;
+      }
+      em {
+        color: #999999;
+      }
+    }
+    em {
+      color: #999999;
+    }
+  }
+}
+
+.bank-section {
+  margin-top: 20px;
+  .bank-item {
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    .bank-img {
+      width: 65px;
+      height: 65px;
+      margin: 0 30px;
+    }
+    .bank-item-r {
+      flex: 1;
+      display: flex;
+      height: 100%;
+      padding: 32px 32px 32px 0;
+      align-items: center;
+      .bank-name {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        em {
+          font-size: 28px;
+          color: #999999;
+          display: inline-block;
+        }
+        span {
+          font-size: 32px;
+        }
+      }
+      .small-btn-orange {
+        border: 1px solid #fe7a0d; /*no*/
+        border-radius: 4px;
+        color: #fe7a0d;
+        font-size: 28px;
+        padding: 8px 35px;
+      }
+      .icon-arrow-r {
+      }
+    }
+  }
+}
+
+.no-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  .icon-errpic {
+    width: 460px;
+    height: 306px;
+    background: url("../../img/errorpic@2x.png") no-repeat 50%;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .no-rep {
+    font-size: 34px;
+    color: #fe7a0d;
+    margin-top: 84px;
+    text-align: center;
+  }
+  .gone {
+    font-size: 28px;
+    color: #999999;
+    text-align: center;
+  }
+}
+
+// header 右侧样式
+.operation {
+  span {
+    font-size: 32px;
+    color: #ffffff;
+  }
+}
+
+// button 按钮
+button {
+  display: block;
+  border: 0;
+  width: 90%;
+  height: 89px;
+  border-radius: 4px;
+  font-size: 34px;
+  margin: 80px auto 50px;
+  font-weight: 600;
+  color: #999999;
+}
+
+.btn-blue {
+  background: #1e88d2;
+  color: #fff;
+}
+
+.btn-grey {
+  background: #e6e6e6;
+  color: #999999;
+}
+
+.p-desc {
+  font-size: 20px;
+  color: #999999;
+  margin: 0 53px;
+}
+
+// 验证码
+.yzm-section {
+  font-size: 32px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  .sf-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    input {
+      margin-left: 20px;
+      border: 0;
+      flex-shrink: 1;
+      outline: 0 none;
+      max-width: 60%;
+    }
+    .icon-delete {
+      flex-shrink: 0;
+    }
+    span {
+      flex-shrink: 0;
+    }
+  }
+  .yzm {
+    font-size: 24px;
+    color: #1e88d2;
+    padding: 10px 0;
+    border-left: 1px solid #e6e6e6; /*no*/
+    text-align: center;
+    width: 35%;
+  }
+}
+
+// 各种图标
+.icon-arrow-d-grey {
+  display: inline-block;
+  width: 30px;
+  height: 18px;
+  background: url("../img/hbgrey@3x.png") no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+}
+
+.icon-search {
+  display: inline-block;
+  width: 32px;
+  height: 34px;
+  background: url("../img/search@2x.png") no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.icon-delete {
+  width: 68px;
+  height: 68px;
+  background: url("../img/deletegrey@2x.png") no-repeat center;
+  background-size: 50%;
+}
+
+// 下拉窗 对号
+.icon-choice {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("../img/greenchoice@2x.png") no-repeat;
+  background-size: cover;
+}
+
+// 右箭头
+.icon-arrow-r {
+  margin-left: 10px;
+  width: 17px;
+  height: 30px;
+  background: url("../img/right@2x.png") no-repeat;
+  background-size: cover;
+}
+
+// load-more
+.load-more {
+  text-align: center;
+  line-height: 38px;
+  font-size: 28px;
+  padding: 30px 0;
+}
+
+// footer
+.st-copy-absolute {
+  width: 100%;
+  font-size: 24px;
+  color: #999999;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  z-index: 1;
+  p {
+    text-align: center;
+  }
+}
+
+.icon-switchon,
+.icon-switchoff {
+  width: 106px;
+  height: 69px;
+  background: url("../img/switchon .png") no-repeat;
+  background-size: cover;
+}
+.icon-switchoff {
+  background: url("../img/switchoff.png") no-repeat;
+  background-size: cover;
+}
+.switch {
+  display: flex;
+}

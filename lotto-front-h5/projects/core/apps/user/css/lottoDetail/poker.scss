@@ -1,0 +1,23 @@
+.open-code{
+    display: flex;
+    align-items: center;
+    .open-list{
+        display: inline-block;
+        margin:0 10px;
+        span{
+            color:#ED1B24;
+        }
+    }
+}
+
+.bet-top{
+    display: flex;
+    .poker-img {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+        img{
+            display: inline-block;
+        }
+    }
+}

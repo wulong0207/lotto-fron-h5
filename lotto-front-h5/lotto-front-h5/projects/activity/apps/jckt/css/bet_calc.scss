@@ -1,0 +1,117 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-11-15 15:25:58
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-12-02 11:10:48
+*/
+.bet_calc {
+  margin-top: 78px;
+  .selectBox {
+    display: flex;
+    justify-content: center;
+    line-height: 66px;
+
+    .bei {
+      width: 84px;
+      height: 66px;
+      line-height: 66px;
+      text-align: center;
+      margin-right: 23px;
+      background-color: #07602d;
+      color: #e9e457;
+      border-radius: 10px;
+      font-size: 30px;
+      border: 1px solid transparent; /*no*/
+      position: relative;
+
+      &.selected {
+        border-color: #e9e457;
+        &:after {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 30px;
+          background-image: url("../img/active.png");
+          background-size: 100% 100%;
+          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+              src="../img/active.png",
+              sizingMethod="scale"
+            );
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .bookWirte {
+      width: 112px;
+      height: 66px;
+      line-height: 66px;
+      text-align: center;
+      border: 1px solid transparent; /*no*/
+      margin-right: 14px;
+      background-color: #07602d;
+      border-radius: 10px;
+      color: #e9e457;
+
+      &.selected {
+        border-color: #e9e457;
+      }
+    }
+    .txt {
+      display: inline-block;
+      width: 30px;
+      height: 66px;
+      line-height: 66px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  .calc_Bouns {
+    padding-bottom: 40px;
+    margin: 40px 40px 0;
+
+    .calc_content {
+      display: flex;
+      justify-content: center;
+      width: auto;
+      .item {
+        border-right: 1px solid rgba(0, 0, 0, 0.2); /*no*/
+        flex: 1;
+        justify-content: center;
+
+        .txt {
+          color: #fff;
+          font-size: 24px;
+          text-align: center;
+        }
+
+        .message {
+          text-align: center;
+          .num {
+            color: #fff100;
+          }
+          .percentage {
+            color: #f39800;
+          }
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+  .nowBuyBox {
+    padding: 20px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nowBuy {
+      width: 256px;
+      height: 76px;
+      margin: 0 auto;
+    }
+  }
+}

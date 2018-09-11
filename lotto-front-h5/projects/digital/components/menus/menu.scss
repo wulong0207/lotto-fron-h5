@@ -1,0 +1,76 @@
+.menu-component {
+  position: relative;
+  text-align: right;
+  .menu-icon {
+    display: inline-block;
+    height: 46px;
+    width: 46px;
+    background: url(../../../../lib/img/icon_more.png) no-repeat;
+    background-size: 46px 46px;
+  }
+  .menu-drop-down {
+    text-align: left;
+    background: #fff;
+    position: absolute;
+    top: 140%;
+    left: -130px;
+    width: 220px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    &:before {
+      content: "";
+      height: 20px;
+      width: 20px;
+      background: #fff;
+      position: absolute;
+      right: 25px;
+      top: -10px;
+      transform: rotate(45deg);
+    }
+    li {
+      white-space: nowrap;
+      padding: 20px 30px;
+      font-size: 28px;
+      border-bottom: solid 1px #f4f4f4; /* no */
+      &.active {
+        color: #ff7a0d;
+      }
+      &.missing-data {
+        background: url(../../../../lib/img/component/icon_missing@2x.png)
+          no-repeat 10px 50%;
+        background-size: 46px 46px;
+        padding-left: 66px;
+      }
+      &.hot-data {
+        background: url(../../../../lib/img/component/icon_hot@2x.png) no-repeat
+          10px 50%;
+        background-size: 46px 46px;
+        padding-left: 66px;
+      }
+      &.probability-data {
+        background: url(../../../../lib/img/component/icon_probability@2x.png)
+          no-repeat 10px 50%;
+        background-size: 46px 46px;
+        padding-left: 66px;
+      }
+      &.max-missing-data {
+        background: url(../../../../lib/img/component/biggest_probability.png)
+          no-repeat 10px 50%;
+        background-size: 46px 46px;
+        padding-left: 66px;
+      }
+      &.last-missing-data {
+        background: url(../../../../lib/img/component/last_probability.png)
+          no-repeat 10px 50%;
+        background-size: 46px 46px;
+        padding-left: 66px;
+      }
+      &.play-info {
+        background: url(../../../../lib/img/component/icon_play@3x.png)
+          no-repeat 10px 50%;
+        background-size: 46px 46px;
+        padding-left: 66px;
+      }
+    }
+  }
+}

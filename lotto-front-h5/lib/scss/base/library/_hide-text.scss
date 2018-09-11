@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*
+ * @Author: yubei
+ * @Date: 2017-03-22 19:03:16
+ * @Desc: hide-text
+ */
+
+/*
+   @example scss
+   .element {
+     @include hide-text;
+   }
+
+   // CSS Output
+   .element {
+     overflow: hidden;
+     text-indent: 101%;
+     white-space: nowrap;
+   }
+*/
+
+
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}

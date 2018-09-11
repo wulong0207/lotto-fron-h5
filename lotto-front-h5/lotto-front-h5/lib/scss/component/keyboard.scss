@@ -1,0 +1,126 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-05-07 18:33:31
+ * @Desc: 自定义键盘
+ */
+
+@import "../base/mixins";
+
+.keyboard-layer {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    @include z-index(keyboard);
+    .keyboard-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .6);
+    }
+}
+
+.keyboard {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    color: #000;
+    .shortcuts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        > span {
+            align-items: center;
+            justify-content: center;
+            height: 90px;
+            display: flex;
+            flex-flow: column;
+            flex: 1;
+            border: 1px solid #d7d7d7;/*no*/
+            border-left: 0;
+            border-bottom: 0;
+        }
+    }
+    .number {
+        display: flex;
+        font-size: 48px;
+        flex-wrap: wrap;
+        > span {
+            width: 33.333%;
+            border-right: 1px solid #d7d7d7;/*no*/
+            border-top: 1px solid #d7d7d7;/*no*/
+            line-height: 100px;
+            &:last-of-type, &:nth-last-child(3){
+                background: #f0f0f0;
+            }
+            &:active {
+                background: #d7d7d7;
+            }
+            &.done-btn {
+                font-size: 38px;
+            }
+        }
+    }
+    .keyboard-wrap {
+        position: relative;
+        @include z-index(maskContent);
+    }
+    .keyboard-header {
+        display: flex;
+        padding: 15px 30px;
+        .keyboard-label {
+            flex: 1;
+            text-align: left;
+            line-height: 60px;
+            font-size: 32px;
+        }
+        .keyboard-input-controller {
+            width: 180px;
+            display: flex;
+            .minus, .plus {
+                flex: 1;
+                background: #f0f0f0;
+                color: #999;
+                height: 60px;
+                line-height: 50px;
+                font-size: 48px;
+                border: solid 1px #f0f0f0;/*no*/
+            }
+            .keyboard-input {
+                width: 80px;
+                height: 60px;
+                overflow: hidden;
+                background: #fff;
+                border: solid 1px #E6E6E6;/*no*/
+                line-height: 60px;
+                font-size: 32px;
+                position: relative;
+                .input-text {
+                    position: absolute;
+                    left: 0;
+                    min-width: 80px;
+                    padding: 0 5px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .delete-key {
+        width: 72px;
+    }
+    .shortcuts-text {
+        font-size: 28px;
+    }
+    .shortcuts-label {
+        font-size: 24px;
+    }
+}

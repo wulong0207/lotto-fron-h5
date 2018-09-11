@@ -1,0 +1,28 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-11-21 14:50:21
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-11-25 16:19:17
+*/
+.header {
+  width: 100%;
+  height: 88px;
+  background-color: #fff;
+  position: relative;
+
+  .title {
+    font-size: 36px;
+    line-height: 88px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .close {
+    width: 38px;
+    height: 38px;
+    background-image: url("../../img/close.png");
+    background-size: cover;
+    position: absolute;
+    right: 22px;
+    top: 18px;
+  }
+}

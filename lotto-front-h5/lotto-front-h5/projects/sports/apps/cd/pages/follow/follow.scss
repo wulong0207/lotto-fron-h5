@@ -1,0 +1,17 @@
+.follow-page {
+  .follow-summary {
+    background: #fff;
+    padding: 30px 20px;
+    font-size: 28px;
+    color: #999;
+    .total-commission {
+      em {
+        font-size: 48px;
+
+        &.commiss {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+// @import '../base/base.scss';
+@import "./common.scss";
+
+.bank-query {
+  .bank-sup {
+    font-size: 28px;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    span {
+      padding: 20px 30px;
+      &:first-child {
+        flex: 1;
+      }
+    }
+  }
+  .bank-section {
+    background: #fff;
+    margin: 0;
+    .bank-item {
+      display: flex;
+      .bank-img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-left: 30px;
+      }
+      .bank-item-r {
+        flex: 1;
+        font-size: 32px;
+        color: #333333;
+        border-bottom: 1px solid #e6e6e6; /*no*/
+        padding-right: 30px;
+        display: flex;
+        .bank-name {
+          flex: 1;
+        }
+        .bankicon {
+          padding: 20px 30px;
+          margin-left: 60px;
+          .icon-bank-sup {
+            width: 36px;
+            height: 36px;
+            display: inline-block;
+            background: url("../img/bank/banksup@2x.png") no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}

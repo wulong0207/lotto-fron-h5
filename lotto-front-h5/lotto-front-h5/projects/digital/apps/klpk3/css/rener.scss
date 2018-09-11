@@ -1,0 +1,230 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-09-28 16:39:39
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-10-29 16:38:12
+*/
+.yc-11x5 {
+  .Eleven-content {
+    .rener-page {
+      .dialog-wrap {
+        .dialog-content {
+          .balls {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+
+      .number-panel-box {
+        &:nth-of-type(1) {
+          padding-bottom: 20px;
+
+          .ball-table {
+            .ball {
+              width: 96px;
+              height: 128px;
+              line-height: 128px;
+              border-radius: 5px;
+              border: 1px solid #afafb2; /*no*/
+              position: relative;
+
+              span {
+                &:nth-of-type(1) {
+                  display: inline-block;
+                  width: 62px;
+                  height: 62px;
+                  background-image: url("../../../../../lib/img/klpk3/heitao.png");
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  margin-top: 33px;
+                  color: transparent;
+                }
+              }
+
+              .ball-label {
+                display: block;
+                width: 100px;
+                line-height: 1.4;
+                text-align: center;
+                padding-top: 14px;
+
+                span {
+                  display: inline-block;
+                  width: 120px;
+                  font-size: 20px;
+                  color: #666;
+                  background-image: none;
+
+                  &:nth-of-type(1) {
+                    margin-top: 10px;
+                  }
+
+                  em {
+                    color: #ff7a0d;
+                  }
+                }
+              }
+              .ball-data {
+                left: 0;
+                top: 140px;
+              }
+            }
+            tr {
+              td {
+                &.selected .ball {
+                  &::before {
+                    width: 118px;
+                    height: 148px;
+                    border: 3px solid #fdca72;
+                    border-radius: 10px;
+                    position: absolute;
+                    left: -12px;
+                    top: -12px;
+                    background-image: none;
+                  }
+
+                  &::after {
+                    content: "";
+                    display: block;
+                    width: 48px;
+                    height: 50px;
+                    background-image: url("../../../../../lib/img/klpk3/money.png");
+                    background-size: cover;
+                    position: absolute;
+                    left: -24px;
+                    bottom: -26px;
+                  }
+                }
+                &:nth-of-type(2) {
+                  .ball {
+                    span {
+                      &:nth-of-type(1) {
+                        background-image: url("../../../../../lib/img/klpk3/hongtao.png");
+                      }
+                    }
+                    .ball-label {
+                      span {
+                        background-image: none;
+                      }
+                    }
+                  }
+                }
+                &:nth-of-type(3) {
+                  .ball {
+                    span {
+                      &:nth-of-type(1) {
+                        background-image: url("../../../../../lib/img/klpk3/meihua.png");
+                      }
+                    }
+                    .ball-label {
+                      span {
+                        background-image: none;
+                      }
+                    }
+                  }
+                }
+                &:nth-of-type(4) {
+                  .ball {
+                    span {
+                      &:nth-of-type(1) {
+                        background-image: url("../../../../../lib/img/klpk3/fangkuai.png");
+                      }
+                    }
+                    .ball-label {
+                      span {
+                        background-image: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          .ball-panel {
+            .ball-table {
+              td {
+                text-align: left;
+              }
+              .selected .ball {
+                background-color: transparent !important;
+                &::before {
+                  content: "";
+                  display: block;
+                  width: 218px;
+                  height: 90px;
+                  border: 3px solid #fdca72;
+                  border-radius: 10px;
+                  position: absolute;
+                  left: -12px;
+                  top: -12px;
+                  background-image: none;
+                }
+                &::after {
+                  content: "";
+                  display: block;
+                  width: 48px;
+                  height: 50px;
+                  background-image: url("../../../../../lib/img/klpk3/money.png");
+                  background-size: cover;
+                  position: absolute;
+                  left: -24px;
+                  bottom: -26px;
+                }
+              }
+              .ball {
+                width: 198px;
+                height: 70px;
+                border-radius: 5px;
+                border: 1px solid #afafb2; /*no*/
+
+                span {
+                  color: #2a2a2a;
+                }
+              }
+              .ball-label {
+                display: block;
+                width: 198px;
+                text-align: center;
+                line-height: 1.4;
+                padding-top: 14px;
+
+                span {
+                  display: inline-block;
+                  width: 120px;
+                  font-size: 20px;
+                  color: #666;
+
+                  em {
+                    color: #ff7a0d;
+                  }
+                }
+              }
+              .ball-data {
+                left: 59;
+                top: 116px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.yc-bet-cart-modal {
+  .modal-content {
+    .cart-area {
+      .ball {
+        img {
+          width: 22px;
+          height: 22px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

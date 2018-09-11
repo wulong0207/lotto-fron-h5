@@ -1,0 +1,202 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-05-30 15:27:37
+ * @Desc: 支付结果页
+ */
+
+@import "../../../../../lib/scss/base/base";
+@import "../../../../../lib/scss/base/mixins";
+
+// 结果显示
+.result-view {
+  text-align: center;
+  background: #fff;
+  padding: 32px 0;
+  img {
+  }
+  p {
+    color: #21ae6a;
+    font-size: 34px;
+    line-height: 80px;
+  }
+  .remaTime {
+    color: #333;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+// 支付成功
+.result-succ {
+  // 结果信息
+  .result-info {
+    margin-top: 30px;
+    background: #fff;
+    font-size: 28px;
+    > div {
+      border-bottom: 1px solid #f4f4f4; /*no*/
+      padding: 10px 30px;
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+    p {
+      display: flex;
+      justify-content: space-between;
+      line-height: 60px;
+    }
+    .oc-num {
+      display: flex;
+      line-height: 60px;
+      justify-content: space-between;
+      .total-order {
+        display: flex;
+        align-items: center;
+        color: #999;
+        font-size: 16px;
+        .triangle {
+          text-align: center;
+        }
+        .triangle::after {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-right: 1px solid #ccc; /*no*/
+          border-top: 1px solid #ccc; /*no*/
+          transition: transform 0.3s ease;
+          transform: rotate(45deg);
+        }
+        .rotate:after {
+          transform: rotate(135deg);
+        }
+      }
+      > div:last-child {
+        margin-left: 15px;
+      }
+    }
+    .drop-menu {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .menu {
+        width: 50%;
+        text-align: center;
+        margin: 10px 0;
+      }
+      .line {
+        border-left: 1px solid #999; /*no*/
+      }
+    }
+    .seq-num {
+      font-size: 24px;
+      color: #999;
+      line-height: 40px;
+    }
+    .result-handler {
+      padding: 30px 30px;
+      p {
+        justify-content: space-around;
+        a {
+          span {
+            display: inline-block;
+            font-size: 34px;
+            color: #666;
+            border-radius: 5px; /*no*/
+            border: 1px solid #999; /*no*/
+            line-height: 60px;
+            padding: 0 60px;
+            border-color: #ff7a0d;
+            color: #ff7a0d;
+          }
+          // &:first-of-type {
+          //   span {
+          //     border-color: #ff7a0d;
+          //     color: #ff7a0d;
+          //   }
+          // }
+          .view-plan {
+            color: #999;
+            border-color: #999;
+            display: inline-block;
+            line-height: 60px;
+          }
+        }
+        // &:last-of-type {
+        // color: #999;
+        // font-size: 24px;
+        // }
+
+        button {
+          font-size: 34px;
+          color: #ff7a0d;
+          border-radius: 5px; /*no*/
+          border: 1px solid #ff7a0d; /*no*/
+          line-height: 60px;
+          padding: 0 60px;
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  // 推荐
+  .result-recommend {
+    padding: 20px 0;
+    text-align: center;
+    h3 {
+      color: #999;
+      font-weight: normal;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 300px;
+          height: 250px;
+          background: #fff;
+          //margin: 20px;
+          color: #333;
+          img {
+            @include size(120px);
+          }
+          span {
+            &:first-of-type {
+              font-size: 30px;
+            }
+            &:last-of-type {
+              font-size: 22px;
+              color: #999;
+              min-height: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .result-query {
+    text-align: center;
+    line-height: 100px;
+    a {
+      color: #169bd4;
+    }
+  }
+}
+
+// 支付失败
+.result-fail {
+  p {
+    padding: 30px;
+    text-align: center;
+    span {
+      width: 100%;
+    }
+  }
+}

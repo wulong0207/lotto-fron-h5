@@ -1,0 +1,61 @@
+// @import '../base/base.scss';
+// @import "./component/common.scss";
+
+.user-info {
+  .sf-section {
+    background: #fff;
+    padding-left: 30px;
+    .upload {
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 80px;
+      width: 100%;
+      height: 160px;
+      .file {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        right: 0;
+      }
+    }
+    .sf-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 20px 20px 0;
+      border-bottom: 1px solid #f4f4f4; /*no*/
+      font-size: 32px;
+      color: #333333;
+      .tx {
+        margin-right: 30px;
+      }
+      .icon-head-normal {
+        width: 116px;
+        height: 116px;
+        background: url("../img/head@2x.png") no-repeat;
+        background-size: cover;
+      }
+      .gray {
+        font-size: 28px;
+        color: #999999;
+        margin-right: 20px;
+        text-align: right;
+      }
+      .icon-arrow-r {
+        margin-left: 10px;
+        width: 17px;
+        height: 30px;
+        background: url("../img/right@2x.png") no-repeat;
+        background-size: cover;
+      }
+      .custom {
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+    }
+  }
+}

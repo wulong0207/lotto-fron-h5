@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="fwG11uAW6Ba">
+  <start-date>2017-12-29T00:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <name/>
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday"/>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>Resource 1</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t7"/>
+    <child-task idref="t8"/>
+    <child-task idref="t12"/>
+    <child-task idref="t14"/>
+    <child-task idref="t30"/>
+  </task>
+  <task id="t1">
+    <title>埋点</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t2">
+    <title>兑换优惠券功能</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t3">
+    <title>移动端分享功能</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>H5</lit>
+          </run>
+          <run>
+            <lit>分享需求需完善，目前是针对</lit>
+          </run>
+          <run>
+            <lit>APP</lit>
+          </run>
+          <run>
+            <lit>的分享，异常状态没完善，比如如果取消分享回到页面提示什么。</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>方案详情登录和注册方式建议更换，如非要做浮窗登录注册，请固定位置，不要让居中，</lit>
+          </run>
+          <run>
+            <lit>IOS</lit>
+          </run>
+          <run>
+            <lit>会存在光标错位问题。</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t4">
+    <title>消息中心接口优化</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t5">
+    <title>移动端红包样式调整优化</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>待激活红包是否有激活方式，需求没写。</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t6">
+    <title>追号计划方案详情修改 - 改接口字段</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>无需求地址</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t7">
+    <title>金宝华</title>
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t3"/>
+    <child-task idref="t4"/>
+    <child-task idref="t2"/>
+    <child-task idref="t5"/>
+    <child-task idref="t6"/>
+  </task>
+  <task id="t8">
+    <title>覃海飞</title>
+    <type>group</type>
+    <child-task idref="t9"/>
+    <child-task idref="t10"/>
+    <child-task idref="t11"/>
+  </task>
+  <task id="t9">
+    <title>M串N</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t10">
+    <title>竞彩篮球玩法推荐 - 抄单三期</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t11">
+    <title>竞彩足球一比分推荐 - 抄单三期</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t12">
+    <title>刘琼</title>
+    <type>group</type>
+    <child-task idref="t13"/>
+  </task>
+  <task id="t13">
+    <title>实名认证从注册和购彩时移除，在提款时验证</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t14">
+    <title>廖宝深</title>
+    <type>group</type>
+    <child-task idref="t15"/>
+    <child-task idref="t16"/>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+    <child-task idref="t19"/>
+    <child-task idref="t20"/>
+    <child-task idref="t21"/>
+    <child-task idref="t22"/>
+    <child-task idref="t23"/>
+    <child-task idref="t24"/>
+    <child-task idref="t25"/>
+    <child-task idref="t26"/>
+    <child-task idref="t27"/>
+    <child-task idref="t28"/>
+    <child-task idref="t29"/>
+  </task>
+  <task id="t15">
+    <title>浦发银行微信公众号支付</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t16">
+    <title>威富通光大渠道H5</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t17">
+    <title>威富通光大渠道QQH5</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t18">
+    <title>威富通中心渠道微信H5</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t19">
+    <title>威富通中心渠道微信公众号</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t20">
+    <title>威富通中心渠道2.微信H5</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t21">
+    <title>威富通中心渠道2.微信公众号支付</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t22">
+    <title>汇潮银行支付</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t23">
+    <title>验证码输入限制</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t24">
+    <title>用户唤醒推送</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t25">
+    <title>移动支付改版</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t26">
+    <title>H5公众号登录</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t27">
+    <title>H5公众号支付</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t28">
+    <title>CMS验证码获取次数清空</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t29">
+    <title>CMS账户禁用</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t30">
+    <title>刘鹏</title>
+    <type>group</type>
+    <child-task idref="t31"/>
+    <child-task idref="t33"/>
+    <child-task idref="t34"/>
+    <child-task idref="t35"/>
+    <child-task idref="t36"/>
+    <child-task idref="t37"/>
+  </task>
+  <task id="t31">
+    <title>广西11选5</title>
+    <effort>28800</effort>
+    <start-constraint-date>2017-12-29T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-12-29T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t33">
+    <title>趣味投注</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t34">
+    <title>遗漏投注</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t35">
+    <title>新疆11选5新增乐选玩法</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t36">
+    <title>年会相关活动</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t37">
+    <title>号码栏增加新彩种</title>
+    <effort>28800</effort>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

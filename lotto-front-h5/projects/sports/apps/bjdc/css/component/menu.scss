@@ -1,0 +1,72 @@
+/**
+ * Created by YLD
+ * date 2017-08-8
+ * desc: 竞彩篮球
+ */
+
+ @import "../../../../../../lib/scss/base/mixins";
+
+.header-menu {
+    height: 73px;
+    .menu-fix {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        color: #d7d7d7;
+        font-size: 30px;
+        line-height: 73px;
+        background: #01af63;
+        // box-shadow: 0 3px 10px #999;
+        z-index: 102;
+        > div {
+            padding: 0 20px;
+            &.curr-tab {
+                color: #fff;
+                border-bottom: 4px solid #fff;/*no*/
+            }
+        }
+        .mix-tab {
+            display: flex;
+            align-items: center;
+            .arrows {
+                margin-left: 20px;
+                @include arrows($size: 15px, $line-size: 1px, $color: #fff);
+            }
+        }
+        .menu-small {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 100%;
+            box-shadow: 0 0 3px #999;
+            background-color: #fff;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                // width: 100%;
+                li {
+                    background: #fff;
+                    font-size: 28px;
+                    color: #333;
+                    // flex: 1;
+                    width: 33.333333%;
+                    height: 88px;
+                    line-height: 88px;
+                    border-right: 1px solid #f4f4f4;/*no*/
+                    border-bottom: 1px solid #f4f4f4;/*no*/
+                }
+            }
+        }
+        // .filter-mask {
+        //     position: fixed;
+        //     width: 100%;
+        //     left:0;
+        //     z-index: -1;
+        //     height: 100%;
+        //     background: rgba(0, 0, 0, .6);
+        // }
+    }
+}

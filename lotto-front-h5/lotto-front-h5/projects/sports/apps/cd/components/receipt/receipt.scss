@@ -1,0 +1,142 @@
+.receipt {
+  background: #fff;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .receipt-info {
+    display: flex;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: dashed 1px #f4f4f4; /* no */
+    .user-avatar {
+      padding-right: 20px;
+      img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+      }
+    }
+    .receipt-summary {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #333;
+      .receipt-head {
+        padding-bottom: 20px;
+      }
+      .nickname {
+        font-size: 32px;
+        font-weight: normal;
+        display: inline;
+      }
+      .receipt-icon {
+        height: 32px;
+        width: 36px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        border-radius: 2px; /* no */
+        font-size: 24px;
+        margin-left: 10px;
+      }
+      .expert-icon {
+        background: #00c3c7;
+      }
+      .recommend-icon {
+        background: #fa5a3a;
+      }
+      .receipt-analytics {
+        font-size: 28px;
+        padding-bottom: 10px;
+        span {
+          padding-right: 30px;
+          position: relative;
+          &:after {
+            content: "";
+            background: #d8d8d8;
+            position: absolute;
+            height: 8px;
+            width: 8px;
+            right: 10px;
+            top: 16px;
+            border-radius: 50%;
+          }
+          &:last-child {
+            padding-right: 0;
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+      .receipt-record {
+        span {
+          margin-right: 10px;
+          font-size: 24px;
+          border-radius: 2px; /* no */
+          padding: 0 10px;
+          &.recent-record {
+            color: #f01614;
+            background: #ffe8db;
+          }
+          &.hit {
+            color: #fff;
+            background: #f01614;
+          }
+        }
+      }
+    }
+  }
+  .receipt-date-time {
+    display: flex;
+    padding: 0 20px;
+    height: 88px;
+    color: #999;
+    align-items: center;
+    .end-time {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding-left: 40px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        height: 30px;
+        width: 30px;
+        border: solid 1px #bcbcbc; /* no */
+        border-radius: 50%;
+        top: 3px;
+        left: 0;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        height: 12px;
+        width: 12px;
+        border-left: solid 1px #bcbcbc; /* no */
+        border-bottom: solid 1px #bcbcbc; /* no */
+        left: 12px;
+        top: 10px;
+      }
+    }
+    .follow-button {
+      color: #f01614;
+      border: solid 1px #f01614; /* no */
+      width: 176px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      font-size: 28px;
+      border-radius: 4px; /* no */
+    }
+  }
+}

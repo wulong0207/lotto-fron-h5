@@ -1,0 +1,57 @@
+/*
+* @Author: LZY
+* @Date:   2017-07-06 14:21:11
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-09-04 18:11:28
+*/
+.drawHistory {
+	width: 100%;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    display:none;
+
+    // 公共样式
+	.red{ color: #ed1c24; }
+	.blue{ color: #1e88d2; }
+	.grey{ color: #999; }
+
+    &.active {
+    	display:block;
+    }
+
+    ul {
+		width: 100%;
+		 li span {
+		 	font-size: 28px;
+   			display: inline-block;
+		    height: 56px;
+		    line-height: 56px;
+		    padding-left: 30px;
+		 }
+    }
+
+   .firstSpan {
+	    position: relative;
+	    border-right: 3px solid #ccc;/*no*/
+	    padding: 0 20px;
+	    color: #999;
+
+	    &.one {
+			width: 222px;
+			text-align:center;
+	    }
+
+	    &::after {
+	    	content: "";
+		    width: 16px;
+		    height: 16px;
+		    background-color: #ccc;
+		    border-radius: 50%;
+		    display: block;
+		    position: absolute;
+		    top: 50%;
+		    right: -9px;
+		    margin-top: -8px;
+	    }
+   }
+}

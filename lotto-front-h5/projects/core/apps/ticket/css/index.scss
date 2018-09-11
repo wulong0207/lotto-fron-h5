@@ -1,0 +1,29 @@
+/**
+ * Created by YLD on 2017/11/02.
+ */
+@import "../../../../../lib/scss/base/base";
+
+.yc {
+  &.yc-ticket {
+    .blue {
+      color: #1e88d2;
+    }
+    .red {
+      color: #f01614;
+    }
+    .more-ticket {
+      background-color: #fff;
+      line-height: 80px;
+      border-top: 1px solid #ececec; /*no*/
+      border-bottom: 1px solid #ececec; /*no*/
+      font-size: 28px;
+      text-align: center;
+      margin: 30px 0;
+      color: #666;
+    }
+
+    .ticket-content {
+      margin-top: 90px;
+    }
+  }
+}

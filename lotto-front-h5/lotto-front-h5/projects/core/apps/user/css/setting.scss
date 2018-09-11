@@ -1,0 +1,130 @@
+// @import '../base/base.scss';
+// @import "./component/common.scss";
+.setting {
+  .login-reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px 30px 28px;
+    position: relative;
+    background-color: #1e88d2;
+    background-image: url("../img/lineone@2x.png"), url("../img/linetwo@2x.png"),
+      url("../img/linethree@2x.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left bottom, left bottom, left bottom;
+    background-size: 100% 35px, 100% 35px, 100% 35px;
+    .icon-custom {
+      display: inline-block;
+      width: 111px;
+      height: 111px;
+      background: url("../img/custom@2x.png") no-repeat;
+      background-size: cover;
+    }
+    .lr-desc {
+      font-size: 30px;
+      margin: 10px 0 20px;
+    }
+    .forget-pwd {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      font-size: 18px;
+    }
+  }
+  .st-section {
+    margin-top: 20px;
+    .st-item {
+      display: flex;
+      padding: 30px;
+      background: #fff;
+      border-bottom: 1px solid #f4f4f4; /*no*/
+      justify-content: space-between;
+      text-align: left;
+      align-items: center;
+      .icon-us {
+        width: 44px;
+        height: 44px;
+        background: url("../img/us@2x.png") no-repeat;
+        background-size: cover;
+      }
+      .icon-bank-card {
+        width: 44px;
+        height: 44px;
+        background: url("../img/bankcard@2x.png") no-repeat 50%;
+        background-size: cover;
+      }
+      .item-title {
+        flex: 1;
+        font-size: 32px;
+        color: #333333;
+        margin: 0 20px;
+      }
+      .icon-arrow-r {
+        margin-left: 10px;
+        width: 17px;
+        height: 30px;
+        background: url("../img/right@2x.png") no-repeat;
+        background-size: cover;
+      }
+      .icon-password {
+        width: 40px;
+        height: 40px;
+        background: url("../img/changepwd.png") no-repeat 50%;
+        background-size: cover;
+      }
+      em {
+        font-size: 26px;
+        color: #999999;
+      }
+    }
+  }
+  .st-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 30px;
+    background: #fff;
+    .custom {
+      flex: 1;
+      width: 116px;
+      height: 116px;
+      border-radius: 50%;
+    }
+    .info {
+      flex: 5;
+      padding-left: 20px;
+      span {
+        font-size: 32px;
+        color: #333333;
+        height: 60px;
+        line-height: 60px;
+      }
+      .level-z {
+      }
+      em {
+        font-size: 26px;
+        color: #999999;
+      }
+    }
+    .icon-arrow-r {
+      margin-left: 10px;
+      width: 17px;
+      height: 30px;
+      background: url("../img/right@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  .quit {
+    font-weight: normal;
+    border: 0;
+    background: #fff;
+    width: 100%;
+    height: 88px;
+    font-size: 32px;
+    color: #333333;
+    margin-top: 20px;
+  }
+}

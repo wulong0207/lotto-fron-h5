@@ -1,0 +1,26 @@
+// @import '../base/base.scss';
+@import "./common.scss";
+
+.question-list {
+  .section-title {
+    font-size: 32px;
+    color: #999999;
+    padding: 20px 30px 0 30px;
+    background: #f4f4f4;
+  }
+  .sf-section {
+    .sf-item {
+      padding: 30px 30px 30px 0;
+      span {
+        font-size: 32px;
+      }
+      .icon-voice {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background: url("../img/voise@2x.png") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}

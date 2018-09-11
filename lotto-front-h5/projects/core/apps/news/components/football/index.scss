@@ -1,0 +1,39 @@
+.matchs {
+    .bottom{
+        font-size:30px;
+        display: flex;
+        justify-content: center;
+        margin-top:30px;
+        align-items:center;
+        div{
+            font-size:24px;
+            width:144px;
+            // height:86px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            padding:10px;
+            border-radius:6px;
+            background-color:#fff3da;
+            margin-right:20px;
+            text-align:center;
+            word-wrap: nowrap;
+            &:last-of-type{
+                margin-right:0;
+            }
+        
+            span{
+                display: inline-block;
+                width:100%;
+            }
+    
+        }
+        .selected{
+            background-color:#009944;
+            border:1px solid #8fc31f;/*no*/
+            color:#fff;
+            // background: url("../img/lvse.png") no-repeat;
+            background-position:bottom right;  
+        }
+    }
+}

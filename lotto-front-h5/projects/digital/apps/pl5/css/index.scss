@@ -1,0 +1,44 @@
+@import "~lib/scss/base/base";
+
+body,
+#app {
+  background: #fff !important;
+}
+.yc-pl5 {
+  .zx-page {
+    padding-top: 20px;
+    position: relative;
+  }
+  .random-button {
+    height: 58px;
+    width: 182px;
+    background: url(~lib/img/number/random.png) no-repeat;
+    background-size: cover;
+    border: none;
+    outline: 0;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 9;
+  }
+  .number-panel-box {
+    position: relative;
+    border-bottom: solid 1px #f4f4f4; /* no */
+    &.last {
+      border: none;
+    }
+    .clear-icon {
+      height: 46px;
+      width: 46px;
+      background: url(~lib/img/component/icon_del@2x.png) no-repeat;
+      background-size: cover;
+      border: none;
+      padding: 0;
+      margin: 0;
+      outline: 0;
+      position: absolute;
+      right: 40px;
+      bottom: 60px;
+    }
+  }
+}

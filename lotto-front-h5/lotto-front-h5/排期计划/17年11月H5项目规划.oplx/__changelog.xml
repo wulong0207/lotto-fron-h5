@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="yubei" date="2017-11-21T02:32:36.756Z" timestamp="2017-11-21T02:32:36.756Z">
+    <change idref="t107" attribute="internalEffortDone" type="real" from="90000" to="198000" resolved="yes"/>
+    <change idref="t110" attribute="internalEffortDone" type="real" from="0" to="14400" resolved="yes"/>
+    <change idref="t111" attribute="internalEffortDone" type="real" from="232200" to="259200" resolved="yes"/>
+    <change idref="t113" attribute="internalEffortDone" type="real" from="9000" to="86400" resolved="yes"/>
+    <change idref="t114" attribute="internalEffortDone" type="real" from="298800" to="374400" resolved="yes"/>
+    <change idref="t116" attribute="internalEffortDone" type="real" from="300600" to="357300" resolved="yes"/>
+    <change idref="t118" attribute="internalEffortDone" type="real" from="72000" to="102600" resolved="yes"/>
+    <change idref="t126" attribute="internalEffortDone" type="real" from="129600" to="145800" resolved="yes"/>
+    <change idref="t127" attribute="internalEffortDone" type="real" from="144000" to="247500" resolved="yes"/>
+    <change idref="t130" attribute="internalEffortDone" type="real" from="18000" to="54000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="yubei" date="2017-11-21T02:32:58.079Z" timestamp="2017-11-21T02:32:58.079Z">
+    <change idref="t119" attribute="internalEffortDone" type="real" from="369000" to="399600" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="yubei" date="2017-11-22T03:16:14.561Z" timestamp="2017-11-22T03:16:14.561Z">
+    <change idref="t109" attribute="internalEffortDone" type="real" from="0" to="14400" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="yubei" date="2017-11-22T03:16:25.088Z" timestamp="2017-11-22T03:16:25.088Z">
+    <change idref="t126" attribute="internalEffortDone" type="real" from="145800" to="162000" resolved="yes"/>
+  </task-change-set>
+</changelog>

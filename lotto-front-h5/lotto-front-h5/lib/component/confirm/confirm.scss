@@ -1,0 +1,38 @@
+@import "../../scss/base/base";
+
+.confirm-dialog-component {
+  .dialog-content {
+    padding: 0;
+  }
+  .confirm-message {
+    padding: 30px;
+    text-align: center;
+    font-size: 32px;
+  }
+  .confirm-footer {
+    display: flex;
+    button {
+      flex: 1;
+      display: block;
+      font-size: 32px;
+      width: 100%;
+      text-align: center;
+      border: none;
+      border-top: solid 1px #f4f4f4; /* no */
+      color: #1e88d2;
+      background: none;
+      padding: 20px 0;
+      outline: 0;
+      &:active {
+        background: rgba(0, 0, 0, .05);
+      }
+      &:first-child {
+        border-right: solid 1px #f4f4f4; /* no */
+        border-bottom-left-radius: 20px;
+      }
+      &:last-child {
+        border-bottom-left-radius: 20px;
+      }
+    }
+  }
+}

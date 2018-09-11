@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="i-Yx-ZGsc-O">
+  <start-date>2017-11-01T00:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>任务 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>里程碑 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>群组 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>资源 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>设备 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>素材 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>群组 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <name/>
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday"/>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+    <child-resource idref="r3"/>
+    <child-resource idref="r4"/>
+    <child-resource idref="r5"/>
+    <child-resource idref="r6"/>
+    <child-resource idref="r7"/>
+  </resource>
+  <resource id="r1">
+    <name>易浩</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>喻备</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r3">
+    <name>廖志远</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r4">
+    <name>邹玉婷</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r5">
+    <name>许胜鹏</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r6">
+    <name>马胜</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r7">
+    <name>杨利东</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t103"/>
+    <child-task idref="t128"/>
+    <child-task idref="t126"/>
+    <child-task idref="t104"/>
+    <child-task idref="t105"/>
+    <child-task idref="t117"/>
+    <child-task idref="t127"/>
+    <child-task idref="t106"/>
+    <child-task idref="t118"/>
+    <child-task idref="t124"/>
+    <child-task idref="t107"/>
+    <child-task idref="t112"/>
+    <child-task idref="t115"/>
+    <child-task idref="t113"/>
+    <child-task idref="t120"/>
+    <child-task idref="t111"/>
+    <child-task idref="t108"/>
+    <child-task idref="t109"/>
+    <child-task idref="t110"/>
+    <child-task idref="t130"/>
+    <child-task idref="t116"/>
+    <child-task idref="t114"/>
+    <child-task idref="t119"/>
+    <child-task idref="t121"/>
+  </task>
+  <task id="t103">
+    <title>竞彩实单推荐上线（抄单项目）</title>
+    <effort>144000</effort>
+    <effort-done>144000</effort-done>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t104">
+    <title>新疆11选5</title>
+    <effort>14400</effort>
+    <effort-done>14400</effort-done>
+    <prerequisite-task idref="t128"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t105">
+    <title>江西11选5</title>
+    <effort>14400</effort>
+    <effort-done>14400</effort-done>
+    <prerequisite-task idref="t104"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t106">
+    <title>江西快3</title>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
+    <prerequisite-task idref="t103"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t107">
+    <title>H5调用APP原生交互</title>
+    <effort>230400</effort>
+    <effort-done>198000</effort-done>
+    <start-constraint-date>2017-11-07T00:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2017-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t108">
+    <title>首页弹出广告</title>
+    <effort>43200</effort>
+    <effort-done>43200</effort-done>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t109">
+    <title>11选5新用户指导页</title>
+    <effort>14400</effort>
+    <effort-done>14400</effort-done>
+    <prerequisite-task idref="t108"/>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t110">
+    <title>11选5乐选新玩法指引页</title>
+    <effort>14400</effort>
+    <effort-done>14400</effort-done>
+    <prerequisite-task idref="t109"/>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t111">
+    <title>帮助中心，APP嵌套</title>
+    <effort>259200</effort>
+    <effort-done>259200</effort-done>
+    <prerequisite-task idref="t120"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t112">
+    <title>浦发银行微信H5对接 - 支付,充值</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t113">
+    <title>消息落地页</title>
+    <effort>86400</effort>
+    <effort-done>86400</effort-done>
+    <prerequisite-task idref="t115"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t114">
+    <title>出票详情</title>
+    <effort>374400</effort>
+    <effort-done>374400</effort-done>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t115">
+    <title>抽奖活动页面奖品图片配置</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <prerequisite-task idref="t112"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t116">
+    <title>方案详情样式修改</title>
+    <effort>374400</effort>
+    <effort-done>357300</effort-done>
+    <prerequisite-task idref="t110"/>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t117">
+    <title>彩种停售分平台</title>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
+    <prerequisite-task idref="t105"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t118">
+    <title>往期对阵数据分析 - 赛事赛选逻辑，SP值选择</title>
+    <effort>144000</effort>
+    <effort-done>102600</effort-done>
+    <prerequisite-task idref="t106"/>
+    <prerequisite-task idref="t126"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t119">
+    <title>赛事详情 - 足球</title>
+    <effort>432000</effort>
+    <effort-done>399600</effort-done>
+    <assignment idref="r6"/>
+  </task>
+  <task id="t120">
+    <title>H5页面回退优化</title>
+    <effort>57600</effort>
+    <effort-done>45000</effort-done>
+    <prerequisite-task idref="t113"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t121">
+    <title>代码结构调整 - 人均5天</title>
+    <effort>864000</effort>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+    <assignment idref="r4"/>
+    <assignment idref="r5"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t124">
+    <title>数字彩URL传递号码</title>
+    <effort>288000</effort>
+    <prerequisite-task idref="t118"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t126">
+    <title>抄单提测后BUG修复</title>
+    <effort>172800</effort>
+    <effort-done>162000</effort-done>
+    <prerequisite-task idref="t103"/>
+    <assignment idref="r1"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t127">
+    <title>快捷投注 - 竞彩足球H5快投</title>
+    <effort>288000</effort>
+    <effort-done>247500</effort-done>
+    <prerequisite-task idref="t117"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t128">
+    <title>竞彩实单推荐上线（抄单项目）</title>
+    <effort>57600</effort>
+    <effort-done>57600</effort-done>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t130">
+    <title>方案详情增加抄单显示 - 临时需求</title>
+    <effort>86400</effort>
+    <effort-done>54000</effort-done>
+    <start-constraint-date>2017-11-15T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t110"/>
+    <assignment idref="r5"/>
+    <start-no-earlier-than>2017-11-15T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

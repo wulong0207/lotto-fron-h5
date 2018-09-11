@@ -1,0 +1,112 @@
+/**
+ * Created by YLD
+ * date 2017-08-16
+ * desc: 竞彩篮球
+ */
+@import "../../../../../../lib/scss/base/mixins";
+
+.sp-history {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  @include z-index(float);
+  flex-direction: column;
+
+  .take-position {
+    flex: 1;
+  }
+
+  .dead-line {
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    padding: 30px 0 30px 0;
+    position: relative;
+    margin-top: 10px;
+    height: 100px;
+
+    .close {
+      background: url(../../img/icon_shut_down2@2x.png) 100% no-repeat;
+      background-size: cover;
+      background-position: 50% 0;
+      position: absolute;
+      height: 83px;
+      width: 50px;
+      right: 27px;
+      top: 25px;
+    }
+  }
+
+  .cart {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #fff;
+
+    .message {
+      padding: 20px;
+      font-size: 32px;
+      color: #000;
+      text-align: center;
+    }
+
+    .slide {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding-bottom: 20px;
+
+      .data-list {
+        line-height: 46px;
+        display: flex;
+        &.gray {
+          background-color: #f4f4f4;
+          color: #666;
+        }
+        &.data {
+          line-height: 60px;
+        }
+        .green {
+          color: #00c100;
+        }
+
+        li {
+          text-align: center;
+
+          &.black {
+            color: #000;
+          }
+          &.gray {
+            color: #000;
+            background-color: #f4f4f4;
+          }
+          &.udpate-time {
+            width: 280px;
+          }
+        }
+      }
+
+      .cart-area {
+        flex: 1;
+        overflow-y: auto;
+        height: 414px;
+
+        .grey {
+          color: #999;
+        }
+        .red {
+          color: #ed1c24;
+        }
+        .blue {
+          color: #1e88d2;
+        }
+      }
+    }
+  }
+}

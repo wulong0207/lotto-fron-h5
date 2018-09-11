@@ -1,0 +1,26 @@
+@import "../base/base";
+
+.number-input-component {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  .number-input-container {
+    display: flex;
+    .minus, .plus {
+      flex: 1;
+      background: #F0F0F0;
+      text-align: center;
+      line-height: 60px;
+      font-size: 42px;
+    }
+    .number-input {
+      background: #fff;
+      border: solid 1px #F0F0F0; /*no*/
+      width: 80px;
+      text-align: center;
+      line-height: 60px;
+      font-size: 28px;
+      overflow: auto;
+    }
+  }
+}

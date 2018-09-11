@@ -1,0 +1,101 @@
+@import "../../../../../../lib/scss/base/base.scss";
+
+.matches {
+  .match {
+    padding: 40px 20px;
+    border-bottom: solid 1px #f4f4f4; /* no */
+    &:last-child {
+      border: none;
+    }
+    .match-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .team {
+        width: 144px;
+        height: 80px;
+        text-align: center;
+        img {
+          height: 60px;
+          width: 60px;
+          margin-top: 10px;
+        }
+        .team-name {
+          width: 80px;
+          padding-top: 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .match-summary {
+        text-align: center;
+        color: #999;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        position: relative;
+        margin-top: 8px;
+        .dan {
+          background: #d0f1e3;
+          height: 36px;
+          width: 68px;
+          text-align: center;
+          line-height: 36px;
+          color: #188857;
+          position: absolute;
+          bottom: -36px;
+          left: 50%;
+          margin-left: -34px;
+        }
+      }
+      .match-meta {
+        span {
+          padding-right: 10px;
+          line-height: 24px;
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+    .team-names {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .match-summary {
+        height: 28px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+      }
+      .match-meta {
+        height: 28px;
+        span {
+          padding-right: 10px;
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+      .team-name {
+        width: 144px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        font-size: 28px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

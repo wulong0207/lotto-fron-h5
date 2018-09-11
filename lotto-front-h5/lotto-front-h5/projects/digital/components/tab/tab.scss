@@ -1,0 +1,96 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-06-27 17:51:07
+ * @Desc: 头部切换组件
+ */
+
+@import "../../../../lib/scss/base/mixins";
+
+.header-tab {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  .tabs {
+    width: 100%;
+    // height: 95px;
+    overflow-x: auto;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+    table {
+      width: 100%;
+      td {
+        padding: 0 20px 10px;
+        color: #a5cff1;
+        * {
+          white-space: nowrap;
+        }
+        div {
+          font-size: 30px;
+          color: #c8ddf1;
+        }
+        span {
+          color: #9ac8ef;
+        }
+        &.cur {
+          border-bottom: 3px solid #fff; /*no*/
+          * {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .tab-switch {
+    width: 80px;
+    // height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.2); /*no*/
+    .tab-switch-arrow {
+      @include size(60px);
+      @include arrows(135, 20px, 3px, #fff);
+    }
+  }
+  .tab-switch-con {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    @include z-index(tabTips);
+    .tab-switch-bg {
+      background: #fff;
+      box-shadow: 0 5px 20px #ccc;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        li {
+          position: relative;
+          border-radius: 5px; /*no*/
+          border: 1px solid #e6e6e6; /*no*/
+          width: 29%;
+          height: 100px;
+          margin: 30px 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          div {
+            font-size: 30px;
+            color: #666;
+          }
+          span {
+            font-size: 24px;
+            color: #999;
+          }
+          &.cur {
+            border-color: #1e88de;
+            * {
+              color: #1e88de;
+            }
+          }
+        }
+      }
+    }
+  }
+}

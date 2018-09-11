@@ -1,0 +1,112 @@
+@import "../../../../../lib/scss/base/base";
+
+body,
+#app {
+  background: #fff !important;
+}
+.yc-ssq {
+  .ssq-content {
+    position: relative;
+    padding-bottom: 180px;
+  }
+  .number-panel-box {
+    border-bottom: solid 1px #f4f4f4; /* no */
+    &.last {
+      border: none;
+    }
+  }
+
+  .pt-page {
+    .number-panel-box {
+      position: relative;
+
+      .number-random-number-component {
+        position: absolute;
+        right: 30px;
+        bottom: 60px;
+      }
+    }
+  }
+  .dt-page {
+    .number-panel-box {
+      position: relative;
+      .number-random-number-component {
+        position: absolute;
+        right: 30px;
+        bottom: 60px;
+      }
+    }
+  }
+}
+
+.number-lottery-empty-tip {
+  font-size: 28px;
+  padding-top: 20px;
+  .balls {
+    text-align: center;
+    padding: 15px 0;
+    .ball {
+      display: inline-block;
+      font-weight: 700;
+      line-height: 50px;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin: 0 10px;
+      background: #ed1c24;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+.number-random-number-component {
+  .random-number-range {
+    width: 688px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: -180px;
+    left: -530px;
+    font-size: 0;
+    box-shadow: 0 0 10px #aaa;
+
+    ::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: 100px;
+      z-index: 3;
+      width: 0;
+      height: 0;
+      border-top: 12px solid #fff;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+    }
+    ::before {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      right: 100px;
+      z-index: 3;
+      width: 0;
+      height: 0;
+      border-top: 12px solid #e6e6e6;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+    }
+
+    .range-item {
+      width: 86px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 30px;
+      text-align: center;
+      display: inline-block;
+      box-sizing: border-box;
+      border-left: 1px solid #f4f4f4; /*no*/
+      border-bottom: 1px solid #f4f4f4; /*no*/
+    }
+  }
+}

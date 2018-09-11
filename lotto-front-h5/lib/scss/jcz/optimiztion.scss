@@ -1,0 +1,196 @@
+@import "../base/base";
+
+.football-optimization {
+  .status-bar {
+    height: 55px;
+    line-height: 55px;
+    padding: 0 30px;
+    font-size: 20px;
+    span {
+      margin-right: 20px;
+    }
+  }
+  .amount-money {
+    background: #fff;
+    padding: 14px 30px;
+    display: flex;
+    border-bottom: solid 1px #f4f4f4; /*no*/
+    h5 {
+      font-size: 28px;
+      flex: 1;
+      line-height: 60px;
+      font-weight: normal;
+    }
+    .number-input-component .number-input-container .number-input{
+      width: 120px;
+    }
+  }
+  .optimization-item {
+    border-bottom: solid 1px #f4f4f4; /*no*/
+    background: #fff;
+    &.disabled {
+      background: rgba(0, 0, 0, .3);
+      color: #666;
+      border-color: #999;
+      .optimization-title {
+        border: none;
+      }
+    }
+    .optimization-title {
+      margin-left: 30px;
+      padding: 20px 30px 20px 0;
+      height: 90px;
+      border-bottom: solid 1px #f4f4f4; /*no*/
+      &.selected {
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 28px;
+          height: 90px;
+          top: 0;
+          right: 30px;
+          background: url('../../img/greenchoice@2x.png') no-repeat right center;
+          background-size: 28px 28px;
+        }
+      }
+      h5 {
+        display: inline-block;
+        font-size: 28px;
+        line-height: 50px;
+        font-weight: normal;
+        margin-right: 30px;
+      }
+      span {
+        font-size: 24px;
+        color: #666;
+      }
+    }
+    .optimization-range {
+      height: 90px;
+      padding: 20px 30px;
+      font-size: 24px;
+      color: #999;
+      line-height: 50px;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 90px;
+        top: 0;
+        right: 30px;
+        background: url('../../img/right@2x.png') no-repeat right center;
+        background-size: 17px 30px;
+      }
+      span {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+.combinations-page {
+  padding-bottom: 220px;
+  .combinations-table {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      th, td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 20px 0;
+        border: solid 1px #f4f4f4; /*no*/
+      }
+      td {
+        background: #fff;
+      }
+    }
+    .match-label {
+      margin: 10px;
+      display: flex;
+      text-align: center;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        flex: 1;
+        border: solid 1px #f4f4f4; /*no*/
+        &.team-name {
+          border-right: 0;
+        }
+        &.label {
+          background: #8FC31F;
+          color: #fff;
+          border-color: #8FC31F;
+        }
+      }
+    }
+  }
+}
+
+.betting-bar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  border-top: solid 1px #f4f4f4; /*no*/
+  .times-input {
+    height: 90px;
+    padding: 15px 30px;
+    display: flex;
+    .money-range {
+      flex: 1;
+      padding-top: 10px;
+      h5 {
+        font-size: 28px;
+        display: inline-block;
+        font-weight: normal;
+      }
+      p {
+        display: inline-block;
+        color: #999;
+      }
+    }
+  }
+  .total-summary {
+    display: flex;
+    .total-money-summary {
+      border-top: solid 1px #f4f4f4; /*no*/
+      padding: 10px 0 0 30px;
+      flex: 1;
+      display: flex;
+      .total-money-range {
+        flex: 2;
+        color: #999;
+        h5 {
+          font-size: 28px;
+          font-weight: normal;
+        }
+      }
+      .total-bet-num {
+        flex: 1;
+        h5 {
+          font-size: 32px;
+          font-weight: normal;
+          padding-top: 15px;
+        }
+      }
+    }
+    .order-btn {
+      width: 220px;
+      height: 100px;
+      background: #ED1C24;
+      color: #fff;
+      font-size: 34px;
+      line-height: 100px;
+      text-align: center;
+      border: none;
+      &[disabled] {
+        opacity: 0.5;
+      }
+    }
+  }
+}

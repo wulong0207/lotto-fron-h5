@@ -1,0 +1,38 @@
+.self {
+  .cont {
+    margin-top: 30px;
+    border-bottom: 1px solid #e5e5e5; /*no*/
+    border-top: 1px solid #e5e5e5; /*no*/
+    .self-block {
+      padding-left: 30px;
+      background-color: #fff;
+      .listout {
+        padding-right: 30px;
+        border-bottom: 1px solid #e5e5e5; /*no*/
+        .list {
+          width: 100%;
+          height: 90px;
+          display: flex;
+          align-items: center;
+          background: url("../img/right@2x.png") no-repeat right center;
+          background-size: 17px 30px;
+          .img {
+            height: 100%;
+            margin-right: 25px;
+            margin-left: 10px;
+          }
+          .txt {
+            font-size: 32px;
+            color: #333;
+            line-height: 90px;
+          }
+        }
+      }
+    }
+    .self-block:nth-last-child(1) {
+      .listout {
+        border: none;
+      }
+    }
+  }
+}

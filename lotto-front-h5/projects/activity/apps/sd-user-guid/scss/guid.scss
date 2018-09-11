@@ -1,0 +1,121 @@
+.full-page {
+  .bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bg-white {
+    background-color: #fff;
+  }
+  .bg-yello {
+    background: url("../img/bgw.png") center center no-repeat;
+    background-size: cover;
+  }
+  .bg-grey {
+    background: url("../img/bgg.png") center center no-repeat;
+    background-size: cover;
+  }
+  .top {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 4%;
+  }
+  .arrow {
+    display: block;
+    max-width: 74px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+  }
+  .col80 {
+    height: 70%;
+  }
+  .title {
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 56px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .f38 {
+    font-size: 38px;
+  }
+  .info {
+    background: url("../img/bgo.png") center center no-repeat;
+    background-size: cover;
+    max-width: 60%;
+    height: 180px;
+    margin: 20px auto 6% auto;
+    padding-top: 60px;
+  }
+  .top1 {
+    background: url("../img/top1.png") center center no-repeat;
+    background-size: contain;
+  }
+  .top2 {
+    background: url("../img/top2.png") center center no-repeat;
+    background-size: contain;
+  }
+  .top3 {
+    background: url("../img/top3.png") center center no-repeat;
+    background-size: contain;
+  }
+  .top4 {
+    background: url("../img/top4.png") center center no-repeat;
+    background-size: contain;
+  }
+  .top5 {
+    background: url("../img/top5.png") center center no-repeat;
+    background-size: contain;
+  }
+  .top6 {
+    background: url("../img/top6.png") center center no-repeat;
+    background-size: contain;
+  }
+  .top7 {
+    background: url("../img/top7.png") center center no-repeat;
+    background-size: contain;
+  }
+  .top8 {
+    background: url("../img/top8.png") center center no-repeat;
+    background-size: contain;
+  }
+  .top9 {
+    background: url("../img/top9.png") center center no-repeat;
+    background-size: contain;
+  }
+  .top10 {
+    background: url("../img/top10.png") center center no-repeat;
+    background-size: contain;
+  }
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  div {
+    display: block;
+    width: 283px;
+    line-height: 84px;
+    border-radius: 42px;
+    text-align: center;
+    font-size: 34px;
+    color: #2b3a36;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  .make-money {
+    background: #f0dc05;
+  }
+  .see-argin {
+    margin-top: 32px;
+    background: #ebedec;
+  }
+}

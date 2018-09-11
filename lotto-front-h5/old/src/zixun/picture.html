@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>图片展示</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1,minimum-scale=1, maximum-scale=1"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link href="css/index.css?v={_VERSION_}" rel="stylesheet" type="text/css" />
+<link href="../lib/css/swiper-3.4.1.min.css" rel="stylesheet" type="text/css" />
+<script src="../utils/app.js?v={_VERSION_}" type="text/javascript"></script>
+<script src="../lib/zepto.min.js"></script>
+<script src="../lib/scale.js?v={_VERSION_}" type="text/javascript"></script>
+</head>
+<body>
+<!--  头部开始  -->
+<section id="picture">
+<header id="zx_head" class="zx_content">
+   <!--   头部标题栏   -->
+   <section class="zx_h_title" id="picture_h_title">
+        <a href="#" class="h_back"></a>
+        <h1 class="h_title white"></h1>
+        <a href="#" class="h_person white"></a>
+        <a href="#" class="h_share white"></a>
+   </section>
+ </header>
+   <section class="picture_show">
+        <div class="swiper-container swiper5" id="swiper5">
+                <div class="swiper-wrapper fontSize8">
+                    <div class="swiper-slide"><a href="#"><img src="images/7.jpg" width="100%" /></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/7.jpg" width="100%" /></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/7.jpg" width="100%" /></a></div>
+                    <div class="swiper-slide swiper_last">
+                        <a href="#"><img src="images/8.jpg"><span class="zx_sl">我是标题我是标题我是标是标题</span></a>
+                        <a href="#"><img src="images/8.jpg"><span class="zx_sl">我是标题我是标题</span></a>
+                        <a href="#"><img src="images/8.jpg"><span class="zx_sl">我是标题我是标题</span></a>
+                        <a href="#"><img src="images/8.jpg"><span class="zx_sl">我是标题我是标题</span></a>
+                        <section class="picture_ssq">
+                             <h4><strong>双色球</strong>可开出0注500万大奖</h4>
+                             <span class="kt_qh picture_kt_qh"><em class="kt_red_border">11</em><em class="kt_red_border">12</em><em class="kt_red_border">11</em><em class="kt_red_border">11</em><em class="kt_red_border">11</em><em class="kt_red_border">11</em><em class="kt_blue_border">01</em><a href="javascript:;" class="break"></a></span>
+                             <a href="#" class="picture_buy">连续买10期</a>
+                             <span class="picture_smallfont">55%的大奖均由追号产生</span>
+                        </section>
+                    </div>
+                </div>
+        </div>
+   </section>
+
+   <section class="picture_bottom">
+       <div class="picture_title_page">
+           <h3 class="picture_title">竞彩足球-赛事前瞻</h3>
+           <span class="picture_page"><em class="page_state">1</em>/<em class="page_total">20</em></span>
+       </div>
+       <p class="pictur_main">
+           北京时间1月7日，火箭在客场以100-93击败魔术。火箭(29-9）七连胜。詹姆斯-哈登三分球8投0中，全场15投5中，但仍得了14分、10次助攻和7个篮板。莱恩阿隆-戈登18分、7塞尔吉-伊巴卡16分12个篮板。
+       </p>
+   </section>
+
+
+</section>
+
+<script src="../lib/alloy-lever.js"></script>
+<script src="../lib/alloy-lever.config.js"></script>
+<script src="../lib/swiper-3.4.1.min.js" type="text/javascript"></script>
+<script src="../utils/utils.js?v={_VERSION_}" type="text/javascript"></script>
+<script src="js/index.js?v={_VERSION_}" type="text/javascript"></script>
+<script type="text/javascript">
+window.onload = function() {
+
+  var swiperLength = $('.swiper5 .swiper-wrapper > div').length;
+  $('.page_total').text(swiperLength-1);
+
+  var swiper5 = new Swiper('.swiper5', {
+        pagination: '.swiper-pagination5',
+        paginationClickable: true,
+        spaceBetween: 60,
+        onSlideChangeEnd:function(mySwiper){
+              var activeIndex = swiper5.activeIndex+1;
+              $('.page_state').text(activeIndex);
+              if(activeIndex == swiperLength){
+                  $('.picture_bottom').hide();
+              }else{
+                  $('.picture_bottom').show();
+              }
+        }
+  });
+
+
+
+
+
+
+}
+</script>
+
+</body>
+</html>

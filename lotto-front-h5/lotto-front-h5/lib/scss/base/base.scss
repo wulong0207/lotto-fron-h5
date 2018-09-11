@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/*
+ * @Author: yubei
+ * @Date: 2017-03-22 17:49:40
+ * @Desc: base通用设置
+ */
+
+@import "reset/_reset.scss";
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: PingFang-SC-Regular, "helvetica neue", "hiragino sans gb", tahoma,
+    "microsoft yahei ui", "microsoft yahei", simsun, sans-serif;
+  line-height: 1.5;
+  font-size: 24px !important;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.theme-blue {
+  background: #1e88d2;
+}
+.theme-green {
+  background: #01af63;
+}
+
+.theme-white {
+  background: #fff;
+}
+
+// body 添加样式，实现有遮罩时不滚动
+html.pop-open,
+.pop-open body {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+#app {
+  margin-left: auto;
+  margin-right: auto;
+  // max-width: 1000px; // 头尾fixed后宽度100%会脱离文档流
+  // box-shadow: 0 0 5px #000;/*no*/
+  background-color: #f5f5f5;
+}
+
+.h100 {
+  height: 100px;
+}
+
+// 小圆点提示
+.dot-tips {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #8fc31f;
+  border-radius: 50%;
+}
+
+// 圆圈数字
+.round-num {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ff7a0d; /*no*/
+  font-size: 20px;
+  color: #ff7a0d;
+  border-radius: 50%;
+  text-align: center;
+}
+
+// 网格选中
+.grid-sel {
+  background: #abd257;
+  color: #fff;
+  * {
+    color: #fff !important;
+  }
+}
+// 网格不可选
+.grid-nosel {
+  background: #f4f4f4;
+  color: #999;
+  flex: 1;
+}
+
+// 遮罩
+.mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+}
+
+/* 待删除 */
+
+.gray {
+  color: #999;
+}
+
+//flex布局
+.flex {
+  // -webkit-box-flex: 1;
+  // -webkit-flex: 1;
+  // -ms-flex: 1;
+  flex: 1;
+}
+.display-flex {
+  // display:-webkit-box;
+  // display: -moz-box;
+  // display: -ms-flexbox;
+  // display: -webkit-flex;
+  display: flex;
+}
+.flex-column {
+  // -webkit-box-orient:vertical;
+  // -webkit-box-direction:normal;
+  // -moz-box-orient:vertical;
+  // -moz-box-direction:normal;
+  flex-direction: column;
+  // -webkit-flex-direction:column;
+}
+.flex-wrap {
+  // -webkit-box-lines: multiple;
+  /* 12版 */
+  // -webkit-flex-wrap: wrap;
+  // -moz-flex-wrap: wrap;
+  // -ms-flex-wrap: wrap;
+  // -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.align-items {
+  // -webkit-box-align: center;
+  align-items: center;
+  // -webkit-box-pack: center;
+  justify-content: center;
+}
+
+/*
+美化range组件
+IE9 以上 ::-ms-fill-lower 和 ::-ms-fill-upper
+Firefox ::-moz-range-progress
+*/
+// input[type=range] {
+//     -webkit-appearance: none; // 隐藏滑块，以便自定义滑块样式
+// 	width: 100%;
+// 	background: transparent;
+// 	// 原始的控件获取到焦点时，会显示包裹整个控件的边框，所以还需要把边框取消
+// 	&:focus {
+// 		outline: none; // 去掉默认蓝色边框
+// 	}
+
+// 	// 给滑动轨道(track)添加样式
+// 	&::-webkit-slider-runnable-track {
+// 		height: 9px;
+// 		background: #4f5f6e;
+// 		border: 1px solid #141e28;/*no*/
+// 		border-radius: 4px; /*no*/ /*这个属性设置使填充进度条时的图形为圆角*/
+// 	}
+
+// 	// 给滑块(thumb)添加样式
+//     &::-webkit-slider-thumb {
+// 		-webkit-appearance: none;
+// 		@include size(15px, 20px);
+// 		margin-top: -5px;
+// 		background: #01af63;
+// 		border-radius: 4px;/*no*/ /*外观设置为圆形*/
+//     	border: 1px solid #141e28;/*no*/
+// 	}
+// }

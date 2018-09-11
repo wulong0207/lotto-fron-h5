@@ -1,0 +1,301 @@
+// // @import '../base/base.scss';
+// @import "./component/common.scss";
+
+// .red {
+//     margin-left: 10px;
+// }
+
+// .lottery-container {
+//     .menu-item {
+//         padding: 30px 24px;
+//         background: #fff;
+//         font-size: 28px;
+//         border-bottom: 1px solid #f4f4f4;
+//         /*no*/
+//         display: flex;
+//         align-items: center;
+//         .icon-ten {
+//             display: inline-block;
+//             width: 108px;
+//             height: 94px;
+//         }
+//         .lot-status-m {
+//             display: flex;
+//             flex: 1;
+//             margin: 0 28px;
+//             flex-direction: column;
+//             span {
+//                 font-size: 34px;
+//             }
+//             em{
+//                 font-size:24px;
+//                 width:100%;
+//                 display: inline-block;
+//                 color:#999999;
+//             }
+//             .btn-pay {
+//                 margin-left: 10px;
+//                 display: inline-block;
+//                 color: orange;
+//                 font-size: 28px; // line-height: 20px;
+//                 border: 1px solid orange;
+//                 /*no*/
+//                 border-radius: 6px;
+//                 padding: 0 8px;
+//             }
+//         }
+//         .des {
+//             margin-left: 20px;
+//         }
+//     }
+//     .pay-area {
+//         padding: 0 30px;
+//         border-bottom: 1px solid #e6e6e6;
+//         /*no*/
+//         background: #fff;
+//         font-size: 28px;
+//         .pa-item {
+//             display: flex;
+//             justify-content: space-between;
+//             div {
+//                 padding: 15px 0;
+//             }
+//             .red{
+//                 color:#ed1c24;
+//             }
+//         }
+//         .ar {
+//             text-align: right;
+//         }
+//     }
+//     .margin-t10 {
+//         margin-top: 20px;
+//     }
+//     .lot-item {
+//         border-top: 1px solid #E6E6E6;
+//         /*no*/
+//         width: 100%;
+//         padding: 20px 30px;
+//         background: #fff;
+//         .lot-item-m {
+//             margin-left: 35px;
+//             // color:#F78D8D;
+//         }
+//     }
+//     .cxHide{
+//         display: none;
+//     }
+//     .plan-section {
+//         .jjc-item {
+//             background: #fff;
+//             margin-top: 20px;
+            
+//         }
+//         .plan-list {
+//             .plan-item {
+//                 padding: 30px 30px 10px 30px;
+//                 .plan-item-h {
+//                     display: flex;
+//                     color: #999999;
+//                     margin-bottom: 20px;
+//                 } // dlt
+//                 // 方案详情分开 f3d 11x5 ssq
+//                 .sd11x5{
+//                     .name{
+//                         width:34%;
+//                     }
+//                     .draw{
+//                         width:30%;
+//                         display: flex;
+//                         flex-wrap: wrap;
+//                         word-break:keep-all;
+//                         // color:#ed1c24;
+//                         i{
+//                             padding:0 5px;
+//                             b{
+//                                 font-weight: normal;
+//                             }
+//                             .hide{
+//                                 display: none;
+//                             }
+//                         }
+//                     }
+//                     .touzhu{
+//                         width:36%;
+//                         text-align:right;
+//                     }
+//                     .tou{
+//                         text-align: right;
+//                         width:36%;
+//                         span{
+//                             word-wrap: normal;
+//                         }
+//                     }
+//                     .red{
+//                         color:#ed1c24;
+//                     }
+//                 }
+//                 .plan-item-f {
+//                     .plan-item-f-w {
+//                         display: flex;
+//                         color: #999999;
+//                         span {
+//                             flex: 1;
+//                             // color:#ed1c24;
+//                         }
+//                         .orange {
+//                             color: #fe7a0d;
+//                             text-align: right;
+//                         }
+//                         // i {
+//                         //     color: #999999;
+//                         // }
+//                         em {
+//                             margin: 0 10px;
+//                             color: #999999;
+//                         }
+//                         .name{
+//                             width:35%;   
+//                         }
+                
+//                     }
+//                 }
+//             }
+//             // 追号新的改变 scroll
+//             .zhuihao{
+//                 width:100%;
+//                 background: #fff;
+//                 overflow-x: scroll;
+//                 .citem1 {
+//                     width: 200px;
+                  
+//                 }
+//                 .citem2 {
+//                     width:100px;
+                  
+//                 }
+//                 .citem3 {
+//                     width:250px;
+                    
+//                 }
+//                 .citem4 {
+//                     width: 350px;
+//                     white-space:nowrap;
+//                 }
+//                 .chase-item {
+//                     width:1300px;
+//                     display: inline-block;
+//                     text-align:center;
+//                     border-bottom: 1px solid #E6E6E6;/*no*/
+//                     padding:0;
+//                     margin:0;
+//                     span {
+//                         display: inline-block;
+//                         line-height: 80px;
+//                         border-right: 1px solid #E6E6E6;  /*no*/
+
+//                     }               
+//                 }
+//                 .plan-other {
+//                     display: flex;
+//                     height: 88px;
+//                     width:1250px;
+//                     align-items: center;
+//                     justify-content: center;
+//                     background: #fff;
+//                     font-size: 28px;
+//                 }
+//             }
+            
+//         }
+//         .plan-other{
+//             text-align: center;
+//             background:#fff;
+//             padding:20px 0;
+//         }
+//     }
+//     .plan-info-section {
+//         margin-top: 20px;
+//         .pay-area {
+//             padding: 30px;
+//             border-bottom: 1px solid #e6e6e6;
+//             /*no*/
+//             background: #fff;
+//             font-size: 28px;
+//             align-items: center;
+//             .pa-item {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 div {
+//                     padding: 15px 0;
+//                 }
+//                 .direction-clumn{
+//                     display: flex;
+//                     flex-direction: column;
+//                     span {
+//                         display: inline-block;
+//                         flex:1;
+//                     }
+//                 }
+//             }
+//             .ar {
+//                 text-align: right;
+//             }
+//             .flex {
+//                 flex: 1;
+//                 .fadd {
+//                     line-height: 30px;
+//                 }
+//             }
+//         }
+//         .showflex {
+//             display: flex;
+//         }
+//     }
+// }
+
+// .btn-round-blue {
+//     padding: 0 32px;
+//     border: 1px solid #1e88d2;
+//     border-radius: 26px;
+//     color: #1e88d2;
+//     height: 53px;
+//     line-height: 53px;
+// }
+
+// .orange-fill {
+//     color: #ed1c24;
+// }
+
+// .stop-chase {
+//     display: flex;
+//     height: 88px;
+//     align-items: center;
+//     justify-content: center;
+//     background: #fff;
+//     font-size: 28px;
+// }
+// .cxHide{
+//     display: none;
+// }
+
+// // 追号弹窗
+// .stop-chase-alert{
+//     .title{
+//         font-size:34px;
+//         color:#333333;
+//         margin:20px auto;
+//         font-weight: bold;
+//     }
+//     div{
+//         display: inline-block;
+//         width:100%;
+//         text-align: center;
+//     }
+// }
+// .font-24{
+//     font-size:24px !important;
+// }
+// .grey{
+//     color:#999999 !important;
+// }

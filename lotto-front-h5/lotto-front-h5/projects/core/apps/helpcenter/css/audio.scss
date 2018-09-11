@@ -1,0 +1,41 @@
+.audio-wrap {
+  .icon-play {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .timeline {
+    input[type="range"]::-ms-fill-lower {
+      //::-ms-fill-lower这是ie兼容range的属性写法下面那个同理
+      /*进度条已填充的部分*/
+      height: 22px;
+      border-radius: 10px;
+      /*background: black;*/
+      background: linear-gradient(to right, #059cfa, white 100%, white);
+    }
+
+    input[type="range"]::-ms-fill-upper {
+      /*进度条未填充的部分*/
+      height: 22px;
+      border-radius: 10px;
+      background: red;
+    }
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 375px;
+      border-radius: 10px; /*这个属性设置使填充进度条时的图形为圆角*/
+      background: -webkit-linear-gradient(#61bd12, #61bd12) no-repeat, #ddd; /*设置左边颜色为#61bd12，右边颜色为#ddd*/
+      height: 10px;
+      background-size: 75% 100%;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none; /*清除系统默认样式*/
+      height: 26px; /*拖动块高度*/
+      width: 26px; /*拖动块宽度*/
+      background: #fff; /*拖动块背景*/
+      border-radius: 50%; /*外观设置为圆形*/
+      box-shadow: 0 0 10px #333;
+    }
+  }
+}

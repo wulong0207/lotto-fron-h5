@@ -1,0 +1,41 @@
+// 追号新的改变 scroll
+.zhuihao {
+  width: 100%;
+  background: #fff;
+  overflow-x: scroll;
+  .citem1 {
+    width: 200px;
+  }
+  .citem2 {
+    width: 100px;
+  }
+  .citem3 {
+    width: 250px;
+  }
+  .citem4 {
+    width: 350px;
+    white-space: nowrap;
+  }
+  .chase-item {
+    width: 1300px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6; /*no*/
+    padding: 0;
+    margin: 0;
+    span {
+      display: inline-block;
+      line-height: 80px;
+      border-right: 1px solid #e6e6e6; /*no*/
+    }
+  }
+  .plan-other {
+    display: flex;
+    height: 88px;
+    width: 1250px;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    font-size: 28px;
+  }
+}

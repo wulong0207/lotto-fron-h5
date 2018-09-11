@@ -1,0 +1,59 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-05-08 17:54:32
+ * @Desc: 公用组件 - 细小组件统一文件
+ */
+
+
+
+@import "../base/mixins";
+
+// 加减输入
+.less-add {
+    display: flex;
+    text-align: center;
+    line-height: 60px;
+    align-items: center;
+    .less, .add {
+        width: 60px;
+        background: #f0f0f0;
+        color: #999;
+        font-size: 35px;
+    }
+    input {
+        width: 80px;
+        border: 1px solid #f4f4f4;/*no*/
+        color: #333;
+        text-align: center;
+        font-size: 32px;
+        line-height: 60px;
+    }
+}
+
+
+// 弹层时间结束提示
+.bet-endtime {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    .endtime {
+        color: #fff;
+        font-size: 28px;
+        text-align: center;
+    }
+    > .close {
+        position: absolute;
+        top: -30px;
+        right: 30px;
+        @include close($size: 50px, $color: #fff);
+        .vertical-line {
+            position: absolute;
+            top: 48px;
+            left: 24px;
+            width: 2px;
+            height: 50px;
+            background: #fff;
+        }
+    }
+}

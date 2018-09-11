@@ -1,0 +1,125 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-11-21 14:39:26
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-11-25 16:53:25
+*/
+@import "../../../../../../lib/scss/base/base.scss";
+
+.templatePage {
+  width: 660px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin-left: -330px;
+  transform: translateY(-50%);
+  z-index: 900;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  padding-bottom: 45px;
+
+  .header {
+    width: 100%;
+    height: 88px;
+    background-color: #fff;
+    position: relative;
+
+    .title {
+      font-size: 36px;
+      line-height: 88px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .close {
+      width: 38px;
+      height: 38px;
+      background-image: url("../../img/close.png");
+      background-size: cover;
+      position: absolute;
+      right: 22px;
+      top: 18px;
+      z-index: 10000;
+    }
+  }
+  .commitButton {
+    width: 306px;
+    height: 94px;
+    line-height: 94px;
+    text-align: center;
+    background-color: #1e88de;
+    margin: 0 auto;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+
+    &.noButton {
+      background-color: #e6e6e6;
+      color: #999;
+    }
+  }
+  .message {
+    font-size: 28px;
+    padding: 0 50px;
+  }
+  .template_main {
+    padding: 0 50px;
+    margin: 40px 0;
+
+    .template_list {
+      .template_item {
+        height: 80px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        display: flex;
+
+        input {
+          width: 100%;
+          height: 80px;
+          // line-height: 78px;
+          padding-left: 35px;
+          font-size: 28px;
+          color: #333;
+          flex: 1;
+          border: 1px solid #e6e6e6; /*no*/
+          border-radius: 10px;
+
+          &.btn_verify {
+            background-color: #ffd72e;
+            margin-left: 15px;
+            line-height: 74px;
+            padding-left: 0;
+            color: #642f00;
+          }
+        }
+      }
+      .lable {
+        display: flex;
+
+        .lable_txt {
+          display: block;
+          flex: 1;
+          color: #333;
+          font-size: 28px;
+
+          &.right {
+            text-align: right;
+          }
+        }
+        &.mt40 {
+          margin-top: 40px;
+        }
+        &.mb20 {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .template_message {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

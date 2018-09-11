@@ -1,0 +1,24 @@
+@import "../../scss/base/base.scss";
+
+.app-download-page {
+  background: #d64940;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app-download {
+  background: url("../images/app.jpg") no-repeat;
+  background-size: cover;
+  height: 1212px;
+  width: 750px;
+  position: absolute;
+  .download-btn {
+    height: 120px;
+    width: 500px;
+    position: absolute;
+    top: 925px;
+    left: 50%;
+    margin-left: -250px;
+  }
+}

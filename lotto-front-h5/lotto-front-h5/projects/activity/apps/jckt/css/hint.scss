@@ -1,0 +1,27 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-11-11 16:59:50
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-11-11 17:25:13
+*/
+.Hint {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 40px;
+
+  .title {
+    height: 42px;
+    line-height: 42px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .content {
+    .txt {
+      line-height: 36px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 10px;
+    }
+  }
+}

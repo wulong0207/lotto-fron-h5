@@ -1,0 +1,50 @@
+.hz-page {
+  .shortcuts-title {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 32px;
+    font-weight: normal;
+  }
+  .shortcuts {
+    padding: 0 30px;
+    display: flex;
+    button {
+      flex: 1;
+      border: solid 1px #f4f4f4; /* no */
+      background: transparent;
+      padding: 20px 0;
+      border-radius: 2px;
+      margin: 0 10px;
+      color: rgb(30, 136, 210);
+      font-size: 28px;
+      outline: 0;
+      &.active {
+        position: relative;
+        overflow: hidden;
+        &:after {
+          content: "";
+          background: rgb(30, 136, 210);
+          height: 60px;
+          width: 60px;
+          position: absolute;
+          right: -30px;
+          bottom: -30px;
+          transform: rotate(45deg);
+        }
+        &:before {
+          content: "";
+          height: 12px;
+          width: 20px;
+          background: transparent;
+          border-top: 2px solid #fff; /* no */
+          border-right: 2px solid #fff; /* no */
+          position: absolute;
+          bottom: 8px;
+          right: 5px;
+          z-index: 9;
+          transform: rotate(135deg);
+        }
+      }
+    }
+  }
+}

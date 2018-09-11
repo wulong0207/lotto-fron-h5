@@ -1,0 +1,101 @@
+/*
+ * @Author: yubei 
+ * @Date: 2017-08-27 13:42:01 
+ * Desc: 底部菜单
+ */
+
+ .menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;/*no*/
+    background: #fff;
+    a {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #999;
+        .menu-icon {
+            display: block;
+            width: 46px;
+            height: 46px;
+        }
+        span {
+
+        }
+    }
+    .current {
+        span {
+            color: #1E88D2;
+        }
+    }
+    .menu-index {
+        .menu-icon {
+            background: url('../../img/component/menu/buya@2x.png') no-repeat;
+            background-size: cover;
+        }
+    }
+    .menu-live {
+        .menu-icon {
+            background: url('../../img/component/menu/livea@2x.png') no-repeat;
+            background-size: cover;
+        }
+    }
+    .menu-open {
+        .menu-icon {
+            background: url('../../img/component/menu/opena@2x.png') no-repeat;
+            background-size: cover;
+        }
+    }
+    .menu-news {
+        .menu-icon {
+            background: url('../../img/component/menu/servia@2x.png') no-repeat;
+            background-size: cover;
+        }
+    }
+    .menu-user {
+        .menu-icon {
+            background: url('../../img/component/menu/mea@2x.png') no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .menu-index.current {
+        .menu-icon {
+            background: url('../../img/component/menu/buy@2x.png') no-repeat;
+            background-size: cover;
+        }
+    }
+    .menu-live.current {
+        .menu-icon {
+            background: url('../../img/component/menu/live@2x.png') no-repeat;
+            background-size: cover;
+        }
+    }
+    .menu-open.current {
+        .menu-icon {
+            background: url('../../img/component/menu/open@2x.png') no-repeat;
+            background-size: cover;
+        }
+    }
+    .menu-news.current {
+        .menu-icon {
+            background: url('../../img/component/menu/servi@2x.png') no-repeat;
+            background-size: cover;
+        }
+    }
+    .menu-user.current {
+        .menu-icon {
+            background: url('../../img/component/menu/me@2x.png') no-repeat;
+            background-size: cover;
+        }
+    }
+ }

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="Harry" date="2017-09-28T01:37:35.903Z" timestamp="2017-09-28T01:37:35.903Z">
+    <change idref="t51" to="t24" to-position="0">
+      <change idref="t51" attribute="title" type="string" to="联连支付"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="yubei" date="2017-10-26T09:39:21.964Z" timestamp="2017-10-26T09:39:21.964Z">
+    <change idref="t52" to="t-1" to-position="8" resolved="yes">
+      <change idref="t52" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t52" attribute="noEarlierThanConstraintDate" type="date" to="2017-10-26T00:00:00.000Z"/>
+      <change idref="t52" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t52" attribute="title" type="string" to="10月未完成任务"/>
+    </change>
+    <change idref="t53" to="t52" to-position="0" resolved="yes">
+      <change idref="t53" attribute="noEarlierThanConstraintDate" type="date" to="2017-10-26T00:00:00.000Z"/>
+      <change idref="t53" attribute="title" type="string" to="首页改版"/>
+    </change>
+    <change idref="t54" to="t52" to-position="1" resolved="yes">
+      <change idref="t54" attribute="noEarlierThanConstraintDate" type="date" to="2017-10-26T00:00:00.000Z"/>
+      <change idref="t54" attribute="title" type="string" to="购彩低收益提醒 - 低®"/>
+    </change>
+    <change idref="t55" to="t52" to-position="2" resolved="yes">
+      <change idref="t55" attribute="noEarlierThanConstraintDate" type="date" to="2017-10-26T00:00:00.000Z"/>
+      <change idref="t55" attribute="title" type="string" to="数字彩URL带号码 - 低"/>
+    </change>
+    <change idref="t57" to="t52" to-position="3" resolved="yes">
+      <change idref="t57" attribute="noEarlierThanConstraintDate" type="date" to="2017-10-26T00:00:00.000Z"/>
+      <change idref="t57" attribute="title" type="string" to="竞彩足球SP值推送"/>
+    </change>
+    <change idref="t59" to="t52" to-position="4" resolved="yes">
+      <change idref="t59" attribute="title" type="string" to="抄单推介(一比分)"/>
+    </change>
+    <change idref="t58" to="t52" to-position="5" resolved="yes">
+      <change idref="t58" attribute="title" type="string" to="分析详情(一比分接口)"/>
+    </change>
+    <change idref="t60" to="t52" to-position="6" resolved="yes">
+      <change idref="t60" attribute="title" type="string" to="竞彩足球快捷H5"/>
+    </change>
+    <change idref="t61" to="t52" to-position="7" resolved="yes">
+      <change idref="t61" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t61" attribute="title" type="string" to="充值增加充值红包"/>
+    </change>
+    <change idref="t62" to="t52" to-position="8" resolved="yes">
+      <change idref="t62" attribute="title" type="string" to="出票详情"/>
+    </change>
+    <change idref="t64" to="t52" to-position="9" resolved="yes">
+      <change idref="t64" attribute="title" type="string" to="分享功能"/>
+    </change>
+    <change idref="t63" to="t52" to-position="10" resolved="yes">
+      <change idref="t63" attribute="title" type="string" to="FAQ页面"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="yubei" date="2017-10-27T06:41:49.606Z" timestamp="2017-10-27T06:41:49.606Z">
+    <change idref="t54" attribute="title" type="string" from="购彩低收益提醒 - 低®" to="购彩低收益提醒 - 低" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="yubei" date="2017-10-27T06:42:20.482Z" timestamp="2017-10-27T06:42:20.482Z">
+    <change idref="t61" attribute="effort" type="real" from="57600" to="28800" resolved="yes"/>
+  </task-change-set>
+</changelog>

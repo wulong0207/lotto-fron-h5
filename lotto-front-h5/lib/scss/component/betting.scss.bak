@@ -1,0 +1,445 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-05-08 17:18:31
+ * @Desc: 下单组件
+ */
+
+@import "../base/base";
+@import "public";
+
+// 底部
+.footer {
+    position: fixed;
+    bottom: 0;
+    @include z-index(maskContent);
+    display: flex;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 .01rem .01rem #d7d7d7;
+    border: .01rem solid #afafbc;/*no*/
+
+    // 投注信息
+    .bet-info {
+        flex: 2.2;
+
+        // 附加栏
+        .attach {
+            position: absolute;
+            left: 0;
+            bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: .9rem;
+            padding: 0 .28rem;
+            border: .01rem solid #afafbc;/*no*/
+            background: #fff;
+        }
+
+        // 没选择的时候
+        .no-selbet {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 1rem;
+            text-align: center;
+            color: #999;
+            p {
+                font-size: 0.28rem;
+            }
+            span {
+                font-size: 0.18rem;
+            }
+        }
+
+
+        // 奖金范围
+        .bonu-mult {
+             color: #999;
+            .bonu-range {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 1rem;
+                padding: 0 .28rem;
+                > div {
+                    display: flex;
+                    justify-content: space-between;
+                    &:first-of-type {
+                        font-size: .28rem;
+                    }
+                    &:last-of-type {
+                        span:last-of-type {
+                            color: #333;
+                        }
+                    }
+                }
+            }
+
+            // 附加块
+            .attach {
+                > div {
+                    &:first-of-type {
+                        flex: 1;
+                        font-size: .28rem;
+                        color: #333;
+                    }
+                    &:nth-of-type(2){
+                        flex: 5;
+                    }
+                }
+            }
+        }
+
+
+
+
+        // 设胆 等信息
+        .bet-opt {
+            .bet-opt-menu {
+                display: flex;
+                > div {
+                    text-align: center;
+                    line-height: 1rem;
+                    flex: 2;
+                    font-size: .28rem;
+                    border-left: .01rem solid #afafbc;
+                    &:first-of-type{
+                        flex: 1.3;
+                        border-left: none;
+                    }
+                }
+
+                .dot-tips {
+                    margin: .3rem 0 0 .05rem;
+                }
+                .round-num {
+                    margin-top: .1rem;
+                }
+            }
+            .attach {
+                color: #999;
+                font-size: .24rem;
+                justify-content: flex-start;
+                padding: 0 .1rem;
+                span:nth-of-type(2){
+                    flex: 7;
+                    text-align: left;
+                }
+                .del {
+                    flex: 1;
+                }
+                .prize-optimize {
+                    color: #ff7a0d;
+                    flex: 2;
+                }
+                em {
+                    margin: 0 .1rem;
+                }
+            }
+
+            // 过关方式
+            .pass-way {
+                position: absolute;
+                left: 0;
+                bottom: 1.85rem;
+                width: 100%;
+                background: #fff;
+                line-height: .6rem;
+                text-align: center;
+                font-size: .28rem;
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                    &:last-of-type{
+                        border-bottom: .01rem solid #afafbc;
+                    }
+                    span {
+                        flex: 1;
+                        border-top: .01rem solid #afafbc;
+                        border-right: .01rem solid #afafbc;
+                        &:first-of-type{
+                            border-left: .01rem solid #afafbc;
+                        }
+                    }
+                    .dot-tips {
+                        margin: .1rem 0 0 .05rem;
+                    }
+                }
+            }
+            // 奖金计算器 提示
+            .bonus-calc-tips {
+                position: absolute;
+                left: 0;
+                bottom: 2rem;
+                width: 100%;
+                background: #fff;
+                color: #333;
+                padding: .2rem .25rem 0;
+                box-shadow: 0 0 0.01rem 0.01rem #d7d7d7;
+                .close {
+                    position: absolute;
+                    top: .1rem;
+                    right: .15rem;
+                    @include size(.3rem);
+                    text-align: center;
+                    line-height: .24rem;
+                    color: #9b9b9b;
+                    border: .02rem solid #9b9b9b;/*no*/
+                    border-radius: 50%;
+                }
+                .arrows {
+                    position: absolute;
+                    bottom: -.05rem;
+                    right: 40%;
+                    @include arrows($color: #fff, $line-size: .1rem);
+                    .arrows {
+                        left: 0;
+                        bottom: -.01rem;
+                        @include arrows($color: #d7d7d7, $line-size: .1rem);
+                    }
+                }
+                .title {
+                    display: flex;
+                    align-items: baseline;
+                    padding-left: .2rem;
+                    line-height: .6rem;
+                    h2 {
+                        font-size: .34rem;
+                    }
+                    span {
+                        padding-left: .2rem;
+                        color: #999;
+                    }
+                }
+                .content {
+                    text-align: center;
+                    line-height: .7rem;
+                    p {
+                        display: flex;
+
+                        border-bottom: .01rem solid #cbcbcb;
+                        &:last-of-type {
+                            border-bottom: none;
+                        }
+                        span {
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+
+            // 设胆弹层
+            .set-courage-layer {
+                position: absolute;
+                left: 0;
+                bottom: 1.9rem;
+                width: 100%;
+                .courage {
+                    background: #fff;
+                    padding: 0 .1rem;
+                    .bet-endtime {
+                        position: absolute;
+                        top: -.65rem;
+                        width: 100%;
+                        color: #fff;
+                        font-size: .28rem;
+                        text-align: center;
+                    }
+                    > .close {
+                        position: absolute;
+                        top: -.8rem;
+                        right: .3rem;
+                        @include close($size: .5rem, $color: #fff);
+                        .vertical-line {
+                            position: absolute;
+                            top: .48rem;
+                            left: .24rem;
+                            width: .02rem;
+                            height: .5rem;
+                            background: #fff;
+                        }
+                    }
+                    .oper {
+                        display: flex;
+                        justify-content: space-around;
+                        padding: .25rem 0;
+                        text-align: center;
+                        font-size: .32rem;
+                        > div {
+                            flex: 1;
+                            &:last-of-type {
+                                border-left: .01rem solid #f4f4f4;
+                            }
+                            span {
+                                font-size: .24rem;
+                            }
+                        }
+                    }
+                    // 设胆区块
+                    .courage-area {
+                        padding-bottom: .3rem;
+                        // 头
+                        .area-header {
+                            height: .2rem;
+                            border: .06rem solid #f7f7f7;/*no*/
+                            box-shadow: 0 0 .1rem #999 inset, 0 -.03rem .15rem #ccc;
+                            border-radius: .5rem;
+                        }
+                        // 剩余部分
+                        .area-extender {
+                            max-height: 7rem;
+                            margin: -.1rem .2rem 0;
+                            box-shadow: 0 -.02rem .15rem #ccc;
+                            border-top-left-radius: .08rem;
+                            border-top-right-radius: .08rem;
+                            overflow-y: auto;
+                            overflow-x: hidden;
+
+                            // 内容
+                            .area-content {
+                                position: relative;
+                                background: #f7f7f7;
+                                // 过期
+                                &.area-content-overdue {
+                                    .mask {
+                                        display: block;
+                                    }
+                                    .area-data {
+                                        .stop-race {
+                                            display: flex;
+
+                                        }
+                                        .title-sub {
+                                            .close {
+                                                @include close($color: #fff);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-last-of-type(2){
+                                    margin-bottom: 0;
+                                }
+
+                                .mask {
+
+                                }
+                                .area-data {
+                                    padding: 0 .09rem;
+                                    padding-bottom: .2rem;
+                                    .stop-race {
+                                        display: none;
+                                        position: absolute;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 100%;
+                                        height: 100%;
+                                        color: #fff;
+                                        @include z-index(float);
+                                    }
+                                    .title-sub {
+                                        position: relative;
+                                        display: flex;
+                                        align-items: flex-end;
+                                        padding: 0 .1rem;
+                                        line-height: .6rem;
+                                        > div:first-of-type{
+                                            padding-right: .2rem;
+                                        }
+                                        .selected {
+                                            @include select();
+                                        }
+                                        .not-selected {
+                                            @include no-select();
+                                        }
+                                        .set-text {
+                                            font-size: .32rem;
+                                            color: #ed1c24;
+                                            padding-left: .1rem;
+                                        }
+                                        .close {
+                                            position: absolute;
+                                            top: .1rem;
+                                            right: .1rem;
+                                            @include close($size: .38rem);
+                                            @include z-index(float);
+                                        }
+                                    }
+
+                                    .data-list {
+                                        line-height: .5rem;
+                                        font-size: .2rem;
+                                        border-top: .01rem solid #f4f4f4;
+                                        // item
+                                        .data-item {
+                                            display: flex;
+                                            text-align: center;
+                                            min-height: .7rem;
+                                            > div {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                flex-wrap: wrap;
+                                                padding: .1rem 0;
+                                                border-left: .01rem solid #f4f4f4;
+                                                border-bottom: .01rem solid #f4f4f4;
+                                                p {
+                                                    width: 100%;
+                                                    display: flex;
+                                                    > span {
+                                                        flex: 1;
+                                                    }
+                                                }
+                                                &:first-of-type {
+                                                    flex: 1;
+                                                    border-left: none;
+                                                }
+                                                &:last-of-type {
+                                                    flex: 4;
+                                                    //border-bottom: none;
+                                                    > span {
+                                                        flex: 1;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        // 尾
+                        .area-footer {
+                            height: .05rem;
+                            margin: 0 .2rem;
+                            background: linear-gradient(135deg, transparent, transparent 45%, #ccc, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #ccc, transparent 55%, transparent 100%);
+                            background-size: 0.5em 0.5em;
+                            background-repeat: repeat-x, repeat-x;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 投注按钮
+    .bet-btn {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex: 1;
+        height: 1rem;
+        font-size: 0.34rem;
+        text-align: center;
+        background: #ed1c24;
+        color: #fff;
+        > p:last-of-type {
+            font-size: .24rem;
+        }
+    }
+
+
+
+}

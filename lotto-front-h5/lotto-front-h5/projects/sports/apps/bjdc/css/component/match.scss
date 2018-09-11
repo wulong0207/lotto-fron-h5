@@ -1,0 +1,180 @@
+/**
+ * Created by YLD
+ * date 2017-08-8
+ * desc: 竞彩篮球
+ */
+@import "../../../../../../lib/scss/base/base";
+
+$lowcolor: #999999;
+.ct-match {
+  position: relative;
+
+  .zhibo {
+    position: relative;
+  }
+  .zhibo::before {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    margin-left: 10px;
+    background: url(../../img/icon_detail@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+
+  .date {
+    color: $lowcolor;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6; /*no*/
+    line-height: 50px;
+  }
+
+  .game-vs {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 96px;
+    height: 160px;
+    width: 120px;
+    margin: 0 auto;
+
+    .sep {
+      line-height: 40px;
+      width: 45px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #e6e6e6; /*no*/
+      margin: 0 auto;
+      background-color: #fff;
+      right: -87.5px;
+      top: 0;
+      color: $lowcolor;
+      font-size: 24px;
+    }
+
+    .pl-change {
+      width: 100px;
+      text-align: center;
+      border: 1px solid #e6e6e6; /*no*/
+      margin: 0 auto;
+      margin-top: 8px;
+      background-color: #fff;
+      right: -110px;
+      top: 0;
+      font-size: 24px;
+      color: $lowcolor;
+      line-height: 32px;
+
+      &.dxf {
+        color: #fe7a0d;
+      }
+      &.green {
+        color: #01af63;
+      }
+      &.rise {
+        color: #ed1b24;
+      }
+      &.fall {
+        color: #04b46c;
+      }
+    }
+  }
+
+  ul {
+    li {
+      height: 170px;
+      position: relative;
+      padding: 0 20px 0 60px;
+      .img {
+        position: absolute;
+        &.right {
+          right: 20px;
+        }
+      }
+      .team {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .team-bet {
+          color: $lowcolor;
+          line-height: 30px;
+          &.red {
+            color: #ed1c24;
+          }
+          &.green {
+            color: #01af63;
+          }
+        }
+
+        h3 {
+          width: 100%;
+        }
+      }
+      .tr {
+        .gray {
+          font-size: 24px;
+        }
+      }
+
+      &.first-child {
+        padding: 0 60px 0 20px;
+      }
+      &.active {
+        background-color: #01af63;
+        h3,
+        .team,
+        .team-bet,
+        .green,
+        .gray {
+          color: #fff;
+        }
+      }
+    }
+
+    .dxf {
+      color: #fe7a0d;
+    }
+    .green {
+      color: #01af63;
+    }
+    .rise {
+      color: #ed1b24;
+    }
+    .fall {
+      color: #04b46c;
+    }
+
+    .tl {
+      text-align: left;
+    }
+    .tr {
+      text-align: right;
+    }
+    .ver-line {
+      padding: 0;
+      margin: 0;
+      width: 1px; /*no*/
+      background-color: #e6e6e6;
+    }
+    .logo {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin: 60px 0;
+      background-color: #f3f3f3;
+    }
+
+    h3 {
+      position: relative;
+      color: #333333;
+      line-height: 60px;
+      font-size: 28px;
+      .gray {
+        color: #999999;
+        font-size: 26px;
+      }
+    }
+  }
+}

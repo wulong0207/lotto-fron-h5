@@ -1,0 +1,51 @@
+
+@import "../base/mixins";
+
+.popup-component {
+  display: none;
+  position: fixed;
+  @include z-index(mask);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
+  .popup-wrap {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+  }
+  &.open {
+    
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .popup-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+  }
+}
+.popup-enter {
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+  transition: all .3s;
+  &.popup-enter-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.popup-leave {
+  opacity: 1;
+  &.popup-leave-active {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    transition: all .3s;
+  }
+}

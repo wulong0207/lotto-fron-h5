@@ -1,0 +1,637 @@
+/*
+ * @Author: yubei 
+ * @Date: 2017-08-18 14:38:01 
+ * Desc: 首页
+ */
+
+ @import '../base/base';
+
+ .home {
+    padding-bottom: 100px;
+
+    // render
+    .renderBanner, .renderLott, .renderLiveKj {
+        border: 1px solid #e6e6e6;/*no*/
+        text-align: center;
+    }
+    .renderBanner {
+        height: 360px;
+        line-height: 360px;
+    }
+    .renderLott {
+        height: 290px;
+        line-height: 290px;
+    }
+    .renderLiveKj {
+        height: 175px;
+        line-height: 175px;
+    }
+    //信息栏
+    .scroll-cont{
+        width: 100%;
+        background-color: #fff;
+        //border-bottom: 1px solid #f2f2f2;/*no*/
+        .scroll-box{
+            width: 100%;
+            height: 100%;
+            height: 65px;
+            background: url('../../img/msg.png') no-repeat 25px center;
+            background-size: 115px 30px;
+            overflow: hidden;
+            border:none;
+            .over-scroll,.content2{  
+                .acc{
+                    padding-left: 160px;
+                    font-size: 24px;
+                    color: #333;
+                    line-height: 65px;
+                    overflow: hidden;
+                    .msg{
+                        float: right;
+                        width:100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+    //浮标
+    .float{
+        position: fixed;
+        width: 144px;
+        height: 144px;
+        right: 20px;
+        bottom: 166px;
+        .down{
+            width: 144px;
+            height: 144px;
+            background: url('../../img/down_app.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+        .close{
+            position: absolute;
+            right: -20px;
+            top: -10px;
+            width:40px;
+            height: 40px;
+            background: url('../../img/icon_shut_down@2x.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+    }
+    //入口
+    .enter-box{
+        width: 100%;
+        height: 156px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        .enter-list{
+            display: flex;
+            .enter-cont{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 40px;
+                    margin-top: 20px;
+                }
+                span{
+                    font-size: 24px;
+                    color: #333;
+                    line-height: 48px;
+                }
+            }
+        }
+    }
+
+    .header {
+        position: relative;
+        .handle {
+            width: 110px !important;
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            .menu {
+                position: absolute;
+                left: 20px;
+                img {
+                    width: 30px;
+                }
+            }
+            .down-app {
+                margin-right: 18px;
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .user-icon {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                &.login {
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+     }
+
+     .lott-section {
+         margin-top: 20px;
+         background: #fff;
+     }
+
+     // 广告图
+     .banner {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        a {
+            img {
+                width: 100%;
+                height: 240px;
+            }
+        }
+        .dotted{
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            .dot{
+                display: block;
+                float: left;
+                width: 10px;
+                height: 10px;
+                background-color: rgba(255,255,255, .5);
+                border-radius: 50%;
+                margin: 0 5px;
+            }
+            .on{
+                background-color: #fff;
+            }
+        }
+     }
+
+     // 彩种列表
+     .list-wrap {
+        .lott-title {
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            line-height: 70px;
+            padding: 0 20px;
+            color: #666;
+            h2 {
+                span {
+                    font-size: 30px;
+                    font-weight: normal;
+                    padding-left: 45px;
+                    background: url('../../img/index/caizhong@2x.png') no-repeat;
+                    background-size: 38px;
+                    background-position: left;
+                }
+            }
+            .lott-more {
+                font-size: 22px;
+            }
+        }
+
+        .lott-list {
+            text-align: center;
+            .lott-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                border: solid #e6e6e6;
+                border-width: 0 1px 1px 0;/*no*/
+                height: 175px;
+                overflow: hidden;
+                .lott-operIcon {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 40px;
+                    height: 40px;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                h3, h4 {
+                    color: #333;
+                    font-weight: normal;
+                }
+                h3 {
+                    font-size: 32px;
+                }
+                h4 {
+                    font-size: 26px;
+                }
+                .lott-desc {
+                    width: 100%;
+                    color: #999;
+                    font-size: 22px;
+                    // margin-bottom: 10px;
+                    p {
+                        max-width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                        vertical-align: middle;
+                        line-height: 30px;
+                    }
+                }
+                img {
+                    width: 70px;
+                }
+            }
+            // 主要彩种 排序 0,3,4,5,6,7,8
+            .lott-priority {
+                display: flex;
+                border-top: 1px solid #e6e6e6;/*no*/
+                .lott-recommend {
+                    flex: 3.5;
+                    height: 350px;
+                    img {
+                        width: 80%;
+                    }
+                }
+                .lott-side {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex: 6.5;
+                    .lott-item {
+                        width: 33.33%;
+                        border: solid #e6e6e6;
+                        border-width: 0 1px 1px 0;/*no*/
+                    }
+                }
+            }
+            // 次要彩种 1,2
+            .lott-secondly {
+                display: flex;
+                border-bottom: 1px solid #e6e6e6;/*no*/
+                .lott-secondly-list {
+                    flex: 5;
+                    overflow: hidden;
+                    height: 175px;
+                    &:last-of-type {
+                        border-left: 1px solid #e6e6e6;/*no*/
+                        .lott-endtime {
+                            background: #5EADFE!important;
+                        }
+                    }
+                    h4 {
+                        font-size: 32px;
+                        color: #333;
+                        font-weight: normal;
+                        text-align: left;
+                        padding-left: 30px;
+                        line-height: 60px;
+                    }
+                    .lott-sec-info {
+                        display: flex;
+                        padding: 0 30px;
+                        > div {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: flex-end;
+                        }
+                        .lott-sec-logo {
+                            flex: 4;
+                            img {
+                                width: 68px;
+                            }
+                        }
+                        .lott-sec-detail {
+                            flex: 6;
+                            width: 60%;
+                            .lott-desc {
+                                width: 100%;
+                                color: #999;
+                                font-size: 22px;
+                                line-height: 46px;
+                                p {
+                                    max-width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    word-wrap: normal;
+                                    vertical-align: middle;
+                                }
+                            }
+                            .lott-bonus {
+                                font-size: 32px;
+                                color: #ED1C24;
+                                line-height: 46px;
+                            }
+                            .lott-endtime {
+                                width: 190px;
+                                height: 35px;
+                                font-size: 22px;
+                                color: #fff;
+                                line-height: 35px;
+                                background: #FFAB73;
+                            }
+                        }
+                    }
+                }
+            }
+            .lott-lesser {
+                display: flex;
+                .lott-item {
+                    flex: 1;
+                }
+            }
+        }
+     }
+
+     // 直播
+     .live-lott {
+        display: flex;
+        height: 175px;
+        border: 1px solid #e6e6e6;/*no*/
+        h3 {
+            font-size: 32px;
+            color: #333;
+            font-weight: normal;
+        }
+        p {
+            font-size: 22px;
+            color: #999;
+            line-height: 32px;
+        }
+        > div{
+            flex: 5;
+            &:last-of-type {
+                border-left: 1px solid #e6e6e6;/*no*/
+            }
+        }
+        .live-ybf {
+            display: flex;
+            .live-img {
+                flex: 3;
+                text-align: center;
+                line-height: 175px;
+                img {
+                    width: 68px;
+                }
+            }
+            .live-info {
+                flex: 7;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+        .lott-kj {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            .lott-kj-link {
+                padding-top: 20px;
+                a {
+                    color: #333;
+                    margin: 0 5px;
+                }
+            }
+        }
+     }
+
+     // 快速投注
+     .fast-bet {
+         // 竞技彩
+        .fast-bet-jjc {
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            .fast-list {
+                // display: flex;
+                // justify-content: center;
+                // flex-direction: column;
+                border: 1px solid #e6e6e6;/*no*/
+                white-space: nowrap;
+                margin-right: 20px;
+                height: 175px;
+                padding: 0 30px;
+                h4 {
+                    font-size: 22px;
+                    color: #999;
+                    font-weight: normal;
+                    margin: 20px 0 0;
+                }
+                .fast-time {
+                    color: #666;
+                    font-size: 22px;
+                    text-align: center;
+                    span {
+                        margin: 0 10px;
+                    }
+                }
+                .fast-info {
+                    color: #333;
+                    line-height: 60px;
+                    .fast-logo {
+                        img {
+                            width: 60px;
+                        }
+                    }
+                    .fast-name {
+                        font-size: 32px;
+                        display: inline-block;
+                        max-width: 150px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                        vertical-align: middle;
+                        margin: 0 30px;
+                    }
+                    .fast-endTime {
+                        font-size: 28px;
+                        vertical-align: sub;
+                        i {
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+        // 数字彩
+        .fast-bet-numble {
+            display: flex;
+            height: 165px;
+            text-align: center;
+            .numble-wrap {
+                flex: 4;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0 20px;
+                &:last-of-type {
+                    flex: 6;
+                    border-left: 1px solid #e6e6e6;/*no*/
+                    h4 {
+                        text-align: right;
+                    }
+                }
+                h4 {
+                    font-size: 22px;
+                    color: #999;
+                    font-weight: normal;
+                    line-height: 36px;
+                    text-align: left;
+                }
+                .numble-title {
+                    padding: 10px 0;
+                    .lott-name {
+                        font-size: 32px;
+                        margin-right: 30px;
+                    }
+                    .lott-endtime {
+                        font-size: 22px;
+                        color: #666;
+                    }
+                }
+                .lott-random {
+                    .lott-children {
+
+                    }
+                    .fast-ball-red, .fast-ball-blue {
+                        span {
+                            margin: 0 5px;
+                        }
+                    }
+                    .fast-ball-red {
+                        color: #ED1C24;
+                    }
+                    .fast-ball-blue {
+                        color: #1E88D2;
+                    }
+                }
+            }
+        }
+     }
+
+     // 首页文章
+     .article-component {
+        background: transparent;
+        .article-list {
+            background: #fff;
+            padding: 0 30px;
+            .article-item {
+                display: block;
+                padding: 20px 0 15px;
+                border-bottom: 1px solid #e6e6e6;/*no*/
+                .article-main {
+                    .article-title {
+                        width: 100%;
+                        color: #333;
+                        font-size: 32px;
+                        max-width: 100%;
+                    }
+                    .article-img {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 10px;
+                        img {
+                            width: 224px;
+                            height: 150px;
+                        }
+                    }
+                }
+                .article-sub {
+                    padding-top: 20px;
+                    font-size: 24px;
+                    color: #999;
+                    .category {
+                        color: #1E88D2;
+                    }
+                    .author {
+                        margin: 0 10px;
+                    }
+                    .time { }
+                }
+            }
+    
+            // 热点图
+            .article-hot {
+                .article-main {
+                    position: relative;
+                    .hot-ident {
+                        position: absolute;
+                        width: 150px;
+                        height: 72px;
+                        line-height: 72px;
+                        padding-right: 20px;
+                        font-size: 30px;
+                        color: #fff;
+                        text-align: center;
+                        background: url('../../img/index/hottag@2x.png') no-repeat;
+                        background-size: cover;
+                    }
+                    .article-img {
+                        margin-top: 0;
+                        img {
+                            width: 100%;
+                            height: 300px;
+                        }
+                    }
+                    .article-title {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        padding: 10px;
+                        color: #fff;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                        background-color: rgba(0,0,0, .6);
+                    }
+    
+                }
+            }
+    
+            // 单个图片时显示方式
+            .article-oneimg {
+                display: flex;
+                flex-direction: row-reverse;
+                .article-title { 
+                    padding-left: 20px;
+                }
+                .article-img {
+                    margin-top: 0;
+                }
+            }
+    
+            > a {
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+        }
+     
+        .article-more {
+            display: block;
+            font-size: 24px;
+            text-align: center;
+            border-top: 1px solid #e6e6e6;/*no*/
+            line-height: 80px;
+            color: #666;
+        }
+     }
+ }

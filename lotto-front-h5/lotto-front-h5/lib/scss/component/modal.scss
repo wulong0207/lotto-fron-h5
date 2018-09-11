@@ -1,0 +1,35 @@
+
+@import "../base/mixins";
+@import "public";
+
+.modal-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 100px;
+  .header-tip-text {
+    position: absolute;
+    top: 30px;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 28px;
+  }
+  .modal-close {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    right: 20px;
+    @include size(100px);
+    img {
+      @include size(100px);
+    }
+  }
+  .modal-content {
+    background: #fff;
+    position: relative;
+    z-index: 9
+  }
+}

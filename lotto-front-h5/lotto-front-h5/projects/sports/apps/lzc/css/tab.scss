@@ -1,0 +1,33 @@
+//tab-menu
+.tab-menu {
+    .menu-box {
+        background-color: #21AE6A;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 0;
+        a {
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            span {
+                font-size: 28px;
+                display: inline-block;
+                line-height: 73px;
+                padding: 0 30px;
+                &.active {
+                    border-bottom: 4px solid #fff;
+                }
+            }
+        }
+    }
+    .content-box {
+        
+        &>div {
+            display: none;
+            &.active {
+                display: block;
+                
+            }
+            
+        }
+    }
+}

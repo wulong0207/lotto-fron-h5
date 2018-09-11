@@ -1,0 +1,45 @@
+/*
+* @Author: liaozhityuan
+* @Date:   2017-11-10 18:57:09
+* @Last Modified by:   liaozhityuan
+* @Last Modified time: 2017-11-10 19:06:38
+*/
+@import "../base/base.scss";
+
+.banner {
+  position: relative;
+  .react-swipe-container {
+    div {
+      .item {
+        display: block;
+        width: 100%;
+      }
+      .tupian {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .dotted {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    .dot {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin-right: 5px;
+
+      &.on {
+        background-color: #fff;
+      }
+    }
+  }
+}

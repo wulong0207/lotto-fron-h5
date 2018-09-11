@@ -1,0 +1,39 @@
+.number-random-number-component {
+  width: 160px;
+  position: relative;
+  .random-number-box {
+    display: flex;
+    align-items: center;
+    button {
+      width: 90px;
+      background: #ed1c24;
+      border: none;
+      color: #fff;
+      font-size: 28px;
+      height: 60px;
+      outline: 0;
+      padding: 0;
+    }
+    .number-input {
+      flex: 1;
+      text-align: center;
+      border: solid 1px #f4f4f4; /* no */
+      border-right: none;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  .random-number-range {
+    position: absolute;
+    width: 80px;
+    background: #fff;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+    left: 0;
+    bottom: 120%;
+    text-align: center;
+    border-radius: 4px; /* no */
+    .range-item {
+      padding: 3px 0;
+    }
+  }
+}

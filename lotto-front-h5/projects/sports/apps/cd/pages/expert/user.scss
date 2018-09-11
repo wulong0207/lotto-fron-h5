@@ -1,0 +1,42 @@
+@import "../../../../../../lib/scss/base/base.scss";
+
+.user-analytics-summary {
+  padding: 20px 20px 40px;
+  h2 {
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 10px;
+    span {
+      font-size: 28px;
+      font-weight: normal;
+    }
+  }
+  dl {
+    display: flex;
+    margin: 0 -20px;
+    dd {
+      flex: 1;
+      line-height: 1;
+      border-right: solid 1px #f4f4f4; /* no */
+      text-align: center;
+      font-size: 28px;
+      span {
+        color: #999;
+        display: block;
+        font-size: 24px;
+        &:first-child {
+          margin-bottom: 12px;
+        }
+        &.number {
+          color: #333;
+          font-size: 28px;
+        }
+      }
+      &:last-child {
+        display: block;
+        border: none;
+        width: 20%;
+      }
+    }
+  }
+}

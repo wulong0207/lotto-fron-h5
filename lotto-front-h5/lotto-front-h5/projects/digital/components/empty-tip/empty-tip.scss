@@ -1,0 +1,48 @@
+.number-lottery-empty-dialog {
+  .number-lottery-empty-tip {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .balls {
+    text-align: center;
+    padding: 30px 0;
+    .ball {
+      display: inline-block;
+      height: 46px;
+      width: 46px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 46px;
+      font-size: 30px;
+      background: rgb(237, 28, 36);
+      color: #fff;
+      margin: 0 5px;
+    }
+  }
+  footer {
+    margin: 0 -30px -30px;
+    display: flex;
+    border-top: solid 1px #f4f4f4; /* no */
+    button {
+      flex: 1;
+      padding: 20px 0;
+      font-size: 30px;
+      text-align: center;
+      color: #1e88d2;
+      background: none;
+      margin: 0;
+      border: none;
+      outline: 0;
+      &:active {
+        background: rgba(0, 0, 0, 0.05);
+      }
+      &:first-child {
+        border-right: solid 1px #f4f4f4; /* no */
+        border-bottom-left-radius: 20px;
+      }
+      &:last-child {
+        border-bottom-left-radius: 20px;
+      }
+    }
+  }
+}

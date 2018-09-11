@@ -1,0 +1,89 @@
+/**
+ * Created by YLD
+ * date 2017-08-8
+ * desc: 竞彩篮球
+ */
+ @import "../../../../../../lib/scss/base/base";
+
+.box-view{
+
+    &.fixed{
+        .bv-header{
+            z-index: 1;
+            position: fixed;
+            padding-top: 5px;
+            top: 160px;
+        }
+        .child-area{
+            padding-top: 50px;
+        }
+    }
+
+    .bv-header{
+        width: 100%;
+        color: #969696;
+        display: flex;
+        background-color: #F4F4F4;
+        text-align: center;
+        box-shadow: 0px 0px 0 2px #efefef;/*no*/
+        border-top: 1px solid #e6e6e6;/*no*/
+        border-bottom: 1px solid #e6e6e6;/*no*/
+
+        .tl{text-align: left;}
+        .tr{text-align: right;}
+
+        h3{
+            line-height: 55px;
+            font-size: 24px;
+            padding: 0 20px;
+        }
+        .title{
+            color: #ed1c24;
+            .toggle{
+                margin-left: 10px;
+                .arrows:after {
+                    content: "";
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-right: 1px solid #666;/*no*/
+                    border-top: 1px solid #666;/*no*/
+                    transform: rotate(135deg);
+                    transition: transform .3s ease 0s;
+                    margin-bottom: 5px;
+                }
+
+                .arrow{
+                    &.close:after {
+                        content: "";
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-right: 1px solid #666;/*no*/
+                        border-top: 1px solid #666;/*no*/
+                        transform: rotate(135deg);
+                        transition: transform .3s ease 0s;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                &.noshow{
+                    .arrows:after{
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        transition: -webkit-transform .3s ease 0s;
+                        transition: transform .3s ease 0s;
+                        transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
+                    }
+                }
+            }
+        }
+    }
+
+    .child-area{
+        margin-top: 8px;
+        overflow: hidden;
+
+        &.hide{}
+    }
+}

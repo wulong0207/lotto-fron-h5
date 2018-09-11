@@ -1,0 +1,231 @@
+// @import '../base/base.scss';
+@import "./common.scss";
+.recharge {
+  .bank-section {
+    margin-top: 20px;
+    .bank-item {
+      display: flex;
+      background: #fff;
+      justify-content: space-between;
+      align-items: center;
+      .bank-img {
+        width: 65px;
+        height: 65px;
+        margin: 0 30px;
+      }
+      .bank-item-r {
+        flex: 1;
+        display: flex;
+        height: 100%;
+        padding: 32px 32px 32px 0;
+        align-items: center;
+        .bank-name {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          em {
+            font-size: 28px;
+            color: #999999;
+            display: inline-block;
+          }
+          span {
+            font-size: 32px;
+          }
+        }
+        .small-btn-orange {
+          border: 1px solid #fe7a0d; /*no*/
+          border-radius: 4px;
+          color: #fe7a0d;
+          font-size: 28px;
+          padding: 8px 35px;
+        }
+        .icon-arrow-r {
+        }
+      }
+    }
+  }
+  .section-title {
+    font-size: 24px;
+    color: #999999;
+    padding: 19px 32px;
+  }
+  .sf-section {
+    margin: 0;
+    .sf-item {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-bottom: 1px solid #e6e6e6; /*no*/
+      span {
+        font-size: 32px;
+        color: #333333;
+      }
+      input {
+        border: 0;
+        flex: 1;
+        font-size: 28px;
+        margin-left: 30px;
+        color: #999999;
+        outline: 0 none;
+        height: 68px;
+      }
+      .icon-delete {
+      }
+    }
+    .yzm-section {
+    }
+  }
+  button {
+  }
+  .btn-blue {
+  }
+  .cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+    .cover-bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      animation: bottomup 0.4s;
+      animation-fill-mode: forwards;
+      .pl10-section {
+        background: #fff;
+        position: relative;
+        .bank-shutdown {
+          position: absolute;
+          top: 0;
+          right: 27px;
+          transform: translateY(-100%);
+        }
+        .icon-shutdown {
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          background: url("../img/icon_Shut_down2@2x.png") no-repeat;
+          background-size: cover;
+        }
+        .bank-list-area {
+          max-height: 800px;
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+          .showflex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 30px;
+            border-bottom: 1px solid #e6e6e6; /*no*/
+            .bank-img {
+              width: 60px;
+              height: 60px;
+              margin-right: 20px;
+            }
+            .recharge-section-m {
+              flex: 1;
+              margin-right: 25px;
+              display: flex;
+              flex-direction: column;
+              font-size: 24px;
+              color: #999999;
+              span:first-child {
+                font-size: 32px;
+                color: #333333;
+              }
+            }
+            .recharge-section-r {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              font-size: 28px;
+              color: #999999;
+              .icon-bank-sup {
+                width: 36px;
+                height: 36px;
+                background: url("../img/bank/banksup@2x.png") no-repeat;
+                background-size: cover;
+              }
+            }
+          }
+          .recharge-item-grey {
+            opacity: 0.8;
+            background: #ccc;
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+  // 充值红包
+  .recharge-packet {
+    // padding:19px 32px;
+    margin-bottom: 30px;
+    .title {
+      font-size: 24px;
+      display: flex;
+      width: 100%;
+      line-height: 80px;
+      color: #666666;
+      padding: 0 30px;
+      justify-content: space-between;
+      align-items: center;
+      .triangle {
+        text-align: center;
+        margin-left: 30px;
+      }
+      .triangle::after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-right: 1px solid #ccc; /*no*/
+        border-top: 1px solid #ccc; /*no*/
+        transition: transform 0.3s ease;
+        transform: rotate(-45deg);
+      }
+      .rotate:after {
+        transform: rotate(135deg);
+      }
+      b {
+        font-weight: normal;
+      }
+      .blue {
+        margin-left: 10px;
+        background: #74d2d4;
+        color: #fff !important;
+        padding: 5px 10px;
+      }
+    }
+    .drop-menu {
+      background: #fff;
+      width: 100%;
+      height: 320px;
+      padding: 0 30px;
+      overflow-y: scroll;
+      div {
+        display: flex;
+        width: 100%;
+        line-height: 80px;
+        justify-content: space-between;
+        border-bottom: 1px solid #f5f5f5;
+        b {
+          font-weight: normal;
+        }
+        img {
+          display: inline-block;
+          margin-left: 10px;
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+  .hide {
+    display: none;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../base/base";
+
+.yc-popover-root{
+    .yc-popover {
+        width: 260px;
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        border-radius: 5px;/*no*/
+        z-index: 102;
+
+        .popover-arrow::after {
+            content: "";
+            position: absolute;
+            top: -12px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            border-bottom: 20px solid #fff;/*no*/
+            border-left: 10px solid transparent;/*no*/
+            border-right: 10px solid transparent;/*no*/
+        }
+
+        .popover-wrapper{
+            .li-center{
+                text-align: center;
+            }
+            li {
+                overflow: hidden;
+                position: relative;
+                padding: 0;
+                height: 88px;
+                line-height: 88px;
+                border-bottom: 1px solid #E5E5E5;/*no*/
+                font-size: 24px;
+
+                a {
+                    position: relative;
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: #333;
+
+                    &.active {
+                        color: #ff3300;
+                    }
+                }
+
+                a i {
+                    width: 46px;
+                    height: 46px;
+                    display: inline-block;
+                    margin: 21px 25px 21px 20px;
+                    float: left;
+                    background-size: cover;
+                }
+
+                img{
+                    width: 46px;
+                    height: 46px;
+                    display: inline-block;
+                    margin: 21px 25px 21px 20px;
+                }
+            }
+        }
+    }
+}

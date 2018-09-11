@@ -1,0 +1,126 @@
+/*
+ * @Author: yubei
+ * @Date: 2017-05-05 20:47:10
+ * @Desc: 弹层提示公用样式
+ */
+
+ @import "../base/mixins";
+
+
+// 弹窗
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    @include z-index(alert);
+    @include size(100%);
+    color: #333;
+    // display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;    
+    .mask {
+        opacity: 0;
+        display: block;
+        transition: all .3s ease 0s;
+    }
+    .alert-cover {
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // width: 100%;
+        // height: 100%;
+        width: 80%;
+        @include z-index(alert);
+        .alert-warp {
+            // width: 80%;
+            transform: scale(0);
+            transition: all .3s ease 0s;
+            background: #fff;
+            border-radius: 15px;
+            .alert-con {
+                padding: 20px;
+                h1 {
+                    font-size: 34px;
+                    font-weight: normal;
+                    line-height: 80px;
+                }
+                .content{
+                    font-size: 26px;
+                    line-height: 40px;
+                    a {
+                        color: #1e88d2;
+                        text-decoration: none;
+                    }
+                    em {
+                        color: #ed1c24;
+                    }
+                }
+            }
+            .alert-btn {
+                display: flex;
+                border-top: 1px solid #afafbc;/*no*/
+                font-size: 34px;
+                line-height: 85px;
+                a {
+                    &:first-child:nth-last-child(2){
+                        // font-weight: bold;
+                        border-right: 1px solid #afafbc;/*no*/
+                    }
+                    flex: 1;
+                    color: #1e88d2;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+.toast {
+    position: fixed;
+    top: 36%;
+    left: 10%;
+    @include z-index(toast);
+    width: 80%;
+    color: #fff;
+    font-size: 26px;
+    line-height: 60px;
+    // background: #ec6941;
+    background: #000;
+    opacity: 0.7;
+    //box-shadow: -3px -3px 5px #666 inset;
+    box-shadow: 0 -0 3px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;/*no*/
+    word-break: break-all;
+    text-align: center;
+    transition: all .3s ease 0s;
+    transform: scale(0);
+    a {
+        color: #b8c7f7;
+        padding: 0 5px;
+    }
+}
+
+.alert-show{
+    display: flex;
+}
+
+.alert-fade {
+    .mask {
+        opacity: .3;
+    }
+    .alert-warp {
+        transform: scale(1) !important;
+    }
+}
+
+.toast-show {
+    transform: scale(1);
+}

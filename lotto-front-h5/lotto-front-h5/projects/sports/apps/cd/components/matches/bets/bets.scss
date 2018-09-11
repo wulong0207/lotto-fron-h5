@@ -1,0 +1,235 @@
+@import "../../../../../../../lib/scss/base/base.scss";
+
+.bets {
+  margin-top: 30px;
+  border: solid 1px #f4f4f4; /* no */
+  border-radius: 10px;
+  .bet {
+    display: flex;
+    border-bottom: solid 1px #f4f4f4; /* no */
+    .bet-score {
+      flex: 1;
+    }
+    .bet-item {
+      color: #999;
+      flex: 1;
+      display: flex;
+      height: 72px;
+      align-items: center;
+      justify-content: center;
+      border-right: solid 1px #f4f4f4; /* no */
+      position: relative;
+      font-size: 28px;
+      i {
+        font-style: normal;
+        color: #999;
+      }
+      &.result {
+        color: #f1231c;
+        i {
+          color: #f1231c;
+        }
+        &:after {
+          content: "";
+          background: transparent;
+          position: absolute;
+          height: 15px;
+          width: 25px;
+          border-left: 1px solid #f1231c; /* no */
+          border-bottom: 1px solid #f1231c; /* no */
+          transform: rotate(-45deg);
+          bottom: 15px;
+          right: 5px;
+          color: #fff;
+          border-radius: 0;
+        }
+      }
+      &.selected {
+        color: #f1231c;
+        i {
+          color: #f1231c;
+        }
+        &:after {
+          content: "推";
+          position: absolute;
+          background: #f1231c;
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+          line-height: 30px;
+          text-align: center;
+          font-size: 24px;
+          bottom: 5px;
+          right: 5px;
+          color: #fff;
+          transform: none;
+        }
+      }
+
+      .let-number {
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+.not-winning {
+  .bet {
+    .bet-item {
+      &.selected {
+        border: solid 1px #f4f4f4; /* no */
+        color: #999;
+        i {
+          color: #999;
+        }
+        &:after {
+          background: #e6e6e6;
+          color: #999;
+        }
+      }
+      &.result {
+        color: #f1231c;
+        i {
+          color: #f1231c;
+        }
+        &:after {
+          content: "";
+          background: transparent;
+          position: absolute;
+          height: 15px;
+          width: 25px;
+          border-left: 1px solid #f1231c; /* no */
+          border-bottom: 1px solid #f1231c; /* no */
+          transform: rotate(-45deg);
+          bottom: 15px;
+          right: 5px;
+          color: #fff;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+.winning {
+  .bet {
+    .bet-item {
+      &.selected {
+        color: #f1231c;
+        i {
+          color: #f1231c;
+        }
+        &:after {
+          content: "推";
+          position: absolute;
+          background: #f1231c;
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+          line-height: 30px;
+          text-align: center;
+          font-size: 24px;
+          bottom: 5px;
+          right: 5px;
+          color: #fff;
+          transform: none;
+          border: none;
+        }
+      }
+    }
+  }
+}
+.bets_ht {
+  margin-top: 40px;
+  border-left: solid 1px #f4f4f4; /* no */
+  border-bottom: solid 1px #f4f4f4; /* no */
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  &.pb60 {
+    padding-bottom: 60px;
+  }
+  .bet_mes {
+    width: 84px;
+    background-color: #f4f4f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mes {
+      display: block;
+      color: #666;
+      font-size: 24px;
+      line-height: 24px;
+      width: 52px;
+
+      &.mes_t {
+        width: 24px;
+      }
+    }
+  }
+
+  .bet_ht {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .bet-item {
+      color: #333;
+      flex: 1;
+      min-width: 33%;
+      display: flex;
+      height: 72px;
+      align-items: center;
+      justify-content: center;
+      border-right: solid 1px #f4f4f4; /* no */
+      border-top: solid 1px #f4f4f4; /* no */
+      position: relative;
+      font-size: 24px;
+      i {
+        font-style: normal;
+        color: #999;
+      }
+      &.selected {
+        color: #f1231c;
+        i {
+          color: #f1231c;
+        }
+      }
+    }
+  }
+  .more {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #f4f4f4; /* no */
+    border-bottom: none;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .txt {
+      line-height: 60px;
+      font-size: 24px;
+      color: #999;
+      margin-right: 20px;
+    }
+    .arrow {
+      width: 20px;
+      height: 20px;
+      border-left: 2px solid #d8d8d8; /* no */
+      border-top: 2px solid #d8d8d8; /* no */
+      transform: rotate(225deg);
+      margin-bottom: 8px;
+      margin-top: 0;
+      &.on {
+        transform: rotate(45deg);
+        margin-bottom: 0;
+        margin-top: 8px;
+      }
+    }
+  }
+}

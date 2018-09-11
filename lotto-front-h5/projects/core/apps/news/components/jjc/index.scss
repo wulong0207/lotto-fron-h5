@@ -1,0 +1,20 @@
+.counter{
+    border:1px solid #e5e5e5;/*no*/
+    background: #f4f4f4;
+    input{
+        display: inline-block;
+        width:80px;
+        height:60px;
+        border:none;
+        border-left:1px solid #e5e5e5; /*no*/
+        border-right:1px solid #e5e5e5; /*no*/
+        background: #fff;
+        text-align: center;
+    }
+    .but{
+        display: inline-block;
+        width:60px;
+        line-height:60px;
+        text-align: center;
+    }
+}

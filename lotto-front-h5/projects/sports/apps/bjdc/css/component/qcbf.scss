@@ -1,0 +1,147 @@
+/**
+ * Created by YLD
+ * date 2017-09-21
+ * desc: 北京单场
+ */
+@import "../../../../../../lib/scss/base/base";
+$lowcolor: #999999;
+.qcbf-bar {
+  .zhibo {
+    position: relative;
+  }
+  .zhibo::before {
+    content: " ";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 20px;
+    height: 40px;
+    margin-left: 10px;
+    background: url(../../img/icon_detail@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+
+  .date {
+    color: $lowcolor;
+    text-align: center;
+    font-size: 28px;
+    border-bottom: 1px solid #e6e6e6; /*no*/
+    line-height: 50px;
+  }
+
+  .mid {
+    color: #fe7a0d !important;
+  }
+  .green {
+    color: #01af63 !important;
+  }
+  .rise {
+    color: #ed1b24 !important;
+  }
+  .fail {
+    color: #04b46c !important;
+  }
+
+  .game-title {
+    line-height: 60px;
+    padding: 0 20px;
+    border-bottom: 1px solid #e6e6e6; /*no*/
+    border-top: 1px solid #e6e6e6; /*no*/
+  }
+
+  ul {
+    li {
+      border-bottom: 1px solid #e6e6e6; /*no*/
+      border-right: 1px solid #e6e6e6; /*no*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &.ls-info {
+        padding: 10px 20px;
+        background-color: #f4f4f4;
+        width: 60px;
+        text-align: left;
+        div {
+          width: 100%;
+        }
+      }
+
+      &.pj {
+        width: 100px;
+      }
+
+      .tc {
+        line-height: 40px;
+        width: 100%;
+        text-align: center;
+        .team-name {
+          max-width: 220px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+
+      .range {
+        position: absolute;
+        left: 10px;
+        top: 0px;
+        &.right {
+          right: 10px;
+          left: auto;
+        }
+      }
+
+      .one-four {
+        width: 20%;
+        &.border-right {
+          border-right: 1px solid #e6e6e6; /*no*/
+        }
+        &.border-bottom {
+          border-bottom: 1px solid #e6e6e6; /*no*/
+        }
+        &.border {
+          border-bottom: 1px solid #e6e6e6; /*no*/
+          border-right: 1px solid #e6e6e6; /*no*/
+        }
+      }
+      .fill {
+        width: 100%;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      &.active,
+      .one-four.active,
+      .one-three.active {
+        background-color: #01af63;
+        h3,
+        .team,
+        .team-bet,
+        .team-name,
+        .mid,
+        .gray,
+        .rise,
+        .fail {
+          color: #fff !important;
+        }
+      }
+    }
+    .tl {
+      text-align: left;
+    }
+    .tr {
+      text-align: right;
+    }
+    .ver-line {
+      padding: 0;
+      margin: 0;
+      width: 1px; /*no*/
+      background-color: #e6e6e6;
+    }
+  }
+}

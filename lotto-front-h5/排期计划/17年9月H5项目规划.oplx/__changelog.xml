@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="yubei" date="2017-09-04T08:56:26.155Z" timestamp="2017-09-04T08:56:26.155Z">
+    <change idref="t34" to="t-1" to-position="4">
+      <change idref="t34" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t34" attribute="noEarlierThanConstraintDate" type="date" to="2017-09-04T00:00:00.000Z"/>
+      <change idref="t34" attribute="title" type="string" to="数字彩URL选号"/>
+    </change>
+    <change idref="t15" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0"/>
+  </task-change-set>
+  <task-change-set user="yubei" date="2017-09-05T10:51:24.688Z" timestamp="2017-09-05T10:51:24.688Z">
+    <change idref="t11" attribute="title" type="string" from="个人中心细节优化" to="个人中心方案详情优化"/>
+  </task-change-set>
+  <task-change-set user="yubei" date="2017-09-06T07:03:07.441Z" timestamp="2017-09-06T07:03:07.441Z">
+    <change idref="t44" to="t-1" to-position="19">
+      <change idref="t44" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t44" attribute="noEarlierThanConstraintDate" type="date" to="2017-09-06T00:00:00.000Z"/>
+      <change idref="t44" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t44" attribute="title" type="string" to="任务 1"/>
+    </change>
+    <change idref="t24" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0"/>
+  </task-change-set>
+  <task-change-set user="yubei" date="2017-09-23T10:05:06.070Z" timestamp="2017-09-23T10:05:06.070Z">
+    <change idref="t62" to="t-1" to-position="13" resolved="yes">
+      <change idref="t62" attribute="effort" type="real" from="28800" to="115200"/>
+      <change idref="t62" attribute="internalPrerequisitesString" type="string" to="12FS"/>
+      <change idref="t62" attribute="title" type="string" to="时时彩组件切换"/>
+    </change>
+    <change idref="t12" attribute="effort" type="real" from="57600" to="86400" resolved="yes"/>
+  </task-change-set>
+</changelog>

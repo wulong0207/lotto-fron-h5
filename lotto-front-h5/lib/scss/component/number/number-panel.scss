@@ -1,0 +1,31 @@
+/*
+ * @Author: YLD
+ * @Date: 2017-07-04 16:24:00
+ * @Desc: 数字彩球面板
+ */
+
+@import '../../base/base.scss';
+
+.flex{flex: 1;}
+.display-flex{display: flex;}
+
+.number-panel {
+    background-color: #fff;
+
+    .ball-table{
+        width: 100%;
+    }
+
+    .panel{
+
+        padding: 20px 10px 30px 10px;
+        background-color: #fff;
+        .panel-title {
+            font-weight: normal;
+            color: #999;
+            font-size: 20px;
+        }
+    }
+
+    .line{height: 2px; background-color: #f5f5f5; margin: 0 20px;}
+}
